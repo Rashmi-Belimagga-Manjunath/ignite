@@ -24,9 +24,17 @@
 
 ## Verified
 - `npm run smoke` PASSED: DB loads (7 tables, 262 sales), full 5-agent pipeline with live tools,
-  all five deliverables, prototype fence, Manager GO, Manager independent re-query (≥3 calls).
+  all five deliverables, prototype fence, Manager GO, Manager independent re-query (≥3 calls,
+  2 evidence events at decision time).
 - Production build + preview healthy.
 
-## Remaining (post-session)
-- Commit + create GitHub repo + Pages secret + `gh workflow run` + verify live site.
-- Browser click-through of checkpoints + prototype iframe (engine already verified in Node).
+## Deployed (Session 2, part 2)
+- Committed (47 files, 9,289 insertions) → pushed to `github.com/Rashmi-Belimagga-Manjunath/ignite`.
+- Repo set **public** (Pages not supported on private for this plan — confirmed with user).
+- Pages enabled (`build_type: workflow`); secret `VITE_OPENAI_API_KEY` set from `.env.local` value.
+- Deploy triggered with `gh workflow run` (push trigger does not auto-fire here) — **success**.
+- Live site verified: `https://rashmi-belimagga-manjunath.github.io/ignite/` — index 200, bundle
+  contains all demo markers, `ignite.db` 200 (57,344 B), `sql-wasm-*.wasm` 200 (659,730 B).
+
+## Remaining (optional, pre-pitch)
+- Browser click-through of checkpoints + prototype iframe on the live site (engine already verified in Node).
