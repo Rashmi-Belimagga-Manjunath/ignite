@@ -6,6 +6,9 @@ import Marquee from "../components/Marquee.jsx";
 import Stat from "../components/Stat.jsx";
 import Portrait from "../components/Portrait.jsx";
 import Monitor from "../components/Monitor.jsx";
+import Reveal from "../components/Reveal.jsx";
+import Tilt from "../components/Tilt.jsx";
+import Magnetic from "../components/Magnetic.jsx";
 
 const CONSOLE_LINES = [
   ["ignite", "→ RESEARCHER (Amara Osei)  live query: business database…"],
@@ -68,6 +71,17 @@ const CONTACTS = [
 
 export default function Home() {
   const heroRef = useRef(null);
+  const [ready, setReady] = useState(false);
+
+  useEffect(() => {
+    const h = () => setReady(true);
+    window.addEventListener("ignite:ready", h);
+    const t = setTimeout(h, 4200);
+    return () => {
+      window.removeEventListener("ignite:ready", h);
+      clearTimeout(t);
+    };
+  }, []);
 
   const onHeroMove = (e) => {
     const el = heroRef.current;
@@ -111,10 +125,9 @@ export default function Home() {
           <div className="flex justify-center">
             <Eyebrow n="00" text="The studio" center />
           </div>
-          <h1 className="font-display font-bold text-4xl sm:text-6xl lg:text-7xl text-white leading-[1.05] tracking-tight">
-            FROM SIGNAL
-            <br />
-            <span className="shimmer-text">→ TO BUSINESS</span>
+          <h1 className={`font-display font-bold text-4xl sm:text-6xl lg:text-7xl text-white leading-[1.05] tracking-tight ${ready ? "title-live" : ""}`}>
+            <span className="title-line"><span className="title-inner" style={{ "--d": "60ms" }}>FROM</span> <span className="title-inner" style={{ "--d": "170ms" }}>SIGNAL</span></span>
+            <span className="title-line"><span className="title-inner" style={{ "--d": "300ms" }}><span className="shimmer-text">→ TO BUSINESS</span></span></span>
           </h1>
           <p className="mt-6 max-w-2xl mx-auto text-zinc-400 text-base sm:text-lg">
             IGNITE is an autonomous venture launch studio. Five specialised AI agents — a{" "}
@@ -124,9 +137,11 @@ export default function Home() {
             one to the next, to research, design, build, market and launch a business using live data.
           </p>
           <div className="mt-8 flex flex-wrap items-center justify-center gap-6">
-            <Link to="/operations" className="px-6 py-3 rounded-lg font-semibold text-black bg-gradient-to-r from-amber-300 to-orange-500 hover:brightness-110 transition">
-              ▶ Watch the organisation work
-            </Link>
+            <Magnetic strength={0.35}>
+              <Link to="/operations" className="px-6 py-3 rounded-lg font-semibold text-black bg-gradient-to-r from-amber-300 to-orange-500 hover:brightness-110 transition inline-block">
+                ▶ Watch the organisation work
+              </Link>
+            </Magnetic>
             <Link to="/chat" className="link-arrow">
               <span>IGNITE COMMAND</span> <span>→</span>
             </Link>
@@ -154,6 +169,7 @@ export default function Home() {
 
       {/* ---------- THE OBJECTIVE ---------- */}
       <section className="mx-auto max-w-7xl px-4 sm:px-6 py-14">
+        <Reveal>
         <div className="text-center mb-10">
           <div className="flex justify-center"><Eyebrow n="01" text="The objective" center /></div>
           <h2 className="font-display text-3xl sm:text-4xl text-white font-bold tracking-tight">What IGNITE is doing — and what it solves.</h2>
@@ -197,10 +213,12 @@ export default function Home() {
             <Stat value={4} suffix=" min" label="Prompt → decision" sub="end-to-end run" />
           </div>
         </div>
+        </Reveal>
       </section>
 
       {/* ---------- THE ORGANISATION ---------- */}
       <section className="mx-auto max-w-7xl px-4 sm:px-6 py-14">
+        <Reveal>
         <div className="flex flex-col sm:flex-row sm:items-end justify-between gap-3 mb-8">
           <div>
             <Eyebrow n="02" text="The organisation" />
@@ -214,28 +232,32 @@ export default function Home() {
           {MOVES.map((m, i) => {
             const a = AGENTS.find((x) => x.role === m.who.split(" · ")[1]);
             return (
-              <div key={m.name} className="card card-hover p-5 relative flex flex-col tilt-hover">
-                <div className="flex items-start justify-between mb-3">
-                  <div className="w-11 h-11 rounded-lg flex items-center justify-center text-xl" style={{ background: `${a.color}1f`, border: `1px solid ${a.color}55` }}>
-                    {m.emoji}
+              <Tilt key={m.name} max={9}>
+                <div className="card card-hover p-5 relative flex flex-col h-full" style={{ transformStyle: "preserve-3d" }}>
+                  <div className="flex items-start justify-between mb-3">
+                    <div className="w-11 h-11 rounded-lg flex items-center justify-center text-xl" style={{ background: `${a.color}1f`, border: `1px solid ${a.color}55` }}>
+                      {m.emoji}
+                    </div>
+                    <span className="idx"><span className="n">{String(i + 1).padStart(2, "0")}</span>/05</span>
                   </div>
-                  <span className="idx"><span className="n">{String(i + 1).padStart(2, "0")}</span>/05</span>
+                  <div className="font-display text-lg text-white font-bold">{m.name}</div>
+                  <div className="text-[11px] text-zinc-500 mb-2 font-mono">{m.who}</div>
+                  <p className="text-xs text-zinc-400 leading-relaxed flex-1">{m.desc}</p>
+                  <div className="mt-3 border-t border-white/6 pt-3 flex items-center justify-between">
+                    <span className="tag live">operating</span>
+                    <span className="font-mono text-[10px] text-zinc-600">→ {a.file}</span>
+                  </div>
                 </div>
-                <div className="font-display text-lg text-white font-bold">{m.name}</div>
-                <div className="text-[11px] text-zinc-500 mb-2 font-mono">{m.who}</div>
-                <p className="text-xs text-zinc-400 leading-relaxed flex-1">{m.desc}</p>
-                <div className="mt-3 border-t border-white/6 pt-3 flex items-center justify-between">
-                  <span className="tag live">operating</span>
-                  <span className="font-mono text-[10px] text-zinc-600">→ {a.file}</span>
-                </div>
-              </div>
+              </Tilt>
             );
           })}
         </div>
+        </Reveal>
       </section>
 
       {/* ---------- LIVE SIGNALS ---------- */}
       <section className="mx-auto max-w-7xl px-4 sm:px-6 py-10">
+        <Reveal>
         <div className="card p-6 lg:p-8">
           <div className="flex flex-col lg:flex-row items-start lg:items-center justify-between gap-6">
             <div>
@@ -266,29 +288,35 @@ export default function Home() {
             </div>
           </div>
         </div>
+        </Reveal>
       </section>
 
       {/* ---------- AWARDS ---------- */}
       <section className="mx-auto max-w-7xl px-4 sm:px-6 py-14">
+        <Reveal>
         <div className="mb-8">
           <Eyebrow n="04" text="Awards & recognition" />
           <h2 className="font-display text-3xl text-white font-bold tracking-tight">Recognised for agentic collaboration.</h2>
         </div>
         <div className="grid gap-4 sm:grid-cols-2 lg:grid-cols-4">
           {AWARDS.map((aw) => (
-            <div key={aw.title} className="card card-hover p-5 relative overflow-hidden">
-              <div className="text-3xl mb-3">{aw.icon}</div>
-              <div className="font-semibold text-white text-sm leading-snug">{aw.title}</div>
-              <div className="text-[11px] text-amber-300 font-mono mt-1">{aw.org}</div>
-              <p className="text-xs text-zinc-400 mt-2 leading-relaxed">{aw.desc}</p>
-              <span className="absolute -right-3 -bottom-5 text-[64px] opacity-[0.05] font-display font-bold text-white">★</span>
-            </div>
+            <Tilt key={aw.title} max={7}>
+              <div className="card card-hover p-5 relative overflow-hidden h-full">
+                <div className="text-3xl mb-3">{aw.icon}</div>
+                <div className="font-semibold text-white text-sm leading-snug">{aw.title}</div>
+                <div className="text-[11px] text-amber-300 font-mono mt-1">{aw.org}</div>
+                <p className="text-xs text-zinc-400 mt-2 leading-relaxed">{aw.desc}</p>
+                <span className="absolute -right-3 -bottom-5 text-[64px] opacity-[0.05] font-display font-bold text-white">★</span>
+              </div>
+            </Tilt>
           ))}
         </div>
+        </Reveal>
       </section>
 
       {/* ---------- THE DEMO ---------- */}
       <section className="mx-auto max-w-7xl px-4 sm:px-6 py-14">
+        <Reveal>
         <div className="mb-8">
           <Eyebrow n="05" text="The demo" />
           <h2 className="font-display text-3xl text-white font-bold tracking-tight">One request. One business.</h2>
@@ -338,10 +366,12 @@ export default function Home() {
             </Link>
           </div>
         </div>
+        </Reveal>
       </section>
 
       {/* ---------- TESTIMONIALS ---------- */}
       <section className="border-y border-white/6 bg-white/[0.015]">
+        <Reveal>
         <div className="mx-auto max-w-7xl px-4 sm:px-6 py-14">
           <div className="mb-8 text-center">
             <div className="flex justify-center"><Eyebrow n="06" text="What people say" center /></div>
@@ -349,24 +379,28 @@ export default function Home() {
           </div>
           <div className="grid gap-4 md:grid-cols-3">
             {TESTIMONIALS.map((t) => (
-              <figure key={t.name} className="card card-hover p-6 flex flex-col">
-                <div className="text-amber-400 text-lg leading-none mb-3">★★★★★</div>
-                <blockquote className="text-sm text-zinc-300 leading-relaxed flex-1">"{t.quote}"</blockquote>
-                <figcaption className="mt-5 flex items-center gap-3 border-t border-white/6 pt-4">
-                  <Portrait name={t.name} size={40} />
-                  <div>
-                    <div className="text-sm font-semibold text-white">{t.name}</div>
-                    <div className="text-[11px] text-zinc-500 font-mono">{t.role}</div>
-                  </div>
-                </figcaption>
-              </figure>
+              <Tilt key={t.name} max={6}>
+                <figure className="card card-hover p-6 flex flex-col h-full">
+                  <div className="text-amber-400 text-lg leading-none mb-3">★★★★★</div>
+                  <blockquote className="text-sm text-zinc-300 leading-relaxed flex-1">"{t.quote}"</blockquote>
+                  <figcaption className="mt-5 flex items-center gap-3 border-t border-white/6 pt-4">
+                    <Portrait name={t.name} size={40} />
+                    <div>
+                      <div className="text-sm font-semibold text-white">{t.name}</div>
+                      <div className="text-[11px] text-zinc-500 font-mono">{t.role}</div>
+                    </div>
+                  </figcaption>
+                </figure>
+              </Tilt>
             ))}
           </div>
         </div>
+        </Reveal>
       </section>
 
       {/* ---------- CONTACT ---------- */}
       <section className="mx-auto max-w-7xl px-4 sm:px-6 py-14">
+        <Reveal>
         <div className="grid gap-6 lg:grid-cols-5">
           <div className="lg:col-span-2">
             <Eyebrow n="07" text="Contact" />
@@ -397,10 +431,12 @@ export default function Home() {
             ))}
           </div>
         </div>
+        </Reveal>
       </section>
 
       {/* ---------- CTA ---------- */}
       <section className="mx-auto max-w-4xl px-4 sm:px-6 pb-20 text-center">
+        <Reveal>
         <div className="card p-10 glow-amber relative overflow-hidden bg-grid scanlines">
           <Eyebrow n="08" text="Run it" center />
           <h2 className="statement text-3xl sm:text-4xl text-white">Watch an organisation build a business.</h2>
@@ -408,14 +444,17 @@ export default function Home() {
             One request in, five agents working, one tangible business out.
           </p>
           <div className="mt-6 flex flex-wrap justify-center gap-6">
-            <Link to="/operations" className="px-6 py-3 rounded-lg font-semibold text-black bg-gradient-to-r from-amber-300 to-orange-500 hover:brightness-110 transition">
-              ▶ Run the operation
-            </Link>
+            <Magnetic strength={0.35}>
+              <Link to="/operations" className="px-6 py-3 rounded-lg font-semibold text-black bg-gradient-to-r from-amber-300 to-orange-500 hover:brightness-110 transition inline-block">
+                ▶ Run the operation
+              </Link>
+            </Magnetic>
             <Link to="/agents" className="link-arrow">
               <span>Meet the five agents</span> <span>→</span>
             </Link>
           </div>
         </div>
+        </Reveal>
       </section>
     </div>
   );

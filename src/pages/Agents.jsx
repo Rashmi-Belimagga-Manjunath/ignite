@@ -3,6 +3,7 @@ import { AGENTS, pipelineOrder } from "../lib/agents.js";
 import { listTools } from "../lib/mcp.js";
 import { Eyebrow } from "../components/Eyebrow.jsx";
 import Portrait from "../components/Portrait.jsx";
+import Reveal from "../components/Reveal.jsx";
 
 // The organisation, presented as five people: Amara, Lena, Dara, Niamh and Elias.
 // Each card is a live-operations dossier — hover (or tap) to flip it over and read
@@ -25,11 +26,17 @@ export default function Agents() {
         </p>
       </header>
 
-      <StatusStrip />
+      <Reveal>
+        <StatusStrip />
+      </Reveal>
 
-      <AgentGrid />
+      <Reveal delay={80}>
+        <AgentGrid />
+      </Reveal>
 
-      <Chain />
+      <Reveal delay={120}>
+        <Chain />
+      </Reveal>
 
       <div className="card p-6 mt-8">
         <div className="flex items-center gap-3 mb-2">

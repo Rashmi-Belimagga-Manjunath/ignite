@@ -85,6 +85,25 @@
   layers (`chip-p1…p4`), driven by `--mx`/`--my` CSS variables from the hero's pointermove.
 - Source appendix regenerated (36 files).
 
+## Session 8 — the motion layer (current)
+- **Boot sequence preloader** (`Preloader.jsx`): full-screen overlay that boots like hardware —
+  five lines (kernel, database, live signals, personas, tools) with animated progress %, skip on
+  click/tap, then slides away and fires the `ignite:ready` window event.
+- **Scroll choreography**: `Reveal.jsx` (IntersectionObserver fade/rise, stagger via `delay` prop),
+  `ScrollProgress.jsx` (amber 2px progress bar across the top), `ScrollToTop.jsx` (route changes
+  always start at the top).
+- **Pointer motion**: `Tilt.jsx` (reusable 3D tilt wrapper, `max` prop), `Magnetic.jsx` (button
+  attraction, `strength` prop), `Spotlight.jsx` (soft amber radial glow that follows the cursor
+  across the whole page). All fine-pointer + reduced-motion gated.
+- **Atmosphere**: `Grain.jsx` (fixed film-grain feTurbulence overlay, 4.5% opacity, blend-mode).
+- **`App.jsx` rewritten**: global overlays mounted, Preloader holds render until boot, per-route
+  `page-enter` animation via keyed routes.
+- **`Home.jsx`**: hero headline reveals line-by-line after boot (`title-live`), primary CTAs are
+  magnetic, every section now animates in on scroll, MOVES/…cards tilt on hover.
+- **`Agents.jsx`**: status strip, dossier grid and chain now scroll-reveal with stagger.
+- Home + Agents polish completed; build green (500 KB bundle) with all motion markers verified in
+  preview.
+
 ## Verified
 - `npm run smoke` PASSED: DB loads (7 tables, 262 sales), full 5-agent pipeline with live tools,
   all five deliverables, prototype fence, Manager GO, Manager independent re-query (≥3 calls,

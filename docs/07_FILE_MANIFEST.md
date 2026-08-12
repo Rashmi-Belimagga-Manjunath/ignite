@@ -32,8 +32,11 @@ ignite/
 │   └── 07_FILE_MANIFEST.md         this file
 ├── src/
 │   ├── main.jsx                    React root
-│   ├── App.jsx                     router: / /operations /data /agents /artefacts /chat /log /settings
-│   ├── index.css                   Tailwind v4 theme, animations, .md markdown styles
+│   ├── App.jsx                     router: / /operations /data /agents /artefacts /chat /log /settings;
+│   │                               overlays + Preloader + keyed page transitions
+│   ├── index.css                   Tailwind v4 theme, animations, .md markdown styles, motion
+│   │                               primitives (.tilt-card/.magnetic/.page-enter/.title-live/
+│   │                               .chip-parallax/flip-card 3D)
 │   ├── lib/
 │   │   ├── config.js               ORG meta, LS keys (ig_apikey, ig_model), demoClient "Mori Coffee"
 │   │   ├── db.js                   sql.js loader (Node/browser), queryDb/queryRows/getTableList
@@ -65,6 +68,15 @@ ignite/
 │   │   ├── CustomCursor.jsx        Xenet-style custom cursor (dot + lagging ring, scales on hover)
 │   │   ├── Monitor.jsx             browser-frame monitor — tilts toward cursor, scroll parallax,
 │   │   │                           inner content counter-parallax
+│   │   ├── Preloader.jsx           boot-sequence overlay (kernel/db/live/personas/tools), fires
+│   │   │                           `ignite:ready`
+│   │   ├── Reveal.jsx              scroll-reveal wrapper (IntersectionObserver fade/rise, delay)
+│   │   ├── Tilt.jsx                3D tilt wrapper (max angle prop)
+│   │   ├── Magnetic.jsx            magnetic button wrapper (strength prop)
+│   │   ├── ScrollProgress.jsx      top progress bar
+│   │   ├── ScrollToTop.jsx         resets scroll on route change
+│   │   ├── Spotlight.jsx           cursor-following radial glow
+│   │   ├── Grain.jsx               fixed film-grain overlay
 │   │   └── ChatWidget.jsx          ★ floating "IGNITE COMMAND" bubble on every page (except /chat)
 │   └── pages/
 │       ├── Home.jsx                hero + objective + stats + awards + testimonials + contact

@@ -217,6 +217,18 @@ body { background: #08080f; }
 .chip-p3 { transform: translate(calc(var(--mx, 0) * -48px), calc(var(--my, 0) * 34px)); }
 .chip-p4 { transform: translate(calc(var(--mx, 0) * 26px), calc(var(--my, 0) * -30px)); }
 
+/* ---- motion layer ---- */
+.tilt-card { transition: transform .25s cubic-bezier(.22,1,.36,1), box-shadow .3s ease, border-color .3s ease; will-change: transform; }
+.magnetic { transition: transform .3s cubic-bezier(.22,1,.36,1); will-change: transform; }
+
+.page-enter { animation: pageIn .5s cubic-bezier(.22,1,.36,1) both; }
+@keyframes pageIn { from { opacity: 0; transform: translateY(12px); } to { opacity: 1; transform: none; } }
+
+.title-line { display: block; overflow: hidden; padding-bottom: 0.08em; margin-bottom: -0.08em; }
+.title-inner { display: inline-block; transform: translateY(120%); opacity: 0; }
+.title-live .title-inner { animation: titleRise .75s cubic-bezier(.22,1,.36,1) forwards; animation-delay: var(--d, 0ms); }
+@keyframes titleRise { to { transform: translateY(0); opacity: 1; } }
+
 /* ---- scrollbars ---- */
 ::-webkit-scrollbar { width: 10px; height: 10px; }
 ::-webkit-scrollbar-thumb { background: rgba(255,255,255,0.14); border-radius: 9999px; }
