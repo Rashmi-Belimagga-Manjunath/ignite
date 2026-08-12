@@ -63,6 +63,8 @@ ignite/
 │   │   ├── Marquee.jsx             infinite ticker strip
 │   │   ├── Stat.jsx                count-up stat on intersection
 │   │   ├── CustomCursor.jsx        Xenet-style custom cursor (dot + lagging ring, scales on hover)
+│   │   ├── Monitor.jsx             browser-frame monitor — tilts toward cursor, scroll parallax,
+│   │   │                           inner content counter-parallax
 │   │   └── ChatWidget.jsx          ★ floating "IGNITE COMMAND" bubble on every page (except /chat)
 │   └── pages/
 │       ├── Home.jsx                hero + objective + stats + awards + testimonials + contact

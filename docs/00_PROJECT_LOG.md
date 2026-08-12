@@ -74,6 +74,17 @@
   label. Docs 00–05, 07 rewritten to the human identities.
 - Source appendix regenerated (36 files).
 
+## Session 7 — the monitor moves with you
+- New `Monitor.jsx`: a browser-frame screen (traffic-light chrome + live tag) that **tilts in 3D
+  toward the cursor**, parallaxes vertically on scroll, and drifts its inner content slightly
+  against the tilt for depth — the "monitor movement" effect. Enabled for fine pointers and
+  non-reduced-motion users only.
+- Home hero rebuilt around it: the animated organisation console now plays inside the monitor as
+  the hero's centrepiece (standalone console section removed). Floating signal chips (☀ 19°,
+  SQL 262 rows, prototype built, GO — 82%) now **parallax against the cursor** at four depth
+  layers (`chip-p1…p4`), driven by `--mx`/`--my` CSS variables from the hero's pointermove.
+- Source appendix regenerated (36 files).
+
 ## Verified
 - `npm run smoke` PASSED: DB loads (7 tables, 262 sales), full 5-agent pipeline with live tools,
   all five deliverables, prototype fence, Manager GO, Manager independent re-query (≥3 calls,

@@ -1,10 +1,11 @@
-import { useEffect, useState } from "react";
+import { useEffect, useRef, useState } from "react";
 import { Link } from "react-router-dom";
-import { AGENTS, pipelineOrder } from "../lib/agents.js";
+import { AGENTS } from "../lib/agents.js";
 import { Eyebrow } from "../components/Eyebrow.jsx";
 import Marquee from "../components/Marquee.jsx";
 import Stat from "../components/Stat.jsx";
 import Portrait from "../components/Portrait.jsx";
+import Monitor from "../components/Monitor.jsx";
 
 const CONSOLE_LINES = [
   ["ignite", "→ RESEARCHER (Amara Osei)  live query: business database…"],
@@ -66,32 +67,47 @@ const CONTACTS = [
 ];
 
 export default function Home() {
+  const heroRef = useRef(null);
+
+  const onHeroMove = (e) => {
+    const el = heroRef.current;
+    if (!el) return;
+    const r = el.getBoundingClientRect();
+    el.style.setProperty("--mx", ((e.clientX - r.left) / r.width - 0.5).toFixed(3));
+    el.style.setProperty("--my", ((e.clientY - r.top) / r.height - 0.5).toFixed(3));
+  };
+
   return (
     <div>
       {/* ---------- FLOATING HERO BANNER ---------- */}
-      <section className="relative overflow-hidden bg-grid">
+      <section ref={heroRef} onPointerMove={onHeroMove} className="relative overflow-hidden bg-grid">
         <div className="aurora aurora-drift w-[480px] h-[480px] bg-amber-500 -top-40 -left-40" />
         <div className="aurora aurora-drift w-[420px] h-[420px] bg-orange-600 top-20 right-0" />
         <div className="aurora aurora-drift w-[300px] h-[300px] bg-pink-600 -bottom-20 left-1/3" />
 
-        {/* floating signal chips */}
-        <div className="absolute left-6 lg:left-16 top-24 float-y hidden md:block">
-          <div className="card bg-black/40 backdrop-blur px-4 py-2.5 text-xs font-mono">
+        {/* floating signal chips — parallax against the cursor */}
+        <div className="absolute left-6 lg:left-16 top-24 hidden md:block chip-parallax chip-p1">
+          <div className="card bg-black/40 backdrop-blur px-4 py-2.5 text-xs font-mono float-y">
             <span className="text-emerald-400">☀ 19°</span> <span className="text-zinc-500">·</span> <span className="text-zinc-300">Open-Meteo</span>
           </div>
         </div>
-        <div className="absolute right-6 lg:right-16 top-40 float-y-slow hidden md:block">
-          <div className="card bg-black/40 backdrop-blur px-4 py-2.5 text-xs font-mono">
+        <div className="absolute right-6 lg:right-16 top-40 hidden md:block chip-parallax chip-p2">
+          <div className="card bg-black/40 backdrop-blur px-4 py-2.5 text-xs font-mono float-y-slow">
             <span className="text-amber-300">SQL</span> <span className="text-zinc-300">262 sales rows</span>
           </div>
         </div>
-        <div className="absolute left-8 lg:left-24 bottom-16 float-y-slow hidden md:block">
-          <div className="card bg-black/40 backdrop-blur px-4 py-2.5 text-xs font-mono">
+        <div className="absolute left-8 lg:left-24 bottom-16 hidden md:block chip-parallax chip-p3">
+          <div className="card bg-black/40 backdrop-blur px-4 py-2.5 text-xs font-mono float-y-slow">
             <span className="text-pink-400">⚙</span> <span className="text-zinc-300">prototype built</span>
           </div>
         </div>
+        <div className="absolute right-10 lg:right-20 bottom-10 hidden md:block chip-parallax chip-p4">
+          <div className="card bg-black/40 backdrop-blur px-4 py-2.5 text-xs font-mono float-y">
+            <span className="text-emerald-400">✓</span> <span className="text-zinc-300">GO — 82% confidence</span>
+          </div>
+        </div>
 
-        <div className="relative mx-auto max-w-7xl px-4 sm:px-6 py-20 lg:py-28 text-center">
+        <div className="relative mx-auto max-w-7xl px-4 sm:px-6 pt-20 lg:pt-28 text-center">
           <div className="flex justify-center">
             <Eyebrow n="00" text="The studio" center />
           </div>
@@ -115,12 +131,13 @@ export default function Home() {
               <span>IGNITE COMMAND</span> <span>→</span>
             </Link>
           </div>
-          <div className="mt-8 flex flex-wrap items-center justify-center gap-2">
-            {pipelineOrder.map((id) => (
-              <span key={id} className="tag dim">{AGENTS.find((a) => a.id === id).emoji} {AGENTS.find((a) => a.id === id).name}</span>
-            ))}
-            <span className="tag hot">demo: Mori Coffee · €3,000</span>
-          </div>
+        </div>
+
+        {/* the monitor — tilts with the cursor, scrubs with the scroll */}
+        <div className="relative mx-auto max-w-3xl px-4 sm:px-6 mt-12 pb-20 lg:pb-24">
+          <Monitor title="ignite — organisation console · dublin" badge="live replay">
+            <Console />
+          </Monitor>
         </div>
       </section>
 
@@ -133,11 +150,6 @@ export default function Home() {
             </span>
           ))}
         </Marquee>
-      </section>
-
-      {/* ---------- ANIMATED CONSOLE ---------- */}
-      <section className="mx-auto max-w-3xl px-4 sm:px-6 py-12">
-        <Console />
       </section>
 
       {/* ---------- THE OBJECTIVE ---------- */}
@@ -419,22 +431,13 @@ function Console() {
   }, [shown]);
 
   return (
-    <div className="card overflow-hidden bg-black/50 relative scanlines">
-      <div className="flex items-center gap-2 px-4 py-2.5 border-b border-white/8 bg-white/3">
-        <span className="w-2.5 h-2.5 rounded-full bg-red-400/70" />
-        <span className="w-2.5 h-2.5 rounded-full bg-amber-400/70" />
-        <span className="w-2.5 h-2.5 rounded-full bg-emerald-400/70" />
-        <span className="ml-2 text-xs font-mono text-zinc-500">ignite — organisation console</span>
-        <span className="ml-auto tag dim">live replay</span>
-      </div>
-      <div className="p-4 font-mono text-xs leading-relaxed min-h-[220px]">
-        {CONSOLE_LINES.slice(0, shown).map(([c, line], i) => (
-          <div key={i} className="console-line">
-            <span className="text-zinc-600">{c} $</span> <span className="text-zinc-300">{line}</span>
-          </div>
-        ))}
-        {shown < CONSOLE_LINES.length && <span className="inline-block w-2 h-4 bg-amber-400 animate-pulse align-middle typing-caret" />}
-      </div>
+    <div className="relative min-h-[230px] p-4 font-mono text-xs leading-relaxed">
+      {CONSOLE_LINES.slice(0, shown).map(([c, line], i) => (
+        <div key={i} className="console-line">
+          <span className="text-zinc-600">{c} $</span> <span className="text-zinc-300">{line}</span>
+        </div>
+      ))}
+      {shown < CONSOLE_LINES.length && <span className="inline-block w-2 h-4 bg-amber-400 animate-pulse align-middle typing-caret" />}
     </div>
   );
 }
