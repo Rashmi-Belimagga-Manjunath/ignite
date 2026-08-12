@@ -1,0 +1,102 @@
+@import "tailwindcss";
+
+@theme {
+  --font-sans: "Inter", ui-sans-serif, system-ui, sans-serif;
+  --font-display: "Space Grotesk", ui-sans-serif, system-ui, sans-serif;
+  --font-mono: "JetBrains Mono", ui-monospace, monospace;
+}
+
+html { scroll-behavior: smooth; }
+body { background: #08080f; }
+
+/* ---- shared primitives ---- */
+.card {
+  background: linear-gradient(180deg, rgba(255,255,255,0.045), rgba(255,255,255,0.02));
+  border: 1px solid rgba(255,255,255,0.08);
+  border-radius: 1rem;
+}
+.card-hover { transition: border-color .2s, transform .2s, box-shadow .2s; }
+.card-hover:hover { border-color: rgba(255,107,53,0.45); box-shadow: 0 8px 40px -12px rgba(255,107,53,0.25); transform: translateY(-2px); }
+
+.gradient-text {
+  background: linear-gradient(100deg, #F5C518 0%, #FF6B35 45%, #f472b6 90%);
+  -webkit-background-clip: text;
+  background-clip: text;
+  color: transparent;
+}
+
+.bg-grid {
+  background-image: linear-gradient(rgba(255,255,255,0.035) 1px, transparent 1px),
+    linear-gradient(90deg, rgba(255,255,255,0.035) 1px, transparent 1px);
+  background-size: 44px 44px;
+}
+.glow-amber { box-shadow: 0 0 80px -20px rgba(245,197,24,0.35); }
+
+/* ---- animated agent console ---- */
+.console-line { animation: fadeUp .35s ease both; }
+@keyframes fadeUp { from { opacity: 0; transform: translateY(6px); } to { opacity: 1; transform: none; } }
+
+/* ---- progress bars (indeterminate + filling) ---- */
+.progress-indet {
+  position: relative; overflow: hidden; background: rgba(255,255,255,0.08); border-radius: 9999px; height: 6px;
+}
+.progress-indet::after {
+  content: ""; position: absolute; top: 0; left: 0; bottom: 0; width: 40%;
+  border-radius: 9999px;
+  background: linear-gradient(90deg, #F5C518, #FF6B35);
+  animation: progress-indet 1.4s ease-in-out infinite;
+}
+@keyframes progress-indet {
+  0% { left: -40%; } 100% { left: 100%; }
+}
+.progress-fill {
+  position: relative; overflow: hidden; background: rgba(255,255,255,0.08); border-radius: 9999px; height: 6px;
+}
+.progress-fill::after {
+  content: ""; position: absolute; top: 0; left: 0; bottom: 0;
+  background: linear-gradient(90deg, #F5C518, #FF6B35);
+  animation: progress-fill 2.4s ease-in-out infinite;
+}
+@keyframes progress-fill {
+  0% { width: 8%; } 55% { width: 88%; } 100% { width: 96%; }
+}
+
+/* ---- agent portraits ---- */
+.flip-card { perspective: 1200px; }
+.flip-inner { position: relative; transform-style: preserve-3d; transition: transform .7s; }
+.flip-card:hover .flip-inner, .flip-card.flipped .flip-inner { transform: rotateY(180deg); }
+.flip-front, .flip-back { backface-visibility: hidden; -webkit-backface-visibility: hidden; }
+.flip-back { position: absolute; inset: 0; transform: rotateY(180deg); }
+
+/* ---- aurora / ambient ---- */
+.aurora {
+  position: absolute; border-radius: 9999px; filter: blur(90px); opacity: 0.28; pointer-events: none;
+}
+
+/* ---- markdown ---- */
+.md { line-height: 1.7; word-wrap: break-word; }
+.md h1 { font-family: var(--font-display); font-size: 1.6rem; font-weight: 700; margin: 1.2em 0 .5em; color: #fff; }
+.md h2 { font-family: var(--font-display); font-size: 1.2rem; font-weight: 700; margin: 1.2em 0 .4em; color: #ffb88c; }
+.md h3 { font-size: 1rem; font-weight: 700; margin: 1em 0 .35em; color: #f5c518; }
+.md p { margin: .5em 0; }
+.md ul, .md ol { margin: .5em 0 .5em 1.3em; }
+.md ul { list-style: disc; }
+.md ol { list-style: decimal; }
+.md li { margin: .25em 0; }
+.md strong { color: #fff; font-weight: 600; }
+.md code { font-family: var(--font-mono); font-size: .85em; background: rgba(255,255,255,0.08); padding: .1em .35em; border-radius: .35em; }
+.md pre { background: rgba(0,0,0,0.45); border: 1px solid rgba(255,255,255,0.09); border-radius: .75rem; padding: .9rem 1rem; overflow-x: auto; margin: .7em 0; }
+.md pre code { background: none; padding: 0; }
+.md blockquote { border-left: 3px solid #FF6B35; padding-left: .9em; color: #b9b9c9; margin: .7em 0; }
+.md table { border-collapse: collapse; width: 100%; margin: .7em 0; font-size: .9em; }
+.md th, .md td { border: 1px solid rgba(255,255,255,0.12); padding: .4em .6em; text-align: left; }
+.md th { background: rgba(255,255,255,0.05); color: #fff; }
+
+/* ---- scrollbars ---- */
+::-webkit-scrollbar { width: 10px; height: 10px; }
+::-webkit-scrollbar-thumb { background: rgba(255,255,255,0.14); border-radius: 9999px; }
+::-webkit-scrollbar-track { background: transparent; }
+
+@media (prefers-reduced-motion: reduce) {
+  *, *::before, *::after { animation-duration: 0.001s !important; transition-duration: 0.001s !important; }
+}

@@ -1,0 +1,29 @@
+{
+  "name": "ignite",
+  "version": "1.0.0",
+  "description": "IGNITE — The Autonomous Venture Launch Studio. Five specialised AI agents, one unbroken pipeline, one tangible business.",
+  "private": true,
+  "type": "module",
+  "scripts": {
+    "dev": "vite",
+    "build": "vite build",
+    "preview": "vite preview",
+    "seed": "node scripts/seed.mjs",
+    "smoke": "node scripts/smoke.mjs",
+    "gendocs": "node scripts/gen_source_doc.mjs"
+  },
+  "dependencies": {
+    "dompurify": "^3.4.13",
+    "marked": "^18.0.9",
+    "react": "^19.2.8",
+    "react-dom": "^19.2.8",
+    "react-router-dom": "^7.18.2",
+    "sql.js": "^1.14.1"
+  },
+  "devDependencies": {
+    "@tailwindcss/vite": "^4.3.3",
+    "@vitejs/plugin-react": "^6.0.5",
+    "tailwindcss": "^4.3.3",
+    "vite": "^8.2.1"
+  }
+}
