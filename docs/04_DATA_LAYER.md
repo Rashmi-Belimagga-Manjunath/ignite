@@ -16,7 +16,7 @@ It is opened in the browser with sql.js (WASM) and queried through the custom **
 | `locations` | 5 candidate pop-up sites (name, address, rent, footfall, capacity, fee) | 5 rows |
 | `operations` | overheads: staff hourly rate, setup/teardown, equipment, daily costs | 1 row |
 | `historical_sales` | 6 months of daily sales by product | 262 rows |
-| `brand` | voice, audience, tone (used by Voice) | 1 row |
+| `brand` | voice, audience, tone (used by Niamh Gallagher) | 1 row |
 
 Rebuild with `npm run seed` (script: `scripts/seed.mjs`). All SQL reads go through a read-only guard.
 
@@ -59,4 +59,4 @@ renders this in the Evidence panel (source + API + record count + timestamp) wit
 
 ✓ The data lives in a **real SQLite database** (`ignite.db`).
 ✓ It is **fetched at query time** — the agents run SQL against it in the browser during every run.
-✓ At least one agent (**Scout**, and again **Pilot**) calls a **live external API at query time** (Open-Meteo).
+✓ At least one agent (**Amara Osei**, and again **Elias Voss**) calls a **live external API at query time** (Open-Meteo).

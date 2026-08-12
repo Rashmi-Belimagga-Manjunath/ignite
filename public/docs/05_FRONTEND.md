@@ -22,22 +22,22 @@ A tiny pub/sub run store so multiple pages (Operations and Chat) see the **same*
 
 ## Key components
 
-- **`PipelineFlow`** — animated 5-node pipeline diagram (Scout→Muse→Forge→Voice→Pilot).
+- **`PipelineFlow`** — animated 5-node pipeline diagram (Amara Osei→Lena Kovács→Dara O'Brien→Niamh Gallagher→Elias Voss).
 - **`RunTimeline`** — agent-by-agent timeline: INPUT/OUTPUT file blocks, tool checklist with live
   ✓/…/✗ states, animated progress fill, and the **human checkpoint** bar (approve / revise with note).
 - **`EvidencePanel`** — source + API + record count + timestamp for every live query, plus the
   Manager's "live re-verification" and "revenue cross-check" rows, with confidence bar.
-- **`PrototypeFrame`** — extracts the ```` ```html ```` fence from Forge's output and renders it in a
+- **`PrototypeFrame`** — extracts the ```` ```html ```` fence from Dara O'Brien's output and renders it in a
   **sandboxed iframe** with a code/toggle tab.
 - **`Markdown`** — marked + DOMPurify sanitisation.
 
 ## The Operations page flow
 
 1. User clicks **START IGNITE** (gated on an API key being present).
-2. Pipeline runs live: Scout streams tool calls → evidence appears → checkpoint opens → user approves.
-3. … through Muse, Forge, Voice.
-4. Pilot re-queries live data → issues decision → **GO / NO-GO / REVISE** banner.
-5. The right pane updates in real time: after Forge it shows the **working prototype**; after Pilot,
+2. Pipeline runs live: Amara Osei streams tool calls → evidence appears → checkpoint opens → user approves.
+3. … through Lena Kovács, Dara O'Brien, Niamh Gallagher.
+4. Elias Voss re-queries live data → issues decision → **GO / NO-GO / REVISE** banner.
+5. The right pane updates in real time: after Dara O'Brien it shows the **working prototype**; after Elias Voss,
    the **executive decision** with revenue/cost/contribution/confidence.
 
 ## Design language

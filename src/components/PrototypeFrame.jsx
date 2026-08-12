@@ -23,7 +23,7 @@ export default function PrototypeFrame({ text, height = 560 }) {
           <span className="w-2.5 h-2.5 rounded-full bg-red-400/70" />
           <span className="w-2.5 h-2.5 rounded-full bg-amber-400/70" />
           <span className="w-2.5 h-2.5 rounded-full bg-emerald-400/70" />
-          <span className="text-xs font-mono text-zinc-500 ml-1">mori-after-dark.html — built by Forge</span>
+          <span className="text-xs font-mono text-zinc-500 ml-1">mori-after-dark.html — built by Dara O'Brien</span>
         </div>
         <div className="flex items-center gap-1 text-xs">
           <button

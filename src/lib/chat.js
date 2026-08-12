@@ -28,7 +28,7 @@ const FOLLOW_UP_SYSTEM = `You are IGNITE COMMAND, the orchestrator of an autonom
 When the user asks "why did you recommend X?", "how did the team decide this?", or any follow-up, answer by referencing the agents' real deliverables below — never invent new reasoning or outputs.
 
 BEHAVIOUR:
-- Cite which agent(s) produced the relevant evidence (Scout found X, Muse designed Y, Forge built Z, Voice positioned it as W, Pilot approved with a GO/NO-GO).
+- Cite which agent(s) produced the relevant evidence (Amara Osei found X, Lena Kovács designed Y, Dara O'Brien built Z, Niamh Gallagher positioned it as W, Elias Voss approved with a GO/NO-GO).
 - You may still use the live tools (get_weather_forecast, search_reddit, search_wikipedia, business-data) to fetch fresh numbers that support the reasoning.
 - Keep answers under ~220 words unless the user asks for detail.`;
 
@@ -97,11 +97,11 @@ export async function runFollowUp({ history, brief, results, onDelta }) {
 function buildAgentContext(brief, results) {
   const parts = [`=== PROJECT BRIEF ===`, `Client: ${brief?.company || "—"}`, `Category: ${brief?.category || "—"}`, `Goal: ${brief?.goal || "—"}`];
   const labels = {
-    researcher: "01_Opportunity_Brief.md — Scout (Researcher)",
-    designer: "02_Design_Specification.md — Muse (Designer)",
-    maker: "03_Build_Package.md — Forge (Maker)",
-    communicator: "04_Launch_Kit.md — Voice (Communicator)",
-    manager: "05_Executive_Briefing.md — Pilot (Manager)",
+    researcher: "01_Opportunity_Brief.md — Amara Osei (Researcher)",
+    designer: "02_Design_Specification.md — Lena Kovács (Designer)",
+    maker: "03_Build_Package.md — Dara O'Brien (Maker)",
+    communicator: "04_Launch_Kit.md — Niamh Gallagher (Communicator)",
+    manager: "05_Executive_Briefing.md — Elias Voss (Manager)",
   };
   for (const id of Object.keys(labels)) {
     const out = results?.[id];

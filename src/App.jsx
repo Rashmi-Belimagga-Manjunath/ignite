@@ -2,6 +2,7 @@ import { Routes, Route } from "react-router-dom";
 import { Navbar } from "./components/Navbar.jsx";
 import { Footer } from "./components/Footer.jsx";
 import ChatWidget from "./components/ChatWidget.jsx";
+import CustomCursor from "./components/CustomCursor.jsx";
 import Home from "./pages/Home.jsx";
 import Operations from "./pages/Operations.jsx";
 import LiveData from "./pages/LiveData.jsx";
@@ -30,6 +31,7 @@ export default function App() {
       </main>
       <Footer />
       <ChatWidget />
+      <CustomCursor />
     </div>
   );
 }

@@ -122,7 +122,7 @@ export default function Operations() {
             {makerOutput ? (
               <div>
                 <div className="flex items-center gap-3 mb-2">
-                  <span className="eyebrow"><span className="bracket">[</span> <span className="n">04</span> · Live artefact — built by Forge <span className="bracket">]</span></span>
+                  <span className="eyebrow"><span className="bracket">[</span> <span className="n">04</span> · Live artefact — built by Dara O'Brien <span className="bracket">]</span></span>
                   <span className="tag hot">working prototype</span>
                 </div>
                 <PrototypeFrame text={makerOutput} height={620} />
@@ -130,7 +130,7 @@ export default function Operations() {
             ) : (
               <div className="card p-6 text-center text-sm text-zinc-500">
                 <div className="text-3xl mb-2">🛠️</div>
-                Waiting for Forge to build the pop-up website…
+                Waiting for Dara O'Brien to build the pop-up website…
                 {running && <div className="mt-3"><div className="progress-indet w-full" /></div>}
               </div>
             )}
@@ -138,7 +138,7 @@ export default function Operations() {
             {managerOutput && (
               <div className={`card p-4 ${go ? "border-emerald-400/30" : "border-amber-400/30"}`}>
                 <div className="flex items-center gap-3 mb-2">
-                  <span className="eyebrow"><span className="bracket">[</span> <span className="n">05</span> · Executive decision — by Pilot <span className="bracket">]</span></span>
+                  <span className="eyebrow"><span className="bracket">[</span> <span className="n">05</span> · Executive decision — by Elias Voss <span className="bracket">]</span></span>
                   <span className="tag live">re-verified</span>
                 </div>
                 <div className={`font-display text-2xl font-bold ${go ? "text-emerald-400" : "text-amber-300"}`}>

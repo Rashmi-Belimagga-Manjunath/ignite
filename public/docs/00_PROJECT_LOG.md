@@ -12,7 +12,7 @@
   business-data + live-signals servers, keyless public APIs), `llm.js` (streaming OpenAI client),
   `agents.js` (five personas + prompts), `orchestrator.js` (pipeline + handoffs + checkpoints),
   `chat.js` (IGNITE COMMAND + follow-up with all five deliverables injected).
-- Added the **Manager independent re-verification**: Pilot re-queries weather + cost + recent sales at
+- Added the **Manager independent re-verification**: Elias Voss re-queries weather + cost + recent sales at
   decision time and can turn GO into CONDITIONAL GO / NO-GO.
 
 ### Session 2 — UI + verification + deploy prep
@@ -57,6 +57,22 @@
   "Run archive", "Synthetic dataset", IGNITE COMMAND), `/docs/01_OVERVIEW.md` (3,313 B),
   `/data/historical_sales.json` (55,450 B), `/data/ignite.db` (57,344 B) all 200.
 - `npm run smoke` PASSED (Manager evidence events: 2). Docs regenerated; manifest + log updated.
+
+## Session 6 — the organisation gets a human face
+- Agents renamed from codenames to real people: **Amara Osei** (Researcher), **Lena Kovács**
+  (Designer), **Dara O'Brien** (Maker), **Niamh Gallagher** (Communicator), **Elias Voss**
+  (Manager). Each agent now carries a `duties` array — its accountability contract.
+- `Agents.jsx` redesigned into **3D flip cards**: portrait + identity on the front, hover/tap
+  flips to reveal duties & responsibilities, tools and handoff. Cards **tilt toward the cursor**
+  (per-card perspective transform) and light up with the agent's colour glow. Manager card spans
+  two columns. Status strip (`system online · 5 agents · N tools · human checkpoints`) added.
+- New `CustomCursor.jsx` (Xenet-style): tight dot + lagging ring that eases toward the pointer
+  every frame, scaling to 1.9× over links/buttons. Mounted globally in `App.jsx`; enabled only
+  for fine pointers and when reduced-motion is off.
+- Human names propagated across the UI: Home console lines + MOVES + artefacts list, Chat narrator
+  lines, `chat.js` evidence-citation prompt + deliverable labels, Operations headers, PrototypeFrame
+  label. Docs 00–05, 07 rewritten to the human identities.
+- Source appendix regenerated (36 files).
 
 ## Verified
 - `npm run smoke` PASSED: DB loads (7 tables, 262 sales), full 5-agent pipeline with live tools,

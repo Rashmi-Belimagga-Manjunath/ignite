@@ -62,12 +62,13 @@ ignite/
 │   │   ├── Portrait.jsx            deterministic SVG initials avatar (hash-coloured)
 │   │   ├── Marquee.jsx             infinite ticker strip
 │   │   ├── Stat.jsx                count-up stat on intersection
+│   │   ├── CustomCursor.jsx        Xenet-style custom cursor (dot + lagging ring, scales on hover)
 │   │   └── ChatWidget.jsx          ★ floating "IGNITE COMMAND" bubble on every page (except /chat)
 │   └── pages/
 │       ├── Home.jsx                hero + objective + stats + awards + testimonials + contact
 │       ├── Operations.jsx          demo centre — split-screen live run
 │       ├── LiveData.jsx            MCP console + SQL explorer
-│       ├── Agents.jsx              registry roster + chain (Portrait avatars)
+│       ├── Agents.jsx              3D flip-card roster (portrait → duties) + chain
 │       ├── Artefacts.jsx           five deliverables as tabs + downloads
 │       ├── Chat.jsx                IGNITE COMMAND chat + narrator + live pipeline (auto-archives)
 │       ├── Log.jsx                 ★ run/chat/docs/data archive (reads public/docs + public/data)

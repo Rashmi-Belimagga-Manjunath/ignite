@@ -7,16 +7,16 @@ import Stat from "../components/Stat.jsx";
 import Portrait from "../components/Portrait.jsx";
 
 const CONSOLE_LINES = [
-  ["ignite", "→ RESEARCHER (Scout)  live query: business database…"],
-  ["ignite", "→ RESEARCHER (Scout)  live query: Open-Meteo weather…"],
-  ["ignite", "→ RESEARCHER (Scout)  live query: Reddit + Wikipedia…"],
+  ["ignite", "→ RESEARCHER (Amara Osei)  live query: business database…"],
+  ["ignite", "→ RESEARCHER (Amara Osei)  live query: Open-Meteo weather…"],
+  ["ignite", "→ RESEARCHER (Amara Osei)  live query: Reddit + Wikipedia…"],
   ["ignite", "→ OPPORTUNITY BRIEF written  01_Opportunity_Brief.md"],
-  ["ignite", "→ DESIGNER (Muse)  reading 01_Opportunity_Brief.md…"],
+  ["ignite", "→ DESIGNER (Lena Kovács)  reading 01_Opportunity_Brief.md…"],
   ["ignite", "→ DESIGN SPEC written  02_Design_Specification.md"],
-  ["ignite", "→ MAKER (Forge)  building the pop-up website…"],
+  ["ignite", "→ MAKER (Dara O'Brien)  building the pop-up website…"],
   ["ignite", "→ PROTOTYPE BUILT  mori-after-dark.html  ✓"],
-  ["ignite", "→ COMMUNICATOR (Voice)  launch campaign ready  04_Launch_Kit.md"],
-  ["ignite", "→ MANAGER (Pilot)  reviewing the entire operation…"],
+  ["ignite", "→ COMMUNICATOR (Niamh Gallagher)  launch campaign ready  04_Launch_Kit.md"],
+  ["ignite", "→ MANAGER (Elias Voss)  reviewing the entire operation…"],
   ["ignite", "→ DECISION: GO — expected contribution €670 · 82% confidence"],
 ];
 
@@ -26,11 +26,11 @@ const TICKER = [
 ];
 
 const MOVES = [
-  { emoji: "🕵️", name: "Research", who: "Scout · Researcher", desc: "Queries a real business database, LIVE Dublin weather and live market signals to find the opportunity." },
-  { emoji: "🎨", name: "Design", who: "Muse · Designer", desc: "Turns the evidence into a pop-up concept, experience, menu and brand direction." },
-  { emoji: "⚙️", name: "Build", who: "Forge · Maker", desc: "Builds a working, clickable pop-up website you can actually reserve a spot on." },
-  { emoji: "📣", name: "Campaign", who: "Voice · Communicator", desc: "Writes the launch campaign — Instagram, email, ads, and a day-by-day strategy." },
-  { emoji: "🧭", name: "Decision", who: "Pilot · Manager", desc: "Reviews everything and decides GO / NO-GO with revenue, cost, confidence and risks." },
+  { emoji: "🕵️", name: "Research", who: "Amara Osei · Researcher", desc: "Queries a real business database, LIVE Dublin weather and live market signals to find the opportunity." },
+  { emoji: "🎨", name: "Design", who: "Lena Kovács · Designer", desc: "Turns the evidence into a pop-up concept, experience, menu and brand direction." },
+  { emoji: "⚙️", name: "Build", who: "Dara O'Brien · Maker", desc: "Builds a working, clickable pop-up website you can actually reserve a spot on." },
+  { emoji: "📣", name: "Campaign", who: "Niamh Gallagher · Communicator", desc: "Writes the launch campaign — Instagram, email, ads, and a day-by-day strategy." },
+  { emoji: "🧭", name: "Decision", who: "Elias Voss · Manager", desc: "Reviews everything and decides GO / NO-GO with revenue, cost, confidence and risks." },
 ];
 
 const AWARDS = [
@@ -308,11 +308,11 @@ export default function Home() {
             <p className="text-sm text-zinc-400 mb-4">A business, not a report. Five files, each one the next agent's input.</p>
             <ol className="space-y-2.5 text-sm text-zinc-400">
               {[
-                ["01_Opportunity_Brief.md", "Scout finds the opportunity with live data"],
-                ["02_Design_Specification.md", "Muse designs the pop-up experience"],
-                ["03_Build_Package.md", "Forge builds a working pop-up website"],
-                ["04_Launch_Kit.md", "Voice writes the launch campaign"],
-                ["05_Executive_Briefing.md", "Pilot decides GO / NO-GO with revenue, cost & risk"],
+                ["01_Opportunity_Brief.md", "Amara Osei finds the opportunity with live data"],
+                ["02_Design_Specification.md", "Lena Kovács designs the pop-up experience"],
+                ["03_Build_Package.md", "Dara O'Brien builds a working pop-up website"],
+                ["04_Launch_Kit.md", "Niamh Gallagher writes the launch campaign"],
+                ["05_Executive_Briefing.md", "Elias Voss decides GO / NO-GO with revenue, cost & risk"],
               ].map(([f, d], i) => (
                 <li key={f} className="flex items-center gap-3 rounded-lg bg-black/25 border border-white/6 px-3 py-2">
                   <span className="idx"><span className="n">{String(i + 1).padStart(2, "0")}</span></span>

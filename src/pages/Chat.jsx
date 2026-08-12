@@ -19,11 +19,11 @@ const SUGGESTIONS = [
 ];
 
 const NARRATOR = {
-  researcher: "🕵️ Scout is investigating the live market — business database, weather, and what Dublin is discussing right now…",
-  designer: "🎨 Muse is turning the evidence into a pop-up concept…",
-  maker: "⚙️ Forge is building the actual pop-up website…",
-  communicator: "📣 Voice is writing the launch campaign…",
-  manager: "🧭 Pilot is independently re-querying the live forecast to verify the research before deciding…",
+  researcher: "🕵️ Amara Osei is investigating the live market — business database, weather, and what Dublin is discussing right now…",
+  designer: "🎨 Lena Kovács is turning the evidence into a pop-up concept…",
+  maker: "⚙️ Dara O'Brien is building the actual pop-up website…",
+  communicator: "📣 Niamh Gallagher is writing the launch campaign…",
+  manager: "🧭 Elias Voss is independently re-querying the live forecast to verify the research before deciding…",
 };
 const DELIVERED = {
   researcher: "Research complete — 01_Opportunity_Brief.md written.",

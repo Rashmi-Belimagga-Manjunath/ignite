@@ -28,7 +28,7 @@
 
 1. **Frontend (React + Vite + Tailwind v4)** — 7 routes. The Operations page renders the live
    pipeline with a split screen: left = agent timeline + evidence, right = the **live artefact**
-   (the pop-up website Forge built, rendered in a sandboxed iframe).
+   (the pop-up website Dara O'Brien built, rendered in a sandboxed iframe).
 2. **Chat engine (`src/lib/chat.js`)** — IGNITE COMMAND, the conversational front door and narrator.
 3. **Orchestrator (`src/lib/orchestrator.js`)** — `runPipeline` runs the five agents in order,
    injects each previous agent's **full output** as the next agent's input, streams events
@@ -43,15 +43,15 @@
 
 ## Data flow for one run
 
-1. **Scout** fires live tool calls: business DB (profile, products, locations, historical sales),
+1. **Amara Osei** fires live tool calls: business DB (profile, products, locations, historical sales),
    then **Open-Meteo forecasts for every candidate location**, then Reddit + Wikipedia. Every call
    streams a `tool:start` / `tool:end` pair and an `evidence` row (source, API, count, timestamp).
-2. Scout's brief is written to `01_Opportunity_Brief.md`.
-3. **Muse** receives the brief **in full**, writes `02_Design_Specification.md`.
-4. **Forge** receives the design spec, writes `03_Build_Package.md` containing a complete,
+2. Amara Osei's brief is written to `01_Opportunity_Brief.md`.
+3. **Lena Kovács** receives the brief **in full**, writes `02_Design_Specification.md`.
+4. **Dara O'Brien** receives the design spec, writes `03_Build_Package.md` containing a complete,
    self-contained HTML prototype (extracted and rendered live).
-5. **Voice** receives the build package, writes `04_Launch_Kit.md`.
-6. **Pilot** receives all of it AND **independently re-queries** the live forecast + cost
+5. **Niamh Gallagher** receives the build package, writes `04_Launch_Kit.md`.
+6. **Elias Voss** receives all of it AND **independently re-queries** the live forecast + cost
    structure + recent sales (the "live verification"), then writes `05_Executive_Briefing.md`
    with the GO / NO-GO decision.
 
