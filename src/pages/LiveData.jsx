@@ -9,7 +9,7 @@ export default function LiveData() {
   return (
     <div className="mx-auto max-w-7xl px-4 sm:px-6 py-8">
       <header className="mb-8">
-        <div className="text-xs uppercase tracking-[0.25em] text-amber-400 font-mono mb-1">Proven, not promised</div>
+        <div className="eyebrow mb-1"><span className="bracket">[</span> <span className="n">01</span> · Proven, not promised <span className="bracket">]</span></div>
         <h1 className="font-display text-3xl text-white font-bold">Live Data</h1>
         <p className="text-sm text-zinc-500 mt-1 max-w-2xl">
           Every tool below is queried at the moment of use — nothing is hardcoded or cached. The

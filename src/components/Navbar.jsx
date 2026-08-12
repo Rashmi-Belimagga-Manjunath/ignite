@@ -23,7 +23,7 @@ const LINKS = [
   { to: "/data", label: "Live Data" },
   { to: "/agents", label: "Agents" },
   { to: "/artefacts", label: "Artefacts" },
-  { to: "/chat", label: "Chat" },
+  { to: "/chat", label: "Command" },
 ];
 
 export function Navbar() {
@@ -39,11 +39,11 @@ export function Navbar() {
           <Logo />
           <div className="leading-tight">
             <div className="font-display font-bold text-white text-lg tracking-wide">IGNITE</div>
-            <div className="text-[10px] uppercase tracking-[0.25em] text-zinc-500">Venture Studio</div>
+            <div className="text-[9px] uppercase tracking-[0.28em] text-zinc-500">Venture Studio</div>
           </div>
         </Link>
 
-        <nav className="hidden md:flex items-center gap-1">
+        <div className="hidden lg:flex items-center gap-1">
           {LINKS.map((l) => (
             <NavLink
               key={l.to}
@@ -55,13 +55,19 @@ export function Navbar() {
               {l.label}
             </NavLink>
           ))}
+        </div>
+
+        <div className="hidden md:flex items-center gap-3">
+          <span className="tag live hidden xl:inline-flex">
+            <span className="w-1.5 h-1.5 rounded-full bg-emerald-400 animate-pulse" /> System online
+          </span>
           <Link
             to="/chat"
-            className="ml-3 px-4 py-2 rounded-lg text-sm font-semibold text-black bg-gradient-to-r from-amber-300 to-orange-500 hover:brightness-110 transition"
+            className="link-arrow"
           >
-            {onChat ? "Organisation live" : "Start an organisation"}
+            <span>{onChat ? "Organisation live" : "Start an organisation"}</span> <span>→</span>
           </Link>
-        </nav>
+        </div>
 
         <button className="md:hidden text-zinc-300 text-xl" onClick={() => setOpen(!open)} aria-label="Menu">
           {open ? "✕" : "☰"}
@@ -75,8 +81,8 @@ export function Navbar() {
               {l.label}
             </NavLink>
           ))}
-          <Link to="/chat" onClick={close} className="block px-3 py-2 rounded-lg text-sm font-semibold text-black bg-gradient-to-r from-amber-300 to-orange-500 text-center">
-            Start an organisation
+          <Link to="/chat" onClick={close} className="link-arrow block pt-2">
+            <span>Start an organisation</span> <span>→</span>
           </Link>
         </nav>
       )}

@@ -141,7 +141,7 @@ export default function Chat() {
     <div className="mx-auto max-w-7xl px-4 sm:px-6 py-8">
       <header className="mb-6 flex flex-col sm:flex-row items-start sm:items-center justify-between gap-3">
         <div>
-          <div className="text-xs uppercase tracking-[0.25em] text-amber-400 font-mono mb-1">Front door</div>
+          <div className="eyebrow mb-1"><span className="bracket">[</span> <span className="n">01</span> · Front door <span className="bracket">]</span></div>
           <h1 className="font-display text-3xl text-white font-bold">IGNITE COMMAND</h1>
           <p className="text-sm text-zinc-500 mt-1">One request in. Five agents working. One business out.</p>
         </div>

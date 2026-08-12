@@ -14,7 +14,7 @@ export default function Settings() {
 
   return (
     <div className="mx-auto max-w-2xl px-4 sm:px-6 py-10">
-      <div className="text-xs uppercase tracking-[0.25em] text-amber-400 font-mono mb-1">Settings</div>
+      <div className="eyebrow mb-1"><span className="bracket">[</span> <span className="n">01</span> · Studio settings <span className="bracket">]</span></div>
       <h1 className="font-display text-3xl text-white font-bold mb-6">Studio settings</h1>
 
       <div className="card p-6 mb-4">

@@ -44,7 +44,7 @@ export default function Artefacts() {
   return (
     <div className="mx-auto max-w-6xl px-4 sm:px-6 py-8">
       <header className="mb-6">
-        <div className="text-xs uppercase tracking-[0.25em] text-amber-400 font-mono mb-1">Real outputs, unbroken chain</div>
+        <div className="eyebrow mb-1"><span className="bracket">[</span> <span className="n">01</span> · Real outputs, unbroken chain <span className="bracket">]</span></div>
         <h1 className="font-display text-3xl text-white font-bold">Artefacts — {run?.brief?.company || "Mori Coffee"}</h1>
         <p className="text-sm text-zinc-500 mt-1">
           Each file is one agent's actual output, passed to the next agent as its input.
