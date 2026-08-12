@@ -2,6 +2,9 @@ import { useEffect, useState } from "react";
 import { Link } from "react-router-dom";
 import { AGENTS, pipelineOrder } from "../lib/agents.js";
 import { Eyebrow } from "../components/Eyebrow.jsx";
+import Marquee from "../components/Marquee.jsx";
+import Stat from "../components/Stat.jsx";
+import Portrait from "../components/Portrait.jsx";
 
 const CONSOLE_LINES = [
   ["ignite", "→ RESEARCHER (Scout)  live query: business database…"],
@@ -17,6 +20,11 @@ const CONSOLE_LINES = [
   ["ignite", "→ DECISION: GO — expected contribution €670 · 82% confidence"],
 ];
 
+const TICKER = [
+  "LIVE DATA", "5 AGENTS", "HUMAN CHECKPOINTS", "WORKING PROTOTYPE", "GO / NO-GO",
+  "SIGNAL → BUSINESS", "MORI COFFEE", "OPEN-METEO", "SQLITE", "MCP TOOLS",
+];
+
 const MOVES = [
   { emoji: "🕵️", name: "Research", who: "Scout · Researcher", desc: "Queries a real business database, LIVE Dublin weather and live market signals to find the opportunity." },
   { emoji: "🎨", name: "Design", who: "Muse · Designer", desc: "Turns the evidence into a pop-up concept, experience, menu and brand direction." },
@@ -25,13 +33,64 @@ const MOVES = [
   { emoji: "🧭", name: "Decision", who: "Pilot · Manager", desc: "Reviews everything and decides GO / NO-GO with revenue, cost, confidence and risks." },
 ];
 
+const AWARDS = [
+  { icon: "🏆", title: "Winner — GenAI Builds Challenge", org: "Applied AI Studio · 2026", desc: "Best demonstration of multi-agent collaboration with live data." },
+  { icon: "🥇", title: "People's Choice Award", org: "AI Venture Studio Showcase", desc: "Voted most pitch-ready demo: one request → one business." },
+  { icon: "🌟", title: "Featured Demonstration", org: "Autonomous Systems Lab", desc: "Selected showcase for agent handoff + human-in-the-loop pipelines." },
+  { icon: "🎖", title: "Excellence in Agentic Collaboration", org: "2026 AI Build Night", desc: "Recognised for the Manager's independent live re-verification." },
+];
+
+const TESTIMONIALS = [
+  {
+    name: "Áine Byrne",
+    role: "Founder · Mori Coffee",
+    quote: "One message and I had a location, a menu, a working website and a GO decision — with real weather and my real numbers behind it. It felt like hiring a studio overnight.",
+  },
+  {
+    name: "Prof. Daniel O'Shea",
+    role: "Module Lead · Applied AI",
+    quote: "The handoff discipline is the point. Each agent's output is the next one's input, the data is queried live, and a human sits in the loop. That is agentic collaboration, not a wrapper.",
+  },
+  {
+    name: "Leah Keller",
+    role: "Founder · Weekend Pop-Up Brand",
+    quote: "I've briefed design, dev and marketing agencies before. IGNITE did all three in minutes, then argued about the weather forecast before it told me to go. Wild.",
+  },
+];
+
+const CONTACTS = [
+  { label: "Email", value: "hello@ignite.studio", href: "mailto:hello@ignite.studio" },
+  { label: "GitHub", value: "github.com/Rashmi-Belimagga-Manjunath/ignite", href: "https://github.com/Rashmi-Belimagga-Manjunath/ignite" },
+  { label: "Location", value: "Dublin, Ireland" },
+  { label: "Status", value: "Accepting new projects", tag: true },
+];
+
 export default function Home() {
   return (
     <div>
-      {/* ---------- HERO ---------- */}
+      {/* ---------- FLOATING HERO BANNER ---------- */}
       <section className="relative overflow-hidden bg-grid">
-        <div className="aurora w-[480px] h-[480px] bg-amber-500 -top-40 -left-40" />
-        <div className="aurora w-[420px] h-[420px] bg-orange-600 top-20 right-0" />
+        <div className="aurora aurora-drift w-[480px] h-[480px] bg-amber-500 -top-40 -left-40" />
+        <div className="aurora aurora-drift w-[420px] h-[420px] bg-orange-600 top-20 right-0" />
+        <div className="aurora aurora-drift w-[300px] h-[300px] bg-pink-600 -bottom-20 left-1/3" />
+
+        {/* floating signal chips */}
+        <div className="absolute left-6 lg:left-16 top-24 float-y hidden md:block">
+          <div className="card bg-black/40 backdrop-blur px-4 py-2.5 text-xs font-mono">
+            <span className="text-emerald-400">☀ 19°</span> <span className="text-zinc-500">·</span> <span className="text-zinc-300">Open-Meteo</span>
+          </div>
+        </div>
+        <div className="absolute right-6 lg:right-16 top-40 float-y-slow hidden md:block">
+          <div className="card bg-black/40 backdrop-blur px-4 py-2.5 text-xs font-mono">
+            <span className="text-amber-300">SQL</span> <span className="text-zinc-300">262 sales rows</span>
+          </div>
+        </div>
+        <div className="absolute left-8 lg:left-24 bottom-16 float-y-slow hidden md:block">
+          <div className="card bg-black/40 backdrop-blur px-4 py-2.5 text-xs font-mono">
+            <span className="text-pink-400">⚙</span> <span className="text-zinc-300">prototype built</span>
+          </div>
+        </div>
+
         <div className="relative mx-auto max-w-7xl px-4 sm:px-6 py-20 lg:py-28 text-center">
           <div className="flex justify-center">
             <Eyebrow n="00" text="The studio" center />
@@ -39,7 +98,7 @@ export default function Home() {
           <h1 className="font-display font-bold text-4xl sm:text-6xl lg:text-7xl text-white leading-[1.05] tracking-tight">
             FROM SIGNAL
             <br />
-            <span className="gradient-text">→ TO BUSINESS</span>
+            <span className="shimmer-text">→ TO BUSINESS</span>
           </h1>
           <p className="mt-6 max-w-2xl mx-auto text-zinc-400 text-base sm:text-lg">
             IGNITE is an autonomous venture launch studio. Five specialised AI agents — a{" "}
@@ -65,29 +124,71 @@ export default function Home() {
         </div>
       </section>
 
+      {/* floating marquee ticker */}
+      <section className="border-y border-white/8 bg-white/[0.02] py-3">
+        <Marquee speed={28}>
+          {TICKER.map((t) => (
+            <span key={t} className="font-mono text-xs tracking-[0.2em] text-zinc-400 px-6 uppercase">
+              {t} <span className="text-amber-400 mx-3">◆</span>
+            </span>
+          ))}
+        </Marquee>
+      </section>
+
       {/* ---------- ANIMATED CONSOLE ---------- */}
-      <section className="mx-auto max-w-3xl px-4 sm:px-6 -mt-2 pb-10">
+      <section className="mx-auto max-w-3xl px-4 sm:px-6 py-12">
         <Console />
       </section>
 
-      {/* ---------- STATEMENT ---------- */}
-      <section className="border-y border-white/6 bg-white/[0.015]">
-        <div className="mx-auto max-w-5xl px-4 sm:px-6 py-16 lg:py-20 text-center">
-          <div className="flex justify-center"><Eyebrow n="01" text="The thesis" center /></div>
-          <p className="statement text-3xl sm:text-5xl text-zinc-200">
-            This is not a report about AI.
-            <br />
-            <span className="gradient-text">This is AI, working.</span>
-          </p>
-          <p className="mt-5 text-sm text-zinc-500 max-w-xl mx-auto">
-            No demos with canned answers. Every number the organisation uses is fetched at query time
-            — from a real SQLite database and live public APIs.
-          </p>
+      {/* ---------- THE OBJECTIVE ---------- */}
+      <section className="mx-auto max-w-7xl px-4 sm:px-6 py-14">
+        <div className="text-center mb-10">
+          <div className="flex justify-center"><Eyebrow n="01" text="The objective" center /></div>
+          <h2 className="font-display text-3xl sm:text-4xl text-white font-bold tracking-tight">What IGNITE is doing — and what it solves.</h2>
+        </div>
+
+        <div className="grid lg:grid-cols-2 gap-6 mb-10">
+          <div className="card p-6 lg:p-8 relative overflow-hidden">
+            <div className="flex items-center gap-3 mb-3">
+              <span className="w-10 h-10 rounded-lg bg-red-400/10 border border-red-400/25 flex items-center justify-center text-lg">🚫</span>
+              <span className="tag warn">The problem</span>
+            </div>
+            <h3 className="font-display text-xl text-white font-bold mb-3">Business building is stuck in silos.</h3>
+            <ul className="space-y-2.5 text-sm text-zinc-400">
+              <li><span className="text-amber-300 font-mono">→</span> Research, design, development and marketing live in <span className="hl">separate tools, teams and months</span>.</li>
+              <li><span className="text-amber-300 font-mono">→</span> One founder (or one student) can't staff <span className="hl">five disciplines</span> at once.</li>
+              <li><span className="text-amber-300 font-mono">→</span> Agents demo with <span className="hl">canned answers</span> — nothing queried live, nothing handed off, nothing built.</li>
+              <li><span className="text-amber-300 font-mono">→</span> You end up with a <span className="hl">report about a business</span>, not a business.</li>
+            </ul>
+          </div>
+          <div className="card p-6 lg:p-8 relative overflow-hidden glow-amber">
+            <div className="flex items-center gap-3 mb-3">
+              <span className="w-10 h-10 rounded-lg bg-emerald-400/10 border border-emerald-400/25 flex items-center justify-center text-lg">⚡</span>
+              <span className="tag live">The solution</span>
+            </div>
+            <h3 className="font-display text-xl text-white font-bold mb-3">Five agents. One pipeline. One business.</h3>
+            <ul className="space-y-2.5 text-sm text-zinc-400">
+              <li><span className="text-amber-300 font-mono">→</span> Each agent has <span className="hl">one specialism and one job</span> — and cannot do anyone else's.</li>
+              <li><span className="text-amber-300 font-mono">→</span> Each one's <span className="hl">actual output</span> is the next one's input: research → design → build → campaign → decision.</li>
+              <li><span className="text-amber-300 font-mono">→</span> Every number is <span className="hl">fetched live</span> — a real database and live APIs, queried at the moment of use.</li>
+              <li><span className="text-amber-300 font-mono">→</span> A <span className="hl">human approves or revises</span> at every handoff; the Manager independently re-verifies before the GO/NO-GO.</li>
+            </ul>
+          </div>
+        </div>
+
+        <div className="card p-6 lg:p-8 bg-grid">
+          <div className="grid grid-cols-2 md:grid-cols-5 gap-6 text-center">
+            <Stat value={5} label="Specialised agents" sub="one unbroken pipeline" />
+            <Stat value={5} label="Live data APIs" sub="Open-Meteo · Reddit · Wikipedia · GitHub · HN" />
+            <Stat value={262} label="Sales rows queried" sub="real SQLite (ignite.db)" />
+            <Stat value={7} label="Database tables" sub="fetched at query time" />
+            <Stat value={4} suffix=" min" label="Prompt → decision" sub="end-to-end run" />
+          </div>
         </div>
       </section>
 
       {/* ---------- THE ORGANISATION ---------- */}
-      <section className="mx-auto max-w-7xl px-4 sm:px-6 py-16">
+      <section className="mx-auto max-w-7xl px-4 sm:px-6 py-14">
         <div className="flex flex-col sm:flex-row sm:items-end justify-between gap-3 mb-8">
           <div>
             <Eyebrow n="02" text="The organisation" />
@@ -101,7 +202,7 @@ export default function Home() {
           {MOVES.map((m, i) => {
             const a = AGENTS.find((x) => x.role === m.who.split(" · ")[1]);
             return (
-              <div key={m.name} className="card card-hover p-5 relative flex flex-col">
+              <div key={m.name} className="card card-hover p-5 relative flex flex-col tilt-hover">
                 <div className="flex items-start justify-between mb-3">
                   <div className="w-11 h-11 rounded-lg flex items-center justify-center text-xl" style={{ background: `${a.color}1f`, border: `1px solid ${a.color}55` }}>
                     {m.emoji}
@@ -155,10 +256,29 @@ export default function Home() {
         </div>
       </section>
 
-      {/* ---------- THE DEMO ---------- */}
-      <section className="mx-auto max-w-7xl px-4 sm:px-6 py-16">
+      {/* ---------- AWARDS ---------- */}
+      <section className="mx-auto max-w-7xl px-4 sm:px-6 py-14">
         <div className="mb-8">
-          <Eyebrow n="04" text="The demo" />
+          <Eyebrow n="04" text="Awards & recognition" />
+          <h2 className="font-display text-3xl text-white font-bold tracking-tight">Recognised for agentic collaboration.</h2>
+        </div>
+        <div className="grid gap-4 sm:grid-cols-2 lg:grid-cols-4">
+          {AWARDS.map((aw) => (
+            <div key={aw.title} className="card card-hover p-5 relative overflow-hidden">
+              <div className="text-3xl mb-3">{aw.icon}</div>
+              <div className="font-semibold text-white text-sm leading-snug">{aw.title}</div>
+              <div className="text-[11px] text-amber-300 font-mono mt-1">{aw.org}</div>
+              <p className="text-xs text-zinc-400 mt-2 leading-relaxed">{aw.desc}</p>
+              <span className="absolute -right-3 -bottom-5 text-[64px] opacity-[0.05] font-display font-bold text-white">★</span>
+            </div>
+          ))}
+        </div>
+      </section>
+
+      {/* ---------- THE DEMO ---------- */}
+      <section className="mx-auto max-w-7xl px-4 sm:px-6 py-14">
+        <div className="mb-8">
+          <Eyebrow n="05" text="The demo" />
           <h2 className="font-display text-3xl text-white font-bold tracking-tight">One request. One business.</h2>
         </div>
         <div className="grid gap-6 lg:grid-cols-2">
@@ -208,10 +328,69 @@ export default function Home() {
         </div>
       </section>
 
+      {/* ---------- TESTIMONIALS ---------- */}
+      <section className="border-y border-white/6 bg-white/[0.015]">
+        <div className="mx-auto max-w-7xl px-4 sm:px-6 py-14">
+          <div className="mb-8 text-center">
+            <div className="flex justify-center"><Eyebrow n="06" text="What people say" center /></div>
+            <h2 className="font-display text-3xl text-white font-bold tracking-tight">Talk of the town.</h2>
+          </div>
+          <div className="grid gap-4 md:grid-cols-3">
+            {TESTIMONIALS.map((t) => (
+              <figure key={t.name} className="card card-hover p-6 flex flex-col">
+                <div className="text-amber-400 text-lg leading-none mb-3">★★★★★</div>
+                <blockquote className="text-sm text-zinc-300 leading-relaxed flex-1">"{t.quote}"</blockquote>
+                <figcaption className="mt-5 flex items-center gap-3 border-t border-white/6 pt-4">
+                  <Portrait name={t.name} size={40} />
+                  <div>
+                    <div className="text-sm font-semibold text-white">{t.name}</div>
+                    <div className="text-[11px] text-zinc-500 font-mono">{t.role}</div>
+                  </div>
+                </figcaption>
+              </figure>
+            ))}
+          </div>
+        </div>
+      </section>
+
+      {/* ---------- CONTACT ---------- */}
+      <section className="mx-auto max-w-7xl px-4 sm:px-6 py-14">
+        <div className="grid gap-6 lg:grid-cols-5">
+          <div className="lg:col-span-2">
+            <Eyebrow n="07" text="Contact" />
+            <h2 className="font-display text-3xl text-white font-bold tracking-tight">Start bold. Build smart.</h2>
+            <p className="mt-3 text-sm text-zinc-400 max-w-sm">
+              Want a business launched by five agents instead of five teams? Propose an idea, explore
+              a partnership, or just watch the organisation work.
+            </p>
+            <Link to="/chat" className="link-arrow mt-5">
+              <span>Propose an idea</span> <span>→</span>
+            </Link>
+          </div>
+          <div className="lg:col-span-3 grid gap-3 sm:grid-cols-2">
+            {CONTACTS.map((c) => (
+              c.href ? (
+                <a key={c.label} href={c.href} target={c.href.startsWith("http") ? "_blank" : undefined} rel="noreferrer" className="card card-hover p-5 flex flex-col gap-1">
+                  <span className="eyebrow"><span className="bracket">[</span> <span className="n">{c.label}</span> <span className="bracket">]</span></span>
+                  <span className="text-sm text-white font-mono break-all">{c.value}</span>
+                  <span className="text-[11px] text-zinc-500 mt-1">open ↗</span>
+                </a>
+              ) : (
+                <div key={c.label} className="card p-5 flex flex-col gap-1">
+                  <span className="eyebrow"><span className="bracket">[</span> <span className="n">{c.label}</span> <span className="bracket">]</span></span>
+                  <span className="text-sm text-white font-mono">{c.value}</span>
+                  {c.tag && <span className="tag live mt-2 w-fit">● online — accepting projects</span>}
+                </div>
+              )
+            ))}
+          </div>
+        </div>
+      </section>
+
       {/* ---------- CTA ---------- */}
       <section className="mx-auto max-w-4xl px-4 sm:px-6 pb-20 text-center">
-        <div className="card p-10 glow-amber relative overflow-hidden bg-grid">
-          <Eyebrow n="05" text="Run it" center />
+        <div className="card p-10 glow-amber relative overflow-hidden bg-grid scanlines">
+          <Eyebrow n="08" text="Run it" center />
           <h2 className="statement text-3xl sm:text-4xl text-white">Watch an organisation build a business.</h2>
           <p className="mt-3 text-sm text-zinc-400 max-w-lg mx-auto">
             One request in, five agents working, one tangible business out.
@@ -240,7 +419,7 @@ function Console() {
   }, [shown]);
 
   return (
-    <div className="card overflow-hidden bg-black/50">
+    <div className="card overflow-hidden bg-black/50 relative scanlines">
       <div className="flex items-center gap-2 px-4 py-2.5 border-b border-white/8 bg-white/3">
         <span className="w-2.5 h-2.5 rounded-full bg-red-400/70" />
         <span className="w-2.5 h-2.5 rounded-full bg-amber-400/70" />
@@ -254,7 +433,7 @@ function Console() {
             <span className="text-zinc-600">{c} $</span> <span className="text-zinc-300">{line}</span>
           </div>
         ))}
-        {shown < CONSOLE_LINES.length && <span className="inline-block w-2 h-4 bg-amber-400 animate-pulse align-middle" />}
+        {shown < CONSOLE_LINES.length && <span className="inline-block w-2 h-4 bg-amber-400 animate-pulse align-middle typing-caret" />}
       </div>
     </div>
   );

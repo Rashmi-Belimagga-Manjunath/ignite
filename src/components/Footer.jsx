@@ -48,6 +48,7 @@ export function Footer() {
               <Link to="/data" className="hover:text-white">Live Data</Link>
               <Link to="/agents" className="hover:text-white">Agents</Link>
               <Link to="/artefacts" className="hover:text-white">Artefacts</Link>
+              <Link to="/log" className="hover:text-white">Log</Link>
               <Link to="/chat" className="hover:text-white">Command</Link>
               <Link to="/settings" className="hover:text-white">Settings</Link>
             </div>
@@ -63,7 +64,8 @@ export function Footer() {
         </div>
       </div>
       <div className="border-t border-white/8 py-4 text-center text-xs text-zinc-600">
-        © 2026 IGNITE — autonomous agents, live data, real output.
+        © 2026 IGNITE — autonomous agents, live data, real output.{" "}
+        <a href="mailto:hello@ignite.studio" className="text-zinc-500 hover:text-amber-300">hello@ignite.studio</a> · Dublin, Ireland
       </div>
     </footer>
   );

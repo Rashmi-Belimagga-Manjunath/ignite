@@ -1,0 +1,82 @@
+[
+  {
+    "id": 1,
+    "item": "Ethiopia Yirgacheffe beans",
+    "category": "coffee",
+    "quantity": 18,
+    "unit": "kg",
+    "notes": "covers ~1,100 espresso drinks"
+  },
+  {
+    "id": 2,
+    "item": "Colombia Huila beans",
+    "category": "coffee",
+    "quantity": 14,
+    "unit": "kg",
+    "notes": "pour-over + retail bags"
+  },
+  {
+    "id": 3,
+    "item": "Cold brew concentrate",
+    "category": "coffee",
+    "quantity": 40,
+    "unit": "L",
+    "notes": "pre-brewed 2 days before"
+  },
+  {
+    "id": 4,
+    "item": "Oat milk",
+    "category": "dairy alt",
+    "quantity": 36,
+    "unit": "L",
+    "notes": "barista blend"
+  },
+  {
+    "id": 5,
+    "item": "Tonic water",
+    "category": "syrup/soft",
+    "quantity": 48,
+    "unit": "can",
+    "notes": "signature drinks"
+  },
+  {
+    "id": 6,
+    "item": "Matcha (ceremonial)",
+    "category": "ingredients",
+    "quantity": 3,
+    "unit": "kg",
+    "notes": "~450 servings"
+  },
+  {
+    "id": 7,
+    "item": "Paper cups 12oz",
+    "category": "packaging",
+    "quantity": 900,
+    "unit": "units",
+    "notes": "eco compostable"
+  },
+  {
+    "id": 8,
+    "item": "Paper cups 8oz",
+    "category": "packaging",
+    "quantity": 300,
+    "unit": "units",
+    "notes": "eco compostable"
+  },
+  {
+    "id": 9,
+    "item": "Napkins + straws",
+    "category": "packaging",
+    "quantity": 800,
+    "unit": "units",
+    "notes": "compostable"
+  },
+  {
+    "id": 10,
+    "item": "Propane canisters",
+    "category": "kit",
+    "quantity": 4,
+    "unit": "units",
+    "notes": "generator fuel for evening hours"
+  }
+]

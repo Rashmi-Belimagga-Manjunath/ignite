@@ -1,0 +1,47 @@
+[
+  {
+    "id": 1,
+    "name": "The Docklands — Mayor Square",
+    "district": "Dublin Docklands",
+    "latitude": 53.3482,
+    "longitude": -6.2393,
+    "footfall_estimate": "Very high at weekends",
+    "weekend_notes": "IFSC + tech events; strong Saturday evening footfall"
+  },
+  {
+    "id": 2,
+    "name": "Smithfield Square",
+    "district": "Smithfield",
+    "latitude": 53.349,
+    "longitude": -6.278,
+    "footfall_estimate": "High on market weekends",
+    "weekend_notes": "Sunday food markets; good footfall from 12:00"
+  },
+  {
+    "id": 3,
+    "name": "Grand Canal Dock",
+    "district": "Grand Canal Dock",
+    "latitude": 53.3383,
+    "longitude": -6.2378,
+    "footfall_estimate": "High weekdays, rising weekends",
+    "weekend_notes": "Silicon Docks; weekend park events nearby"
+  },
+  {
+    "id": 4,
+    "name": "Temple Bar",
+    "district": "Temple Bar",
+    "latitude": 53.3459,
+    "longitude": -6.2636,
+    "footfall_estimate": "Very high, tourist heavy",
+    "weekend_notes": "Highest footfall; less of a craft-coffee audience"
+  },
+  {
+    "id": 5,
+    "name": "Stoneybatter",
+    "district": "Stoneybatter",
+    "latitude": 53.3423,
+    "longitude": -6.2881,
+    "footfall_estimate": "Medium, foodie locals",
+    "weekend_notes": "Café culture neighbourhood; loyal local crowd"
+  }
+]

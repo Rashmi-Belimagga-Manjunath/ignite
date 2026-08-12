@@ -1,0 +1,6 @@
+id,name,district,latitude,longitude,footfall_estimate,weekend_notes
+1,The Docklands — Mayor Square,Dublin Docklands,53.3482,-6.2393,Very high at weekends,IFSC + tech events; strong Saturday evening footfall
+2,Smithfield Square,Smithfield,53.349,-6.278,High on market weekends,Sunday food markets; good footfall from 12:00
+3,Grand Canal Dock,Grand Canal Dock,53.3383,-6.2378,"High weekdays, rising weekends",Silicon Docks; weekend park events nearby
+4,Temple Bar,Temple Bar,53.3459,-6.2636,"Very high, tourist heavy",Highest footfall; less of a craft-coffee audience
+5,Stoneybatter,Stoneybatter,53.3423,-6.2881,"Medium, foodie locals",Café culture neighbourhood; loyal local crowd

@@ -1,6 +1,7 @@
 import { useCallback, useRef, useState, useSyncExternalStore } from "react";
 import { runPipeline, DEMO_BRIEF } from "../lib/orchestrator.js";
 import { runStore } from "../lib/store.js";
+import { saveRun } from "../lib/history.js";
 
 // Shared hook that runs the five-agent organisation with live events,
 // streaming deltas, human checkpoints and handoff results.
@@ -13,11 +14,13 @@ export function useRun() {
   const [error, setError] = useState(null);
   const abortRef = useRef(null);
   const pendingRef = useRef(null);
+  const eventsRef = useRef([]);
 
   const start = useCallback(async (brief = DEMO_BRIEF, { autoApprove = false } = {}) => {
     abortRef.current?.abort();
     const ac = new AbortController();
     abortRef.current = ac;
+    eventsRef.current = [];
     setEvents([]);
     setDelta({});
     setCheckpoint(null);
@@ -30,6 +33,7 @@ export function useRun() {
         signal: ac.signal,
         brief,
         onEvent: (e) => {
+          eventsRef.current = [...eventsRef.current, e];
           if (e.type === "agent:delta") {
             setDelta((d) => ({ ...d, [e.agentId]: (d[e.agentId] || "") + e.text }));
             return;
@@ -50,6 +54,9 @@ export function useRun() {
       if (ac.signal.aborted) return;
       setResults(handoffs);
       runStore.set({ results: handoffs, brief, lastRun: Date.now() });
+      try {
+        saveRun({ brief, results: handoffs, events: eventsRef.current || [] });
+      } catch {}
     } catch (err) {
       if (err?.name !== "AbortError") {
         console.error(err);

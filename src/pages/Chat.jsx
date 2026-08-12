@@ -2,6 +2,7 @@ import { useEffect, useRef, useState } from "react";
 import { Link } from "react-router-dom";
 import { useRun } from "../hooks/useRun.js";
 import { runGeneral, runFollowUp, DEMO_TRIGGER } from "../lib/chat.js";
+import { saveChat } from "../lib/history.js";
 import { DEMO_BRIEF } from "../lib/orchestrator.js";
 import { AGENTS } from "../lib/agents.js";
 import { hasKey } from "../lib/llm.js";
@@ -93,6 +94,11 @@ export default function Chat() {
     scrollRef.current?.scrollTo({ top: scrollRef.current.scrollHeight, behavior: "smooth" });
   }, [messages, delta]);
 
+  // Persist the full transcript whenever a run completes.
+  useEffect(() => {
+    if (phase === "done") saveChat({ messages: histRef.current });
+  }, [phase]);
+
   async function handleSend(raw) {
     const text = (raw ?? input).trim();
     if (!text || running) return;
@@ -110,30 +116,32 @@ export default function Chat() {
     push({ role: "user", content: text });
 
     if (results && phase === "done") {
-      push({ role: "assistant", content: "", streaming: true });
-      try {
-        await runFollowUp({
-          history: histRef.current.slice(0, -1),
-          brief: DEMO_BRIEF,
-          results,
-          onDelta: (t) => patchLast({ content: (histRef.current[histRef.current.length - 1]?.content || "") + t }),
-        });
-      } catch (err) {
-        patchLast({ content: `⚠️ ${err?.message || "Something went wrong"}` });
-      }
-      return;
-    }
-
     push({ role: "assistant", content: "", streaming: true });
     try {
-      await runGeneral({
+      await runFollowUp({
         history: histRef.current.slice(0, -1),
+        brief: DEMO_BRIEF,
+        results,
         onDelta: (t) => patchLast({ content: (histRef.current[histRef.current.length - 1]?.content || "") + t }),
       });
     } catch (err) {
       patchLast({ content: `⚠️ ${err?.message || "Something went wrong"}` });
     }
+    saveChat({ messages: histRef.current });
+    return;
   }
+
+  push({ role: "assistant", content: "", streaming: true });
+  try {
+    await runGeneral({
+      history: histRef.current.slice(0, -1),
+      onDelta: (t) => patchLast({ content: (histRef.current[histRef.current.length - 1]?.content || "") + t }),
+    });
+  } catch (err) {
+    patchLast({ content: `⚠️ ${err?.message || "Something went wrong"}` });
+  }
+  saveChat({ messages: histRef.current });
+}
 
   const evidence = events.filter((e) => e.type === "evidence");
 

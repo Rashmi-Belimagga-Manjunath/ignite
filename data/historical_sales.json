@@ -1,0 +1,2622 @@
+[
+  {
+    "id": 1,
+    "date": "2026-05-15",
+    "product": "Matcha Latte",
+    "units": 12,
+    "revenue": 84,
+    "location": "Stoneybatter",
+    "weather": "cloudy",
+    "notes": "Friday evening rush"
+  },
+  {
+    "id": 2,
+    "date": "2026-05-15",
+    "product": "Mori Blend (250g bag)",
+    "units": 32,
+    "revenue": 448,
+    "location": "Stoneybatter",
+    "weather": "cloudy",
+    "notes": "Friday evening rush"
+  },
+  {
+    "id": 3,
+    "date": "2026-05-16",
+    "product": "Cortado",
+    "units": 11,
+    "revenue": 38.5,
+    "location": "The Docklands — Mayor Square",
+    "weather": "rain",
+    "notes": "Saturday pop-up day"
+  },
+  {
+    "id": 4,
+    "date": "2026-05-16",
+    "product": "Espresso Tonic",
+    "units": 15,
+    "revenue": 112.5,
+    "location": "Grand Canal Dock",
+    "weather": "rain",
+    "notes": "Saturday pop-up day"
+  },
+  {
+    "id": 5,
+    "date": "2026-05-17",
+    "product": "Buttered Croissant",
+    "units": 35,
+    "revenue": 122.5,
+    "location": "Smithfield Square",
+    "weather": "cloudy",
+    "notes": "Sunday market"
+  },
+  {
+    "id": 6,
+    "date": "2026-05-17",
+    "product": "Matcha Latte",
+    "units": 26,
+    "revenue": 182,
+    "location": "Smithfield Square",
+    "weather": "cloudy",
+    "notes": "Sunday market"
+  },
+  {
+    "id": 7,
+    "date": "2026-05-18",
+    "product": "Cold Brew Tonic",
+    "units": 20,
+    "revenue": 130,
+    "location": "Grand Canal Dock",
+    "weather": "sunny",
+    "notes": "weekday service"
+  },
+  {
+    "id": 8,
+    "date": "2026-05-18",
+    "product": "Cold Brew Tonic",
+    "units": 22,
+    "revenue": 143,
+    "location": "Temple Bar",
+    "weather": "sunny",
+    "notes": "weekday service"
+  },
+  {
+    "id": 9,
+    "date": "2026-05-18",
+    "product": "Matcha Latte",
+    "units": 23,
+    "revenue": 161,
+    "location": "Smithfield Square",
+    "weather": "sunny",
+    "notes": "weekday service"
+  },
+  {
+    "id": 10,
+    "date": "2026-05-19",
+    "product": "Mori Blend (250g bag)",
+    "units": 33,
+    "revenue": 462,
+    "location": "The Docklands — Mayor Square",
+    "weather": "sunny",
+    "notes": "weekday service"
+  },
+  {
+    "id": 11,
+    "date": "2026-05-19",
+    "product": "Cold Brew Tonic",
+    "units": 13,
+    "revenue": 84.5,
+    "location": "Stoneybatter",
+    "weather": "sunny",
+    "notes": "weekday service"
+  },
+  {
+    "id": 12,
+    "date": "2026-05-20",
+    "product": "Pour-Over",
+    "units": 8,
+    "revenue": 44,
+    "location": "Smithfield Square",
+    "weather": "windy",
+    "notes": "weekday service"
+  },
+  {
+    "id": 13,
+    "date": "2026-05-20",
+    "product": "Buttered Croissant",
+    "units": 25,
+    "revenue": 87.5,
+    "location": "The Docklands — Mayor Square",
+    "weather": "windy",
+    "notes": "weekday service"
+  },
+  {
+    "id": 14,
+    "date": "2026-05-20",
+    "product": "Buttered Croissant",
+    "units": 9,
+    "revenue": 31.5,
+    "location": "Temple Bar",
+    "weather": "windy",
+    "notes": "weekday service"
+  },
+  {
+    "id": 15,
+    "date": "2026-05-20",
+    "product": "Espresso Tonic",
+    "units": 22,
+    "revenue": 165,
+    "location": "The Docklands — Mayor Square",
+    "weather": "windy",
+    "notes": "weekday service"
+  },
+  {
+    "id": 16,
+    "date": "2026-05-21",
+    "product": "Cold Brew Tonic",
+    "units": 13,
+    "revenue": 84.5,
+    "location": "Smithfield Square",
+    "weather": "rain",
+    "notes": "weekday service"
+  },
+  {
+    "id": 17,
+    "date": "2026-05-21",
+    "product": "Pour-Over",
+    "units": 6,
+    "revenue": 33,
+    "location": "Temple Bar",
+    "weather": "rain",
+    "notes": "weekday service"
+  },
+  {
+    "id": 18,
+    "date": "2026-05-22",
+    "product": "Matcha Latte",
+    "units": 35,
+    "revenue": 245,
+    "location": "Grand Canal Dock",
+    "weather": "windy",
+    "notes": "Friday evening rush"
+  },
+  {
+    "id": 19,
+    "date": "2026-05-22",
+    "product": "Pour-Over",
+    "units": 19,
+    "revenue": 104.5,
+    "location": "Stoneybatter",
+    "weather": "windy",
+    "notes": "Friday evening rush"
+  },
+  {
+    "id": 20,
+    "date": "2026-05-22",
+    "product": "Mori Blend (250g bag)",
+    "units": 27,
+    "revenue": 378,
+    "location": "Stoneybatter",
+    "weather": "windy",
+    "notes": "Friday evening rush"
+  },
+  {
+    "id": 21,
+    "date": "2026-05-22",
+    "product": "Pour-Over",
+    "units": 28,
+    "revenue": 154,
+    "location": "Grand Canal Dock",
+    "weather": "windy",
+    "notes": "Friday evening rush"
+  },
+  {
+    "id": 22,
+    "date": "2026-05-23",
+    "product": "Espresso Tonic",
+    "units": 36,
+    "revenue": 270,
+    "location": "Stoneybatter",
+    "weather": "cloudy",
+    "notes": "Saturday pop-up day"
+  },
+  {
+    "id": 23,
+    "date": "2026-05-23",
+    "product": "Espresso Tonic",
+    "units": 28,
+    "revenue": 210,
+    "location": "Stoneybatter",
+    "weather": "cloudy",
+    "notes": "Saturday pop-up day"
+  },
+  {
+    "id": 24,
+    "date": "2026-05-24",
+    "product": "Buttered Croissant",
+    "units": 17,
+    "revenue": 59.5,
+    "location": "Stoneybatter",
+    "weather": "rain",
+    "notes": "Sunday market"
+  },
+  {
+    "id": 25,
+    "date": "2026-05-24",
+    "product": "Cortado",
+    "units": 15,
+    "revenue": 52.5,
+    "location": "Stoneybatter",
+    "weather": "rain",
+    "notes": "Sunday market"
+  },
+  {
+    "id": 26,
+    "date": "2026-05-24",
+    "product": "Mori Blend (250g bag)",
+    "units": 12,
+    "revenue": 168,
+    "location": "The Docklands — Mayor Square",
+    "weather": "rain",
+    "notes": "Sunday market"
+  },
+  {
+    "id": 27,
+    "date": "2026-05-25",
+    "product": "Mori Blend (250g bag)",
+    "units": 9,
+    "revenue": 126,
+    "location": "Stoneybatter",
+    "weather": "sunny",
+    "notes": "weekday service"
+  },
+  {
+    "id": 28,
+    "date": "2026-05-25",
+    "product": "Mori Blend (250g bag)",
+    "units": 9,
+    "revenue": 126,
+    "location": "Stoneybatter",
+    "weather": "sunny",
+    "notes": "weekday service"
+  },
+  {
+    "id": 29,
+    "date": "2026-05-25",
+    "product": "Pour-Over",
+    "units": 30,
+    "revenue": 165,
+    "location": "Grand Canal Dock",
+    "weather": "sunny",
+    "notes": "weekday service"
+  },
+  {
+    "id": 30,
+    "date": "2026-05-26",
+    "product": "Mori Blend (250g bag)",
+    "units": 29,
+    "revenue": 406,
+    "location": "Smithfield Square",
+    "weather": "cloudy",
+    "notes": "weekday service"
+  },
+  {
+    "id": 31,
+    "date": "2026-05-26",
+    "product": "Mori Blend (250g bag)",
+    "units": 8,
+    "revenue": 112,
+    "location": "Stoneybatter",
+    "weather": "cloudy",
+    "notes": "weekday service"
+  },
+  {
+    "id": 32,
+    "date": "2026-05-27",
+    "product": "Buttered Croissant",
+    "units": 34,
+    "revenue": 119,
+    "location": "Temple Bar",
+    "weather": "sunny",
+    "notes": "weekday service"
+  },
+  {
+    "id": 33,
+    "date": "2026-05-27",
+    "product": "Mori Blend (250g bag)",
+    "units": 14,
+    "revenue": 196,
+    "location": "Stoneybatter",
+    "weather": "sunny",
+    "notes": "weekday service"
+  },
+  {
+    "id": 34,
+    "date": "2026-05-27",
+    "product": "Espresso Tonic",
+    "units": 21,
+    "revenue": 157.5,
+    "location": "Smithfield Square",
+    "weather": "sunny",
+    "notes": "weekday service"
+  },
+  {
+    "id": 35,
+    "date": "2026-05-27",
+    "product": "Espresso Tonic",
+    "units": 38,
+    "revenue": 285,
+    "location": "Smithfield Square",
+    "weather": "sunny",
+    "notes": "weekday service"
+  },
+  {
+    "id": 36,
+    "date": "2026-05-28",
+    "product": "Cortado",
+    "units": 8,
+    "revenue": 28,
+    "location": "The Docklands — Mayor Square",
+    "weather": "cloudy",
+    "notes": "weekday service"
+  },
+  {
+    "id": 37,
+    "date": "2026-05-28",
+    "product": "Espresso Tonic",
+    "units": 23,
+    "revenue": 172.5,
+    "location": "Stoneybatter",
+    "weather": "cloudy",
+    "notes": "weekday service"
+  },
+  {
+    "id": 38,
+    "date": "2026-05-28",
+    "product": "Mori Blend (250g bag)",
+    "units": 29,
+    "revenue": 406,
+    "location": "Grand Canal Dock",
+    "weather": "cloudy",
+    "notes": "weekday service"
+  },
+  {
+    "id": 39,
+    "date": "2026-05-28",
+    "product": "Buttered Croissant",
+    "units": 21,
+    "revenue": 73.5,
+    "location": "Stoneybatter",
+    "weather": "cloudy",
+    "notes": "weekday service"
+  },
+  {
+    "id": 40,
+    "date": "2026-05-29",
+    "product": "Espresso Tonic",
+    "units": 24,
+    "revenue": 180,
+    "location": "Temple Bar",
+    "weather": "rain",
+    "notes": "Friday evening rush"
+  },
+  {
+    "id": 41,
+    "date": "2026-05-29",
+    "product": "Cold Brew Tonic",
+    "units": 16,
+    "revenue": 104,
+    "location": "The Docklands — Mayor Square",
+    "weather": "rain",
+    "notes": "Friday evening rush"
+  },
+  {
+    "id": 42,
+    "date": "2026-05-29",
+    "product": "Cold Brew Tonic",
+    "units": 17,
+    "revenue": 110.5,
+    "location": "Grand Canal Dock",
+    "weather": "rain",
+    "notes": "Friday evening rush"
+  },
+  {
+    "id": 43,
+    "date": "2026-05-30",
+    "product": "Cold Brew Tonic",
+    "units": 8,
+    "revenue": 52,
+    "location": "The Docklands — Mayor Square",
+    "weather": "cloudy",
+    "notes": "Saturday pop-up day"
+  },
+  {
+    "id": 44,
+    "date": "2026-05-30",
+    "product": "Buttered Croissant",
+    "units": 27,
+    "revenue": 94.5,
+    "location": "Smithfield Square",
+    "weather": "cloudy",
+    "notes": "Saturday pop-up day"
+  },
+  {
+    "id": 45,
+    "date": "2026-05-31",
+    "product": "Cortado",
+    "units": 21,
+    "revenue": 73.5,
+    "location": "Temple Bar",
+    "weather": "rain",
+    "notes": "Sunday market"
+  },
+  {
+    "id": 46,
+    "date": "2026-05-31",
+    "product": "Matcha Latte",
+    "units": 6,
+    "revenue": 42,
+    "location": "Smithfield Square",
+    "weather": "rain",
+    "notes": "Sunday market"
+  },
+  {
+    "id": 47,
+    "date": "2026-05-31",
+    "product": "Espresso Tonic",
+    "units": 24,
+    "revenue": 180,
+    "location": "Smithfield Square",
+    "weather": "rain",
+    "notes": "Sunday market"
+  },
+  {
+    "id": 48,
+    "date": "2026-06-01",
+    "product": "Pour-Over",
+    "units": 29,
+    "revenue": 159.5,
+    "location": "Temple Bar",
+    "weather": "cloudy",
+    "notes": "weekday service"
+  },
+  {
+    "id": 49,
+    "date": "2026-06-01",
+    "product": "Cold Brew Tonic",
+    "units": 4,
+    "revenue": 26,
+    "location": "Smithfield Square",
+    "weather": "cloudy",
+    "notes": "weekday service"
+  },
+  {
+    "id": 50,
+    "date": "2026-06-01",
+    "product": "Pour-Over",
+    "units": 25,
+    "revenue": 137.5,
+    "location": "Stoneybatter",
+    "weather": "cloudy",
+    "notes": "weekday service"
+  },
+  {
+    "id": 51,
+    "date": "2026-06-02",
+    "product": "Buttered Croissant",
+    "units": 20,
+    "revenue": 70,
+    "location": "The Docklands — Mayor Square",
+    "weather": "cloudy",
+    "notes": "weekday service"
+  },
+  {
+    "id": 52,
+    "date": "2026-06-02",
+    "product": "Buttered Croissant",
+    "units": 6,
+    "revenue": 21,
+    "location": "Stoneybatter",
+    "weather": "cloudy",
+    "notes": "weekday service"
+  },
+  {
+    "id": 53,
+    "date": "2026-06-03",
+    "product": "Buttered Croissant",
+    "units": 25,
+    "revenue": 87.5,
+    "location": "Stoneybatter",
+    "weather": "sunny",
+    "notes": "weekday service"
+  },
+  {
+    "id": 54,
+    "date": "2026-06-03",
+    "product": "Cold Brew Tonic",
+    "units": 25,
+    "revenue": 162.5,
+    "location": "Temple Bar",
+    "weather": "sunny",
+    "notes": "weekday service"
+  },
+  {
+    "id": 55,
+    "date": "2026-06-03",
+    "product": "Cold Brew Tonic",
+    "units": 29,
+    "revenue": 188.5,
+    "location": "Smithfield Square",
+    "weather": "sunny",
+    "notes": "weekday service"
+  },
+  {
+    "id": 56,
+    "date": "2026-06-03",
+    "product": "Matcha Latte",
+    "units": 34,
+    "revenue": 238,
+    "location": "Temple Bar",
+    "weather": "sunny",
+    "notes": "weekday service"
+  },
+  {
+    "id": 57,
+    "date": "2026-06-04",
+    "product": "Espresso Tonic",
+    "units": 15,
+    "revenue": 112.5,
+    "location": "Smithfield Square",
+    "weather": "windy",
+    "notes": "weekday service"
+  },
+  {
+    "id": 58,
+    "date": "2026-06-04",
+    "product": "Pour-Over",
+    "units": 10,
+    "revenue": 55,
+    "location": "Stoneybatter",
+    "weather": "windy",
+    "notes": "weekday service"
+  },
+  {
+    "id": 59,
+    "date": "2026-06-04",
+    "product": "Matcha Latte",
+    "units": 15,
+    "revenue": 105,
+    "location": "Grand Canal Dock",
+    "weather": "windy",
+    "notes": "weekday service"
+  },
+  {
+    "id": 60,
+    "date": "2026-06-05",
+    "product": "Cortado",
+    "units": 23,
+    "revenue": 80.5,
+    "location": "Temple Bar",
+    "weather": "rain",
+    "notes": "Friday evening rush"
+  },
+  {
+    "id": 61,
+    "date": "2026-06-05",
+    "product": "Buttered Croissant",
+    "units": 12,
+    "revenue": 42,
+    "location": "Stoneybatter",
+    "weather": "rain",
+    "notes": "Friday evening rush"
+  },
+  {
+    "id": 62,
+    "date": "2026-06-05",
+    "product": "Buttered Croissant",
+    "units": 13,
+    "revenue": 45.5,
+    "location": "Temple Bar",
+    "weather": "rain",
+    "notes": "Friday evening rush"
+  },
+  {
+    "id": 63,
+    "date": "2026-06-05",
+    "product": "Buttered Croissant",
+    "units": 6,
+    "revenue": 21,
+    "location": "The Docklands — Mayor Square",
+    "weather": "rain",
+    "notes": "Friday evening rush"
+  },
+  {
+    "id": 64,
+    "date": "2026-06-06",
+    "product": "Cortado",
+    "units": 9,
+    "revenue": 31.5,
+    "location": "The Docklands — Mayor Square",
+    "weather": "cloudy",
+    "notes": "Saturday pop-up day"
+  },
+  {
+    "id": 65,
+    "date": "2026-06-06",
+    "product": "Cortado",
+    "units": 34,
+    "revenue": 119,
+    "location": "The Docklands — Mayor Square",
+    "weather": "cloudy",
+    "notes": "Saturday pop-up day"
+  },
+  {
+    "id": 66,
+    "date": "2026-06-06",
+    "product": "Cold Brew Tonic",
+    "units": 9,
+    "revenue": 58.5,
+    "location": "Temple Bar",
+    "weather": "cloudy",
+    "notes": "Saturday pop-up day"
+  },
+  {
+    "id": 67,
+    "date": "2026-06-07",
+    "product": "Pour-Over",
+    "units": 7,
+    "revenue": 38.5,
+    "location": "Stoneybatter",
+    "weather": "cloudy",
+    "notes": "Sunday market"
+  },
+  {
+    "id": 68,
+    "date": "2026-06-07",
+    "product": "Espresso Tonic",
+    "units": 31,
+    "revenue": 232.5,
+    "location": "Stoneybatter",
+    "weather": "cloudy",
+    "notes": "Sunday market"
+  },
+  {
+    "id": 69,
+    "date": "2026-06-07",
+    "product": "Cortado",
+    "units": 18,
+    "revenue": 63,
+    "location": "Smithfield Square",
+    "weather": "cloudy",
+    "notes": "Sunday market"
+  },
+  {
+    "id": 70,
+    "date": "2026-06-07",
+    "product": "Pour-Over",
+    "units": 27,
+    "revenue": 148.5,
+    "location": "Smithfield Square",
+    "weather": "cloudy",
+    "notes": "Sunday market"
+  },
+  {
+    "id": 71,
+    "date": "2026-06-08",
+    "product": "Matcha Latte",
+    "units": 4,
+    "revenue": 28,
+    "location": "Smithfield Square",
+    "weather": "rain",
+    "notes": "weekday service"
+  },
+  {
+    "id": 72,
+    "date": "2026-06-08",
+    "product": "Cold Brew Tonic",
+    "units": 2,
+    "revenue": 13,
+    "location": "Stoneybatter",
+    "weather": "rain",
+    "notes": "weekday service"
+  },
+  {
+    "id": 73,
+    "date": "2026-06-08",
+    "product": "Cold Brew Tonic",
+    "units": 6,
+    "revenue": 39,
+    "location": "The Docklands — Mayor Square",
+    "weather": "rain",
+    "notes": "weekday service"
+  },
+  {
+    "id": 74,
+    "date": "2026-06-08",
+    "product": "Cortado",
+    "units": 2,
+    "revenue": 7,
+    "location": "Temple Bar",
+    "weather": "rain",
+    "notes": "weekday service"
+  },
+  {
+    "id": 75,
+    "date": "2026-06-09",
+    "product": "Mori Blend (250g bag)",
+    "units": 31,
+    "revenue": 434,
+    "location": "Temple Bar",
+    "weather": "sunny",
+    "notes": "weekday service"
+  },
+  {
+    "id": 76,
+    "date": "2026-06-09",
+    "product": "Matcha Latte",
+    "units": 34,
+    "revenue": 238,
+    "location": "Grand Canal Dock",
+    "weather": "sunny",
+    "notes": "weekday service"
+  },
+  {
+    "id": 77,
+    "date": "2026-06-10",
+    "product": "Espresso Tonic",
+    "units": 4,
+    "revenue": 30,
+    "location": "Temple Bar",
+    "weather": "cloudy",
+    "notes": "weekday service"
+  },
+  {
+    "id": 78,
+    "date": "2026-06-10",
+    "product": "Mori Blend (250g bag)",
+    "units": 27,
+    "revenue": 378,
+    "location": "Stoneybatter",
+    "weather": "cloudy",
+    "notes": "weekday service"
+  },
+  {
+    "id": 79,
+    "date": "2026-06-11",
+    "product": "Cold Brew Tonic",
+    "units": 23,
+    "revenue": 149.5,
+    "location": "Stoneybatter",
+    "weather": "sunny",
+    "notes": "weekday service"
+  },
+  {
+    "id": 80,
+    "date": "2026-06-11",
+    "product": "Cold Brew Tonic",
+    "units": 29,
+    "revenue": 188.5,
+    "location": "Grand Canal Dock",
+    "weather": "sunny",
+    "notes": "weekday service"
+  },
+  {
+    "id": 81,
+    "date": "2026-06-11",
+    "product": "Cold Brew Tonic",
+    "units": 23,
+    "revenue": 149.5,
+    "location": "Grand Canal Dock",
+    "weather": "sunny",
+    "notes": "weekday service"
+  },
+  {
+    "id": 82,
+    "date": "2026-06-12",
+    "product": "Cold Brew Tonic",
+    "units": 38,
+    "revenue": 247,
+    "location": "Stoneybatter",
+    "weather": "cloudy",
+    "notes": "Friday evening rush"
+  },
+  {
+    "id": 83,
+    "date": "2026-06-12",
+    "product": "Buttered Croissant",
+    "units": 39,
+    "revenue": 136.5,
+    "location": "Smithfield Square",
+    "weather": "cloudy",
+    "notes": "Friday evening rush"
+  },
+  {
+    "id": 84,
+    "date": "2026-06-12",
+    "product": "Cold Brew Tonic",
+    "units": 39,
+    "revenue": 253.5,
+    "location": "Stoneybatter",
+    "weather": "cloudy",
+    "notes": "Friday evening rush"
+  },
+  {
+    "id": 85,
+    "date": "2026-06-13",
+    "product": "Cold Brew Tonic",
+    "units": 4,
+    "revenue": 26,
+    "location": "Smithfield Square",
+    "weather": "rain",
+    "notes": "Saturday pop-up day"
+  },
+  {
+    "id": 86,
+    "date": "2026-06-13",
+    "product": "Espresso Tonic",
+    "units": 13,
+    "revenue": 97.5,
+    "location": "Temple Bar",
+    "weather": "rain",
+    "notes": "Saturday pop-up day"
+  },
+  {
+    "id": 87,
+    "date": "2026-06-13",
+    "product": "Mori Blend (250g bag)",
+    "units": 14,
+    "revenue": 196,
+    "location": "Stoneybatter",
+    "weather": "rain",
+    "notes": "Saturday pop-up day"
+  },
+  {
+    "id": 88,
+    "date": "2026-06-14",
+    "product": "Espresso Tonic",
+    "units": 6,
+    "revenue": 45,
+    "location": "Stoneybatter",
+    "weather": "sunny",
+    "notes": "Sunday market"
+  },
+  {
+    "id": 89,
+    "date": "2026-06-14",
+    "product": "Matcha Latte",
+    "units": 40,
+    "revenue": 280,
+    "location": "Stoneybatter",
+    "weather": "sunny",
+    "notes": "Sunday market"
+  },
+  {
+    "id": 90,
+    "date": "2026-06-15",
+    "product": "Pour-Over",
+    "units": 15,
+    "revenue": 82.5,
+    "location": "The Docklands — Mayor Square",
+    "weather": "sunny",
+    "notes": "weekday service"
+  },
+  {
+    "id": 91,
+    "date": "2026-06-15",
+    "product": "Cold Brew Tonic",
+    "units": 15,
+    "revenue": 97.5,
+    "location": "Grand Canal Dock",
+    "weather": "sunny",
+    "notes": "weekday service"
+  },
+  {
+    "id": 92,
+    "date": "2026-06-16",
+    "product": "Pour-Over",
+    "units": 15,
+    "revenue": 82.5,
+    "location": "Temple Bar",
+    "weather": "windy",
+    "notes": "weekday service"
+  },
+  {
+    "id": 93,
+    "date": "2026-06-16",
+    "product": "Cortado",
+    "units": 5,
+    "revenue": 17.5,
+    "location": "Smithfield Square",
+    "weather": "windy",
+    "notes": "weekday service"
+  },
+  {
+    "id": 94,
+    "date": "2026-06-16",
+    "product": "Cortado",
+    "units": 15,
+    "revenue": 52.5,
+    "location": "Stoneybatter",
+    "weather": "windy",
+    "notes": "weekday service"
+  },
+  {
+    "id": 95,
+    "date": "2026-06-17",
+    "product": "Cortado",
+    "units": 24,
+    "revenue": 84,
+    "location": "Grand Canal Dock",
+    "weather": "sunny",
+    "notes": "weekday service"
+  },
+  {
+    "id": 96,
+    "date": "2026-06-17",
+    "product": "Pour-Over",
+    "units": 22,
+    "revenue": 121,
+    "location": "Temple Bar",
+    "weather": "sunny",
+    "notes": "weekday service"
+  },
+  {
+    "id": 97,
+    "date": "2026-06-17",
+    "product": "Mori Blend (250g bag)",
+    "units": 28,
+    "revenue": 392,
+    "location": "Stoneybatter",
+    "weather": "sunny",
+    "notes": "weekday service"
+  },
+  {
+    "id": 98,
+    "date": "2026-06-18",
+    "product": "Espresso Tonic",
+    "units": 22,
+    "revenue": 165,
+    "location": "Temple Bar",
+    "weather": "sunny",
+    "notes": "weekday service"
+  },
+  {
+    "id": 99,
+    "date": "2026-06-18",
+    "product": "Cortado",
+    "units": 11,
+    "revenue": 38.5,
+    "location": "Stoneybatter",
+    "weather": "sunny",
+    "notes": "weekday service"
+  },
+  {
+    "id": 100,
+    "date": "2026-06-18",
+    "product": "Espresso Tonic",
+    "units": 19,
+    "revenue": 142.5,
+    "location": "Temple Bar",
+    "weather": "sunny",
+    "notes": "weekday service"
+  },
+  {
+    "id": 101,
+    "date": "2026-06-18",
+    "product": "Mori Blend (250g bag)",
+    "units": 17,
+    "revenue": 238,
+    "location": "Grand Canal Dock",
+    "weather": "sunny",
+    "notes": "weekday service"
+  },
+  {
+    "id": 102,
+    "date": "2026-06-19",
+    "product": "Espresso Tonic",
+    "units": 17,
+    "revenue": 127.5,
+    "location": "The Docklands — Mayor Square",
+    "weather": "rain",
+    "notes": "Friday evening rush"
+  },
+  {
+    "id": 103,
+    "date": "2026-06-19",
+    "product": "Mori Blend (250g bag)",
+    "units": 17,
+    "revenue": 238,
+    "location": "Temple Bar",
+    "weather": "rain",
+    "notes": "Friday evening rush"
+  },
+  {
+    "id": 104,
+    "date": "2026-06-20",
+    "product": "Matcha Latte",
+    "units": 20,
+    "revenue": 140,
+    "location": "Smithfield Square",
+    "weather": "cloudy",
+    "notes": "Saturday pop-up day"
+  },
+  {
+    "id": 105,
+    "date": "2026-06-20",
+    "product": "Pour-Over",
+    "units": 16,
+    "revenue": 88,
+    "location": "Stoneybatter",
+    "weather": "cloudy",
+    "notes": "Saturday pop-up day"
+  },
+  {
+    "id": 106,
+    "date": "2026-06-21",
+    "product": "Pour-Over",
+    "units": 7,
+    "revenue": 38.5,
+    "location": "Temple Bar",
+    "weather": "sunny",
+    "notes": "Sunday market"
+  },
+  {
+    "id": 107,
+    "date": "2026-06-21",
+    "product": "Cortado",
+    "units": 16,
+    "revenue": 56,
+    "location": "Smithfield Square",
+    "weather": "sunny",
+    "notes": "Sunday market"
+  },
+  {
+    "id": 108,
+    "date": "2026-06-22",
+    "product": "Pour-Over",
+    "units": 7,
+    "revenue": 38.5,
+    "location": "Grand Canal Dock",
+    "weather": "rain",
+    "notes": "weekday service"
+  },
+  {
+    "id": 109,
+    "date": "2026-06-22",
+    "product": "Buttered Croissant",
+    "units": 9,
+    "revenue": 31.5,
+    "location": "Grand Canal Dock",
+    "weather": "rain",
+    "notes": "weekday service"
+  },
+  {
+    "id": 110,
+    "date": "2026-06-23",
+    "product": "Espresso Tonic",
+    "units": 20,
+    "revenue": 150,
+    "location": "Grand Canal Dock",
+    "weather": "cloudy",
+    "notes": "weekday service"
+  },
+  {
+    "id": 111,
+    "date": "2026-06-23",
+    "product": "Buttered Croissant",
+    "units": 7,
+    "revenue": 24.5,
+    "location": "Grand Canal Dock",
+    "weather": "cloudy",
+    "notes": "weekday service"
+  },
+  {
+    "id": 112,
+    "date": "2026-06-24",
+    "product": "Cortado",
+    "units": 17,
+    "revenue": 59.5,
+    "location": "Smithfield Square",
+    "weather": "cloudy",
+    "notes": "weekday service"
+  },
+  {
+    "id": 113,
+    "date": "2026-06-24",
+    "product": "Espresso Tonic",
+    "units": 8,
+    "revenue": 60,
+    "location": "Grand Canal Dock",
+    "weather": "cloudy",
+    "notes": "weekday service"
+  },
+  {
+    "id": 114,
+    "date": "2026-06-24",
+    "product": "Mori Blend (250g bag)",
+    "units": 8,
+    "revenue": 112,
+    "location": "Stoneybatter",
+    "weather": "cloudy",
+    "notes": "weekday service"
+  },
+  {
+    "id": 115,
+    "date": "2026-06-25",
+    "product": "Espresso Tonic",
+    "units": 13,
+    "revenue": 97.5,
+    "location": "The Docklands — Mayor Square",
+    "weather": "cloudy",
+    "notes": "weekday service"
+  },
+  {
+    "id": 116,
+    "date": "2026-06-25",
+    "product": "Cortado",
+    "units": 26,
+    "revenue": 91,
+    "location": "Stoneybatter",
+    "weather": "cloudy",
+    "notes": "weekday service"
+  },
+  {
+    "id": 117,
+    "date": "2026-06-25",
+    "product": "Buttered Croissant",
+    "units": 10,
+    "revenue": 35,
+    "location": "Smithfield Square",
+    "weather": "cloudy",
+    "notes": "weekday service"
+  },
+  {
+    "id": 118,
+    "date": "2026-06-26",
+    "product": "Espresso Tonic",
+    "units": 8,
+    "revenue": 60,
+    "location": "The Docklands — Mayor Square",
+    "weather": "rain",
+    "notes": "Friday evening rush"
+  },
+  {
+    "id": 119,
+    "date": "2026-06-26",
+    "product": "Cortado",
+    "units": 4,
+    "revenue": 14,
+    "location": "Smithfield Square",
+    "weather": "rain",
+    "notes": "Friday evening rush"
+  },
+  {
+    "id": 120,
+    "date": "2026-06-26",
+    "product": "Pour-Over",
+    "units": 4,
+    "revenue": 22,
+    "location": "Stoneybatter",
+    "weather": "rain",
+    "notes": "Friday evening rush"
+  },
+  {
+    "id": 121,
+    "date": "2026-06-27",
+    "product": "Cold Brew Tonic",
+    "units": 21,
+    "revenue": 136.5,
+    "location": "Stoneybatter",
+    "weather": "cloudy",
+    "notes": "Saturday pop-up day"
+  },
+  {
+    "id": 122,
+    "date": "2026-06-27",
+    "product": "Cortado",
+    "units": 34,
+    "revenue": 119,
+    "location": "Stoneybatter",
+    "weather": "cloudy",
+    "notes": "Saturday pop-up day"
+  },
+  {
+    "id": 123,
+    "date": "2026-06-28",
+    "product": "Cold Brew Tonic",
+    "units": 28,
+    "revenue": 182,
+    "location": "The Docklands — Mayor Square",
+    "weather": "sunny",
+    "notes": "Sunday market"
+  },
+  {
+    "id": 124,
+    "date": "2026-06-28",
+    "product": "Pour-Over",
+    "units": 42,
+    "revenue": 231,
+    "location": "Grand Canal Dock",
+    "weather": "sunny",
+    "notes": "Sunday market"
+  },
+  {
+    "id": 125,
+    "date": "2026-06-28",
+    "product": "Pour-Over",
+    "units": 25,
+    "revenue": 137.5,
+    "location": "The Docklands — Mayor Square",
+    "weather": "sunny",
+    "notes": "Sunday market"
+  },
+  {
+    "id": 126,
+    "date": "2026-06-29",
+    "product": "Cortado",
+    "units": 10,
+    "revenue": 35,
+    "location": "Smithfield Square",
+    "weather": "rain",
+    "notes": "weekday service"
+  },
+  {
+    "id": 127,
+    "date": "2026-06-29",
+    "product": "Cold Brew Tonic",
+    "units": 13,
+    "revenue": 84.5,
+    "location": "The Docklands — Mayor Square",
+    "weather": "rain",
+    "notes": "weekday service"
+  },
+  {
+    "id": 128,
+    "date": "2026-06-29",
+    "product": "Cold Brew Tonic",
+    "units": 10,
+    "revenue": 65,
+    "location": "The Docklands — Mayor Square",
+    "weather": "rain",
+    "notes": "weekday service"
+  },
+  {
+    "id": 129,
+    "date": "2026-06-29",
+    "product": "Pour-Over",
+    "units": 5,
+    "revenue": 27.5,
+    "location": "Smithfield Square",
+    "weather": "rain",
+    "notes": "weekday service"
+  },
+  {
+    "id": 130,
+    "date": "2026-06-30",
+    "product": "Buttered Croissant",
+    "units": 23,
+    "revenue": 80.5,
+    "location": "Temple Bar",
+    "weather": "sunny",
+    "notes": "weekday service"
+  },
+  {
+    "id": 131,
+    "date": "2026-06-30",
+    "product": "Cold Brew Tonic",
+    "units": 33,
+    "revenue": 214.5,
+    "location": "Grand Canal Dock",
+    "weather": "sunny",
+    "notes": "weekday service"
+  },
+  {
+    "id": 132,
+    "date": "2026-06-30",
+    "product": "Cortado",
+    "units": 21,
+    "revenue": 73.5,
+    "location": "Stoneybatter",
+    "weather": "sunny",
+    "notes": "weekday service"
+  },
+  {
+    "id": 133,
+    "date": "2026-07-01",
+    "product": "Espresso Tonic",
+    "units": 10,
+    "revenue": 75,
+    "location": "Smithfield Square",
+    "weather": "rain",
+    "notes": "weekday service"
+  },
+  {
+    "id": 134,
+    "date": "2026-07-01",
+    "product": "Cold Brew Tonic",
+    "units": 8,
+    "revenue": 52,
+    "location": "Stoneybatter",
+    "weather": "rain",
+    "notes": "weekday service"
+  },
+  {
+    "id": 135,
+    "date": "2026-07-02",
+    "product": "Buttered Croissant",
+    "units": 3,
+    "revenue": 10.5,
+    "location": "Stoneybatter",
+    "weather": "cloudy",
+    "notes": "weekday service"
+  },
+  {
+    "id": 136,
+    "date": "2026-07-02",
+    "product": "Matcha Latte",
+    "units": 7,
+    "revenue": 49,
+    "location": "Smithfield Square",
+    "weather": "cloudy",
+    "notes": "weekday service"
+  },
+  {
+    "id": 137,
+    "date": "2026-07-02",
+    "product": "Pour-Over",
+    "units": 7,
+    "revenue": 38.5,
+    "location": "Stoneybatter",
+    "weather": "cloudy",
+    "notes": "weekday service"
+  },
+  {
+    "id": 138,
+    "date": "2026-07-03",
+    "product": "Mori Blend (250g bag)",
+    "units": 24,
+    "revenue": 336,
+    "location": "Smithfield Square",
+    "weather": "cloudy",
+    "notes": "Friday evening rush"
+  },
+  {
+    "id": 139,
+    "date": "2026-07-03",
+    "product": "Buttered Croissant",
+    "units": 10,
+    "revenue": 35,
+    "location": "Stoneybatter",
+    "weather": "cloudy",
+    "notes": "Friday evening rush"
+  },
+  {
+    "id": 140,
+    "date": "2026-07-03",
+    "product": "Buttered Croissant",
+    "units": 33,
+    "revenue": 115.5,
+    "location": "Grand Canal Dock",
+    "weather": "cloudy",
+    "notes": "Friday evening rush"
+  },
+  {
+    "id": 141,
+    "date": "2026-07-03",
+    "product": "Matcha Latte",
+    "units": 9,
+    "revenue": 63,
+    "location": "Stoneybatter",
+    "weather": "cloudy",
+    "notes": "Friday evening rush"
+  },
+  {
+    "id": 142,
+    "date": "2026-07-04",
+    "product": "Espresso Tonic",
+    "units": 19,
+    "revenue": 142.5,
+    "location": "Smithfield Square",
+    "weather": "rain",
+    "notes": "Saturday pop-up day"
+  },
+  {
+    "id": 143,
+    "date": "2026-07-04",
+    "product": "Buttered Croissant",
+    "units": 8,
+    "revenue": 28,
+    "location": "Stoneybatter",
+    "weather": "rain",
+    "notes": "Saturday pop-up day"
+  },
+  {
+    "id": 144,
+    "date": "2026-07-04",
+    "product": "Pour-Over",
+    "units": 5,
+    "revenue": 27.5,
+    "location": "Stoneybatter",
+    "weather": "rain",
+    "notes": "Saturday pop-up day"
+  },
+  {
+    "id": 145,
+    "date": "2026-07-04",
+    "product": "Buttered Croissant",
+    "units": 21,
+    "revenue": 73.5,
+    "location": "Grand Canal Dock",
+    "weather": "rain",
+    "notes": "Saturday pop-up day"
+  },
+  {
+    "id": 146,
+    "date": "2026-07-05",
+    "product": "Matcha Latte",
+    "units": 10,
+    "revenue": 70,
+    "location": "The Docklands — Mayor Square",
+    "weather": "cloudy",
+    "notes": "Sunday market"
+  },
+  {
+    "id": 147,
+    "date": "2026-07-05",
+    "product": "Mori Blend (250g bag)",
+    "units": 22,
+    "revenue": 308,
+    "location": "Temple Bar",
+    "weather": "cloudy",
+    "notes": "Sunday market"
+  },
+  {
+    "id": 148,
+    "date": "2026-07-05",
+    "product": "Espresso Tonic",
+    "units": 10,
+    "revenue": 75,
+    "location": "Stoneybatter",
+    "weather": "cloudy",
+    "notes": "Sunday market"
+  },
+  {
+    "id": 149,
+    "date": "2026-07-06",
+    "product": "Cold Brew Tonic",
+    "units": 10,
+    "revenue": 65,
+    "location": "Stoneybatter",
+    "weather": "rain",
+    "notes": "weekday service"
+  },
+  {
+    "id": 150,
+    "date": "2026-07-06",
+    "product": "Matcha Latte",
+    "units": 6,
+    "revenue": 42,
+    "location": "Temple Bar",
+    "weather": "rain",
+    "notes": "weekday service"
+  },
+  {
+    "id": 151,
+    "date": "2026-07-06",
+    "product": "Cold Brew Tonic",
+    "units": 14,
+    "revenue": 91,
+    "location": "Stoneybatter",
+    "weather": "rain",
+    "notes": "weekday service"
+  },
+  {
+    "id": 152,
+    "date": "2026-07-07",
+    "product": "Cortado",
+    "units": 21,
+    "revenue": 73.5,
+    "location": "Temple Bar",
+    "weather": "cloudy",
+    "notes": "weekday service"
+  },
+  {
+    "id": 153,
+    "date": "2026-07-07",
+    "product": "Cold Brew Tonic",
+    "units": 22,
+    "revenue": 143,
+    "location": "The Docklands — Mayor Square",
+    "weather": "cloudy",
+    "notes": "weekday service"
+  },
+  {
+    "id": 154,
+    "date": "2026-07-08",
+    "product": "Mori Blend (250g bag)",
+    "units": 13,
+    "revenue": 182,
+    "location": "Stoneybatter",
+    "weather": "sunny",
+    "notes": "weekday service"
+  },
+  {
+    "id": 155,
+    "date": "2026-07-08",
+    "product": "Cortado",
+    "units": 6,
+    "revenue": 21,
+    "location": "The Docklands — Mayor Square",
+    "weather": "sunny",
+    "notes": "weekday service"
+  },
+  {
+    "id": 156,
+    "date": "2026-07-08",
+    "product": "Pour-Over",
+    "units": 14,
+    "revenue": 77,
+    "location": "Temple Bar",
+    "weather": "sunny",
+    "notes": "weekday service"
+  },
+  {
+    "id": 157,
+    "date": "2026-07-08",
+    "product": "Cold Brew Tonic",
+    "units": 10,
+    "revenue": 65,
+    "location": "The Docklands — Mayor Square",
+    "weather": "sunny",
+    "notes": "weekday service"
+  },
+  {
+    "id": 158,
+    "date": "2026-07-09",
+    "product": "Mori Blend (250g bag)",
+    "units": 4,
+    "revenue": 56,
+    "location": "Temple Bar",
+    "weather": "rain",
+    "notes": "weekday service"
+  },
+  {
+    "id": 159,
+    "date": "2026-07-09",
+    "product": "Mori Blend (250g bag)",
+    "units": 11,
+    "revenue": 154,
+    "location": "Smithfield Square",
+    "weather": "rain",
+    "notes": "weekday service"
+  },
+  {
+    "id": 160,
+    "date": "2026-07-10",
+    "product": "Mori Blend (250g bag)",
+    "units": 6,
+    "revenue": 84,
+    "location": "Smithfield Square",
+    "weather": "sunny",
+    "notes": "Friday evening rush"
+  },
+  {
+    "id": 161,
+    "date": "2026-07-10",
+    "product": "Buttered Croissant",
+    "units": 15,
+    "revenue": 52.5,
+    "location": "Grand Canal Dock",
+    "weather": "sunny",
+    "notes": "Friday evening rush"
+  },
+  {
+    "id": 162,
+    "date": "2026-07-10",
+    "product": "Buttered Croissant",
+    "units": 31,
+    "revenue": 108.5,
+    "location": "The Docklands — Mayor Square",
+    "weather": "sunny",
+    "notes": "Friday evening rush"
+  },
+  {
+    "id": 163,
+    "date": "2026-07-11",
+    "product": "Buttered Croissant",
+    "units": 11,
+    "revenue": 38.5,
+    "location": "Grand Canal Dock",
+    "weather": "windy",
+    "notes": "Saturday pop-up day"
+  },
+  {
+    "id": 164,
+    "date": "2026-07-11",
+    "product": "Matcha Latte",
+    "units": 7,
+    "revenue": 49,
+    "location": "Stoneybatter",
+    "weather": "windy",
+    "notes": "Saturday pop-up day"
+  },
+  {
+    "id": 165,
+    "date": "2026-07-12",
+    "product": "Espresso Tonic",
+    "units": 29,
+    "revenue": 217.5,
+    "location": "Stoneybatter",
+    "weather": "cloudy",
+    "notes": "Sunday market"
+  },
+  {
+    "id": 166,
+    "date": "2026-07-12",
+    "product": "Pour-Over",
+    "units": 17,
+    "revenue": 93.5,
+    "location": "The Docklands — Mayor Square",
+    "weather": "cloudy",
+    "notes": "Sunday market"
+  },
+  {
+    "id": 167,
+    "date": "2026-07-13",
+    "product": "Cold Brew Tonic",
+    "units": 15,
+    "revenue": 97.5,
+    "location": "Stoneybatter",
+    "weather": "cloudy",
+    "notes": "weekday service"
+  },
+  {
+    "id": 168,
+    "date": "2026-07-13",
+    "product": "Buttered Croissant",
+    "units": 6,
+    "revenue": 21,
+    "location": "Smithfield Square",
+    "weather": "cloudy",
+    "notes": "weekday service"
+  },
+  {
+    "id": 169,
+    "date": "2026-07-14",
+    "product": "Mori Blend (250g bag)",
+    "units": 19,
+    "revenue": 266,
+    "location": "Smithfield Square",
+    "weather": "sunny",
+    "notes": "weekday service"
+  },
+  {
+    "id": 170,
+    "date": "2026-07-14",
+    "product": "Pour-Over",
+    "units": 16,
+    "revenue": 88,
+    "location": "Stoneybatter",
+    "weather": "sunny",
+    "notes": "weekday service"
+  },
+  {
+    "id": 171,
+    "date": "2026-07-15",
+    "product": "Mori Blend (250g bag)",
+    "units": 18,
+    "revenue": 252,
+    "location": "Stoneybatter",
+    "weather": "cloudy",
+    "notes": "weekday service"
+  },
+  {
+    "id": 172,
+    "date": "2026-07-15",
+    "product": "Cortado",
+    "units": 10,
+    "revenue": 35,
+    "location": "Temple Bar",
+    "weather": "cloudy",
+    "notes": "weekday service"
+  },
+  {
+    "id": 173,
+    "date": "2026-07-15",
+    "product": "Buttered Croissant",
+    "units": 18,
+    "revenue": 63,
+    "location": "Stoneybatter",
+    "weather": "cloudy",
+    "notes": "weekday service"
+  },
+  {
+    "id": 174,
+    "date": "2026-07-15",
+    "product": "Pour-Over",
+    "units": 30,
+    "revenue": 165,
+    "location": "Temple Bar",
+    "weather": "cloudy",
+    "notes": "weekday service"
+  },
+  {
+    "id": 175,
+    "date": "2026-07-16",
+    "product": "Cold Brew Tonic",
+    "units": 7,
+    "revenue": 45.5,
+    "location": "Stoneybatter",
+    "weather": "cloudy",
+    "notes": "weekday service"
+  },
+  {
+    "id": 176,
+    "date": "2026-07-16",
+    "product": "Pour-Over",
+    "units": 6,
+    "revenue": 33,
+    "location": "The Docklands — Mayor Square",
+    "weather": "cloudy",
+    "notes": "weekday service"
+  },
+  {
+    "id": 177,
+    "date": "2026-07-17",
+    "product": "Pour-Over",
+    "units": 29,
+    "revenue": 159.5,
+    "location": "The Docklands — Mayor Square",
+    "weather": "sunny",
+    "notes": "Friday evening rush"
+  },
+  {
+    "id": 178,
+    "date": "2026-07-17",
+    "product": "Cold Brew Tonic",
+    "units": 39,
+    "revenue": 253.5,
+    "location": "Smithfield Square",
+    "weather": "sunny",
+    "notes": "Friday evening rush"
+  },
+  {
+    "id": 179,
+    "date": "2026-07-17",
+    "product": "Mori Blend (250g bag)",
+    "units": 54,
+    "revenue": 756,
+    "location": "Smithfield Square",
+    "weather": "sunny",
+    "notes": "Friday evening rush"
+  },
+  {
+    "id": 180,
+    "date": "2026-07-17",
+    "product": "Mori Blend (250g bag)",
+    "units": 37,
+    "revenue": 518,
+    "location": "Stoneybatter",
+    "weather": "sunny",
+    "notes": "Friday evening rush"
+  },
+  {
+    "id": 181,
+    "date": "2026-07-18",
+    "product": "Pour-Over",
+    "units": 12,
+    "revenue": 66,
+    "location": "Smithfield Square",
+    "weather": "rain",
+    "notes": "Saturday pop-up day"
+  },
+  {
+    "id": 182,
+    "date": "2026-07-18",
+    "product": "Pour-Over",
+    "units": 15,
+    "revenue": 82.5,
+    "location": "Grand Canal Dock",
+    "weather": "rain",
+    "notes": "Saturday pop-up day"
+  },
+  {
+    "id": 183,
+    "date": "2026-07-18",
+    "product": "Espresso Tonic",
+    "units": 9,
+    "revenue": 67.5,
+    "location": "Smithfield Square",
+    "weather": "rain",
+    "notes": "Saturday pop-up day"
+  },
+  {
+    "id": 184,
+    "date": "2026-07-18",
+    "product": "Espresso Tonic",
+    "units": 7,
+    "revenue": 52.5,
+    "location": "The Docklands — Mayor Square",
+    "weather": "rain",
+    "notes": "Saturday pop-up day"
+  },
+  {
+    "id": 185,
+    "date": "2026-07-19",
+    "product": "Buttered Croissant",
+    "units": 56,
+    "revenue": 196,
+    "location": "Temple Bar",
+    "weather": "sunny",
+    "notes": "Sunday market"
+  },
+  {
+    "id": 186,
+    "date": "2026-07-19",
+    "product": "Cold Brew Tonic",
+    "units": 54,
+    "revenue": 351,
+    "location": "Grand Canal Dock",
+    "weather": "sunny",
+    "notes": "Sunday market"
+  },
+  {
+    "id": 187,
+    "date": "2026-07-19",
+    "product": "Matcha Latte",
+    "units": 23,
+    "revenue": 161,
+    "location": "The Docklands — Mayor Square",
+    "weather": "sunny",
+    "notes": "Sunday market"
+  },
+  {
+    "id": 188,
+    "date": "2026-07-19",
+    "product": "Pour-Over",
+    "units": 52,
+    "revenue": 286,
+    "location": "Smithfield Square",
+    "weather": "sunny",
+    "notes": "Sunday market"
+  },
+  {
+    "id": 189,
+    "date": "2026-07-20",
+    "product": "Cortado",
+    "units": 7,
+    "revenue": 24.5,
+    "location": "The Docklands — Mayor Square",
+    "weather": "sunny",
+    "notes": "weekday service"
+  },
+  {
+    "id": 190,
+    "date": "2026-07-20",
+    "product": "Cortado",
+    "units": 40,
+    "revenue": 140,
+    "location": "Temple Bar",
+    "weather": "sunny",
+    "notes": "weekday service"
+  },
+  {
+    "id": 191,
+    "date": "2026-07-20",
+    "product": "Cortado",
+    "units": 29,
+    "revenue": 101.5,
+    "location": "Smithfield Square",
+    "weather": "sunny",
+    "notes": "weekday service"
+  },
+  {
+    "id": 192,
+    "date": "2026-07-20",
+    "product": "Buttered Croissant",
+    "units": 37,
+    "revenue": 129.5,
+    "location": "Stoneybatter",
+    "weather": "sunny",
+    "notes": "weekday service"
+  },
+  {
+    "id": 193,
+    "date": "2026-07-21",
+    "product": "Cold Brew Tonic",
+    "units": 7,
+    "revenue": 45.5,
+    "location": "The Docklands — Mayor Square",
+    "weather": "cloudy",
+    "notes": "weekday service"
+  },
+  {
+    "id": 194,
+    "date": "2026-07-21",
+    "product": "Matcha Latte",
+    "units": 18,
+    "revenue": 126,
+    "location": "Stoneybatter",
+    "weather": "cloudy",
+    "notes": "weekday service"
+  },
+  {
+    "id": 195,
+    "date": "2026-07-21",
+    "product": "Matcha Latte",
+    "units": 20,
+    "revenue": 140,
+    "location": "Temple Bar",
+    "weather": "cloudy",
+    "notes": "weekday service"
+  },
+  {
+    "id": 196,
+    "date": "2026-07-22",
+    "product": "Mori Blend (250g bag)",
+    "units": 7,
+    "revenue": 98,
+    "location": "Temple Bar",
+    "weather": "rain",
+    "notes": "weekday service"
+  },
+  {
+    "id": 197,
+    "date": "2026-07-22",
+    "product": "Cortado",
+    "units": 7,
+    "revenue": 24.5,
+    "location": "Temple Bar",
+    "weather": "rain",
+    "notes": "weekday service"
+  },
+  {
+    "id": 198,
+    "date": "2026-07-23",
+    "product": "Espresso Tonic",
+    "units": 16,
+    "revenue": 120,
+    "location": "The Docklands — Mayor Square",
+    "weather": "rain",
+    "notes": "weekday service"
+  },
+  {
+    "id": 199,
+    "date": "2026-07-23",
+    "product": "Pour-Over",
+    "units": 20,
+    "revenue": 110,
+    "location": "Stoneybatter",
+    "weather": "rain",
+    "notes": "weekday service"
+  },
+  {
+    "id": 200,
+    "date": "2026-07-23",
+    "product": "Matcha Latte",
+    "units": 18,
+    "revenue": 126,
+    "location": "Smithfield Square",
+    "weather": "rain",
+    "notes": "weekday service"
+  },
+  {
+    "id": 201,
+    "date": "2026-07-24",
+    "product": "Pour-Over",
+    "units": 33,
+    "revenue": 181.5,
+    "location": "Stoneybatter",
+    "weather": "sunny",
+    "notes": "Friday evening rush"
+  },
+  {
+    "id": 202,
+    "date": "2026-07-24",
+    "product": "Espresso Tonic",
+    "units": 44,
+    "revenue": 330,
+    "location": "Grand Canal Dock",
+    "weather": "sunny",
+    "notes": "Friday evening rush"
+  },
+  {
+    "id": 203,
+    "date": "2026-07-24",
+    "product": "Matcha Latte",
+    "units": 27,
+    "revenue": 189,
+    "location": "Grand Canal Dock",
+    "weather": "sunny",
+    "notes": "Friday evening rush"
+  },
+  {
+    "id": 204,
+    "date": "2026-07-24",
+    "product": "Mori Blend (250g bag)",
+    "units": 8,
+    "revenue": 112,
+    "location": "Grand Canal Dock",
+    "weather": "sunny",
+    "notes": "Friday evening rush"
+  },
+  {
+    "id": 205,
+    "date": "2026-07-25",
+    "product": "Mori Blend (250g bag)",
+    "units": 12,
+    "revenue": 168,
+    "location": "Temple Bar",
+    "weather": "rain",
+    "notes": "Saturday pop-up day"
+  },
+  {
+    "id": 206,
+    "date": "2026-07-25",
+    "product": "Buttered Croissant",
+    "units": 14,
+    "revenue": 49,
+    "location": "Temple Bar",
+    "weather": "rain",
+    "notes": "Saturday pop-up day"
+  },
+  {
+    "id": 207,
+    "date": "2026-07-25",
+    "product": "Mori Blend (250g bag)",
+    "units": 25,
+    "revenue": 350,
+    "location": "The Docklands — Mayor Square",
+    "weather": "rain",
+    "notes": "Saturday pop-up day"
+  },
+  {
+    "id": 208,
+    "date": "2026-07-26",
+    "product": "Matcha Latte",
+    "units": 42,
+    "revenue": 294,
+    "location": "Smithfield Square",
+    "weather": "sunny",
+    "notes": "Sunday market"
+  },
+  {
+    "id": 209,
+    "date": "2026-07-26",
+    "product": "Cold Brew Tonic",
+    "units": 21,
+    "revenue": 136.5,
+    "location": "Stoneybatter",
+    "weather": "sunny",
+    "notes": "Sunday market"
+  },
+  {
+    "id": 210,
+    "date": "2026-07-26",
+    "product": "Cold Brew Tonic",
+    "units": 27,
+    "revenue": 175.5,
+    "location": "Temple Bar",
+    "weather": "sunny",
+    "notes": "Sunday market"
+  },
+  {
+    "id": 211,
+    "date": "2026-07-26",
+    "product": "Espresso Tonic",
+    "units": 56,
+    "revenue": 420,
+    "location": "Stoneybatter",
+    "weather": "sunny",
+    "notes": "Sunday market"
+  },
+  {
+    "id": 212,
+    "date": "2026-07-27",
+    "product": "Matcha Latte",
+    "units": 20,
+    "revenue": 140,
+    "location": "The Docklands — Mayor Square",
+    "weather": "rain",
+    "notes": "weekday service"
+  },
+  {
+    "id": 213,
+    "date": "2026-07-27",
+    "product": "Matcha Latte",
+    "units": 14,
+    "revenue": 98,
+    "location": "Grand Canal Dock",
+    "weather": "rain",
+    "notes": "weekday service"
+  },
+  {
+    "id": 214,
+    "date": "2026-07-28",
+    "product": "Pour-Over",
+    "units": 7,
+    "revenue": 38.5,
+    "location": "Smithfield Square",
+    "weather": "windy",
+    "notes": "weekday service"
+  },
+  {
+    "id": 215,
+    "date": "2026-07-28",
+    "product": "Pour-Over",
+    "units": 28,
+    "revenue": 154,
+    "location": "Stoneybatter",
+    "weather": "windy",
+    "notes": "weekday service"
+  },
+  {
+    "id": 216,
+    "date": "2026-07-28",
+    "product": "Mori Blend (250g bag)",
+    "units": 14,
+    "revenue": 196,
+    "location": "Grand Canal Dock",
+    "weather": "windy",
+    "notes": "weekday service"
+  },
+  {
+    "id": 217,
+    "date": "2026-07-28",
+    "product": "Cortado",
+    "units": 18,
+    "revenue": 63,
+    "location": "Stoneybatter",
+    "weather": "windy",
+    "notes": "weekday service"
+  },
+  {
+    "id": 218,
+    "date": "2026-07-29",
+    "product": "Cold Brew Tonic",
+    "units": 4,
+    "revenue": 26,
+    "location": "Grand Canal Dock",
+    "weather": "rain",
+    "notes": "weekday service"
+  },
+  {
+    "id": 219,
+    "date": "2026-07-29",
+    "product": "Buttered Croissant",
+    "units": 13,
+    "revenue": 45.5,
+    "location": "Grand Canal Dock",
+    "weather": "rain",
+    "notes": "weekday service"
+  },
+  {
+    "id": 220,
+    "date": "2026-07-29",
+    "product": "Mori Blend (250g bag)",
+    "units": 10,
+    "revenue": 140,
+    "location": "Grand Canal Dock",
+    "weather": "rain",
+    "notes": "weekday service"
+  },
+  {
+    "id": 221,
+    "date": "2026-07-30",
+    "product": "Pour-Over",
+    "units": 11,
+    "revenue": 60.5,
+    "location": "Grand Canal Dock",
+    "weather": "sunny",
+    "notes": "weekday service"
+  },
+  {
+    "id": 222,
+    "date": "2026-07-30",
+    "product": "Pour-Over",
+    "units": 11,
+    "revenue": 60.5,
+    "location": "Grand Canal Dock",
+    "weather": "sunny",
+    "notes": "weekday service"
+  },
+  {
+    "id": 223,
+    "date": "2026-07-31",
+    "product": "Mori Blend (250g bag)",
+    "units": 9,
+    "revenue": 126,
+    "location": "Grand Canal Dock",
+    "weather": "rain",
+    "notes": "Friday evening rush"
+  },
+  {
+    "id": 224,
+    "date": "2026-07-31",
+    "product": "Matcha Latte",
+    "units": 24,
+    "revenue": 168,
+    "location": "Grand Canal Dock",
+    "weather": "rain",
+    "notes": "Friday evening rush"
+  },
+  {
+    "id": 225,
+    "date": "2026-07-31",
+    "product": "Buttered Croissant",
+    "units": 13,
+    "revenue": 45.5,
+    "location": "Stoneybatter",
+    "weather": "rain",
+    "notes": "Friday evening rush"
+  },
+  {
+    "id": 226,
+    "date": "2026-08-01",
+    "product": "Buttered Croissant",
+    "units": 25,
+    "revenue": 87.5,
+    "location": "Stoneybatter",
+    "weather": "rain",
+    "notes": "Saturday pop-up day"
+  },
+  {
+    "id": 227,
+    "date": "2026-08-01",
+    "product": "Cortado",
+    "units": 24,
+    "revenue": 84,
+    "location": "Stoneybatter",
+    "weather": "rain",
+    "notes": "Saturday pop-up day"
+  },
+  {
+    "id": 228,
+    "date": "2026-08-01",
+    "product": "Matcha Latte",
+    "units": 22,
+    "revenue": 154,
+    "location": "The Docklands — Mayor Square",
+    "weather": "rain",
+    "notes": "Saturday pop-up day"
+  },
+  {
+    "id": 229,
+    "date": "2026-08-02",
+    "product": "Buttered Croissant",
+    "units": 8,
+    "revenue": 28,
+    "location": "Stoneybatter",
+    "weather": "sunny",
+    "notes": "Sunday market"
+  },
+  {
+    "id": 230,
+    "date": "2026-08-02",
+    "product": "Matcha Latte",
+    "units": 21,
+    "revenue": 147,
+    "location": "Smithfield Square",
+    "weather": "sunny",
+    "notes": "Sunday market"
+  },
+  {
+    "id": 231,
+    "date": "2026-08-02",
+    "product": "Matcha Latte",
+    "units": 37,
+    "revenue": 259,
+    "location": "Temple Bar",
+    "weather": "sunny",
+    "notes": "Sunday market"
+  },
+  {
+    "id": 232,
+    "date": "2026-08-03",
+    "product": "Matcha Latte",
+    "units": 28,
+    "revenue": 196,
+    "location": "Temple Bar",
+    "weather": "windy",
+    "notes": "weekday service"
+  },
+  {
+    "id": 233,
+    "date": "2026-08-03",
+    "product": "Matcha Latte",
+    "units": 21,
+    "revenue": 147,
+    "location": "Temple Bar",
+    "weather": "windy",
+    "notes": "weekday service"
+  },
+  {
+    "id": 234,
+    "date": "2026-08-04",
+    "product": "Cold Brew Tonic",
+    "units": 32,
+    "revenue": 208,
+    "location": "Smithfield Square",
+    "weather": "cloudy",
+    "notes": "weekday service"
+  },
+  {
+    "id": 235,
+    "date": "2026-08-04",
+    "product": "Buttered Croissant",
+    "units": 28,
+    "revenue": 98,
+    "location": "Stoneybatter",
+    "weather": "cloudy",
+    "notes": "weekday service"
+  },
+  {
+    "id": 236,
+    "date": "2026-08-04",
+    "product": "Pour-Over",
+    "units": 11,
+    "revenue": 60.5,
+    "location": "Grand Canal Dock",
+    "weather": "cloudy",
+    "notes": "weekday service"
+  },
+  {
+    "id": 237,
+    "date": "2026-08-05",
+    "product": "Cold Brew Tonic",
+    "units": 7,
+    "revenue": 45.5,
+    "location": "The Docklands — Mayor Square",
+    "weather": "rain",
+    "notes": "weekday service"
+  },
+  {
+    "id": 238,
+    "date": "2026-08-05",
+    "product": "Cold Brew Tonic",
+    "units": 15,
+    "revenue": 97.5,
+    "location": "Temple Bar",
+    "weather": "rain",
+    "notes": "weekday service"
+  },
+  {
+    "id": 239,
+    "date": "2026-08-05",
+    "product": "Espresso Tonic",
+    "units": 13,
+    "revenue": 97.5,
+    "location": "Temple Bar",
+    "weather": "rain",
+    "notes": "weekday service"
+  },
+  {
+    "id": 240,
+    "date": "2026-08-06",
+    "product": "Cold Brew Tonic",
+    "units": 26,
+    "revenue": 169,
+    "location": "Smithfield Square",
+    "weather": "cloudy",
+    "notes": "weekday service"
+  },
+  {
+    "id": 241,
+    "date": "2026-08-06",
+    "product": "Cortado",
+    "units": 7,
+    "revenue": 24.5,
+    "location": "Temple Bar",
+    "weather": "cloudy",
+    "notes": "weekday service"
+  },
+  {
+    "id": 242,
+    "date": "2026-08-06",
+    "product": "Mori Blend (250g bag)",
+    "units": 23,
+    "revenue": 322,
+    "location": "The Docklands — Mayor Square",
+    "weather": "cloudy",
+    "notes": "weekday service"
+  },
+  {
+    "id": 243,
+    "date": "2026-08-06",
+    "product": "Matcha Latte",
+    "units": 8,
+    "revenue": 56,
+    "location": "Smithfield Square",
+    "weather": "cloudy",
+    "notes": "weekday service"
+  },
+  {
+    "id": 244,
+    "date": "2026-08-07",
+    "product": "Buttered Croissant",
+    "units": 22,
+    "revenue": 77,
+    "location": "Smithfield Square",
+    "weather": "rain",
+    "notes": "Friday evening rush"
+  },
+  {
+    "id": 245,
+    "date": "2026-08-07",
+    "product": "Cold Brew Tonic",
+    "units": 17,
+    "revenue": 110.5,
+    "location": "Temple Bar",
+    "weather": "rain",
+    "notes": "Friday evening rush"
+  },
+  {
+    "id": 246,
+    "date": "2026-08-07",
+    "product": "Espresso Tonic",
+    "units": 18,
+    "revenue": 135,
+    "location": "Grand Canal Dock",
+    "weather": "rain",
+    "notes": "Friday evening rush"
+  },
+  {
+    "id": 247,
+    "date": "2026-08-07",
+    "product": "Buttered Croissant",
+    "units": 12,
+    "revenue": 42,
+    "location": "Stoneybatter",
+    "weather": "rain",
+    "notes": "Friday evening rush"
+  },
+  {
+    "id": 248,
+    "date": "2026-08-08",
+    "product": "Pour-Over",
+    "units": 39,
+    "revenue": 214.5,
+    "location": "Smithfield Square",
+    "weather": "sunny",
+    "notes": "Saturday pop-up day"
+  },
+  {
+    "id": 249,
+    "date": "2026-08-08",
+    "product": "Pour-Over",
+    "units": 48,
+    "revenue": 264,
+    "location": "Stoneybatter",
+    "weather": "sunny",
+    "notes": "Saturday pop-up day"
+  },
+  {
+    "id": 250,
+    "date": "2026-08-09",
+    "product": "Espresso Tonic",
+    "units": 46,
+    "revenue": 345,
+    "location": "The Docklands — Mayor Square",
+    "weather": "sunny",
+    "notes": "Sunday market"
+  },
+  {
+    "id": 251,
+    "date": "2026-08-09",
+    "product": "Espresso Tonic",
+    "units": 48,
+    "revenue": 360,
+    "location": "The Docklands — Mayor Square",
+    "weather": "sunny",
+    "notes": "Sunday market"
+  },
+  {
+    "id": 252,
+    "date": "2026-08-10",
+    "product": "Buttered Croissant",
+    "units": 21,
+    "revenue": 73.5,
+    "location": "Grand Canal Dock",
+    "weather": "sunny",
+    "notes": "weekday service"
+  },
+  {
+    "id": 253,
+    "date": "2026-08-10",
+    "product": "Mori Blend (250g bag)",
+    "units": 26,
+    "revenue": 364,
+    "location": "Temple Bar",
+    "weather": "sunny",
+    "notes": "weekday service"
+  },
+  {
+    "id": 254,
+    "date": "2026-08-10",
+    "product": "Matcha Latte",
+    "units": 40,
+    "revenue": 280,
+    "location": "Smithfield Square",
+    "weather": "sunny",
+    "notes": "weekday service"
+  },
+  {
+    "id": 255,
+    "date": "2026-08-11",
+    "product": "Cortado",
+    "units": 13,
+    "revenue": 45.5,
+    "location": "Smithfield Square",
+    "weather": "rain",
+    "notes": "weekday service"
+  },
+  {
+    "id": 256,
+    "date": "2026-08-11",
+    "product": "Cortado",
+    "units": 20,
+    "revenue": 70,
+    "location": "The Docklands — Mayor Square",
+    "weather": "rain",
+    "notes": "weekday service"
+  },
+  {
+    "id": 257,
+    "date": "2026-08-11",
+    "product": "Buttered Croissant",
+    "units": 8,
+    "revenue": 28,
+    "location": "Stoneybatter",
+    "weather": "rain",
+    "notes": "weekday service"
+  },
+  {
+    "id": 258,
+    "date": "2026-08-11",
+    "product": "Matcha Latte",
+    "units": 17,
+    "revenue": 119,
+    "location": "Stoneybatter",
+    "weather": "rain",
+    "notes": "weekday service"
+  },
+  {
+    "id": 259,
+    "date": "2026-08-12",
+    "product": "Pour-Over",
+    "units": 37,
+    "revenue": 203.5,
+    "location": "Stoneybatter",
+    "weather": "sunny",
+    "notes": "weekday service"
+  },
+  {
+    "id": 260,
+    "date": "2026-08-12",
+    "product": "Buttered Croissant",
+    "units": 37,
+    "revenue": 129.5,
+    "location": "The Docklands — Mayor Square",
+    "weather": "sunny",
+    "notes": "weekday service"
+  },
+  {
+    "id": 261,
+    "date": "2026-08-12",
+    "product": "Buttered Croissant",
+    "units": 16,
+    "revenue": 56,
+    "location": "Smithfield Square",
+    "weather": "sunny",
+    "notes": "weekday service"
+  },
+  {
+    "id": 262,
+    "date": "2026-08-12",
+    "product": "Cold Brew Tonic",
+    "units": 27,
+    "revenue": 175.5,
+    "location": "Stoneybatter",
+    "weather": "sunny",
+    "notes": "weekday service"
+  }
+]

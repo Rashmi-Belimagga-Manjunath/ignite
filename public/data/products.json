@@ -1,0 +1,72 @@
+[
+  {
+    "id": 1,
+    "name": "Cold Brew Tonic",
+    "description": "Slow-steeped 18h cold brew with tonic and orange zest.",
+    "cost": 1.1,
+    "price": 6.5,
+    "margin": 5.4,
+    "category": "specialty coffee",
+    "hero": 1
+  },
+  {
+    "id": 2,
+    "name": "Espresso Tonic",
+    "description": "Double espresso over tonic and ice — the signature pop-up drink.",
+    "cost": 1.4,
+    "price": 7.5,
+    "margin": 6.1,
+    "category": "specialty coffee",
+    "hero": 1
+  },
+  {
+    "id": 3,
+    "name": "Matcha Latte",
+    "description": "Ceremonial-grade matcha, oat milk, light sweetness.",
+    "cost": 1.2,
+    "price": 7,
+    "margin": 5.8,
+    "category": "specialty coffee",
+    "hero": 1
+  },
+  {
+    "id": 4,
+    "name": "Cortado",
+    "description": "Double ristretto with silky steamed milk.",
+    "cost": 0.9,
+    "price": 3.5,
+    "margin": 2.6,
+    "category": "espresso",
+    "hero": 0
+  },
+  {
+    "id": 5,
+    "name": "Pour-Over",
+    "description": "Single-origin pour-over, brewed to order.",
+    "cost": 1.3,
+    "price": 5.5,
+    "margin": 4.2,
+    "category": "specialty coffee",
+    "hero": 0
+  },
+  {
+    "id": 6,
+    "name": "Buttered Croissant",
+    "description": "Fresh from a local Dublin bakery.",
+    "cost": 0.6,
+    "price": 3.5,
+    "margin": 2.9,
+    "category": "pastry",
+    "hero": 0
+  },
+  {
+    "id": 7,
+    "name": "Mori Blend (250g bag)",
+    "description": "House blend of the night's featured origin, to take home.",
+    "cost": 4,
+    "price": 14,
+    "margin": 10,
+    "category": "retail",
+    "hero": 0
+  }
+]

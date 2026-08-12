@@ -2,6 +2,7 @@ import { useState } from "react";
 import { AGENTS, pipelineOrder } from "../lib/agents.js";
 import { listTools } from "../lib/mcp.js";
 import { Eyebrow } from "../components/Eyebrow.jsx";
+import Portrait from "../components/Portrait.jsx";
 
 // The five agents, presented as a live-operations registry: each row carries an
 // ID, its role in the organisation, an operating status, its superpower and the
@@ -68,10 +69,10 @@ function Registry() {
             >
               <span className="idx col-span-1"><span className="n">AG-{String(i + 1).padStart(3, "0")}</span></span>
               <span className="col-span-3 flex items-center gap-3">
-                <span className="w-10 h-10 rounded-lg flex items-center justify-center text-lg shrink-0" style={{ background: `${a.color}1f`, border: `1px solid ${a.color}55` }}>{a.emoji}</span>
+                <Portrait name={`${a.name} ${a.role}`} size={40} />
                 <span>
                   <span className="font-display text-white font-bold block">{a.name}</span>
-                  <span className="text-[11px] text-zinc-500 font-mono">{a.role}</span>
+                  <span className="text-[11px] text-zinc-500 font-mono">{a.role} · {a.emoji}</span>
                 </span>
               </span>
               <span className="col-span-2 text-sm text-zinc-400">{a.title}</span>
@@ -129,7 +130,7 @@ function Chain() {
             <div key={id} className="flex-1 flex lg:flex-col items-center gap-3">
               <div className="flex-1 lg:flex-none w-full rounded-lg bg-black/30 border border-white/8 p-4">
                 <div className="flex items-center gap-2 mb-2">
-                  <span>{a.emoji}</span>
+                  <Portrait name={`${a.name} ${a.role}`} size={28} />
                   <span className="font-semibold text-white text-sm">{a.name}</span>
                   <span className="text-[10px] uppercase tracking-widest text-zinc-500 ml-auto">{a.role}</span>
                 </div>

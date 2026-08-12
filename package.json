@@ -10,6 +10,8 @@
     "preview": "vite preview",
     "seed": "node scripts/seed.mjs",
     "smoke": "node scripts/smoke.mjs",
+    "sync:public": "node scripts/sync-public.mjs",
+    "pub": "npm run seed && npm run sync:public && npm run build",
     "gendocs": "node scripts/gen_source_doc.mjs"
   },
   "dependencies": {

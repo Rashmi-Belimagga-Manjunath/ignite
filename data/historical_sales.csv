@@ -1,0 +1,263 @@
+id,date,product,units,revenue,location,weather,notes
+1,2026-05-15,Matcha Latte,12,84,Stoneybatter,cloudy,Friday evening rush
+2,2026-05-15,Mori Blend (250g bag),32,448,Stoneybatter,cloudy,Friday evening rush
+3,2026-05-16,Cortado,11,38.5,The Docklands — Mayor Square,rain,Saturday pop-up day
+4,2026-05-16,Espresso Tonic,15,112.5,Grand Canal Dock,rain,Saturday pop-up day
+5,2026-05-17,Buttered Croissant,35,122.5,Smithfield Square,cloudy,Sunday market
+6,2026-05-17,Matcha Latte,26,182,Smithfield Square,cloudy,Sunday market
+7,2026-05-18,Cold Brew Tonic,20,130,Grand Canal Dock,sunny,weekday service
+8,2026-05-18,Cold Brew Tonic,22,143,Temple Bar,sunny,weekday service
+9,2026-05-18,Matcha Latte,23,161,Smithfield Square,sunny,weekday service
+10,2026-05-19,Mori Blend (250g bag),33,462,The Docklands — Mayor Square,sunny,weekday service
+11,2026-05-19,Cold Brew Tonic,13,84.5,Stoneybatter,sunny,weekday service
+12,2026-05-20,Pour-Over,8,44,Smithfield Square,windy,weekday service
+13,2026-05-20,Buttered Croissant,25,87.5,The Docklands — Mayor Square,windy,weekday service
+14,2026-05-20,Buttered Croissant,9,31.5,Temple Bar,windy,weekday service
+15,2026-05-20,Espresso Tonic,22,165,The Docklands — Mayor Square,windy,weekday service
+16,2026-05-21,Cold Brew Tonic,13,84.5,Smithfield Square,rain,weekday service
+17,2026-05-21,Pour-Over,6,33,Temple Bar,rain,weekday service
+18,2026-05-22,Matcha Latte,35,245,Grand Canal Dock,windy,Friday evening rush
+19,2026-05-22,Pour-Over,19,104.5,Stoneybatter,windy,Friday evening rush
+20,2026-05-22,Mori Blend (250g bag),27,378,Stoneybatter,windy,Friday evening rush
+21,2026-05-22,Pour-Over,28,154,Grand Canal Dock,windy,Friday evening rush
+22,2026-05-23,Espresso Tonic,36,270,Stoneybatter,cloudy,Saturday pop-up day
+23,2026-05-23,Espresso Tonic,28,210,Stoneybatter,cloudy,Saturday pop-up day
+24,2026-05-24,Buttered Croissant,17,59.5,Stoneybatter,rain,Sunday market
+25,2026-05-24,Cortado,15,52.5,Stoneybatter,rain,Sunday market
+26,2026-05-24,Mori Blend (250g bag),12,168,The Docklands — Mayor Square,rain,Sunday market
+27,2026-05-25,Mori Blend (250g bag),9,126,Stoneybatter,sunny,weekday service
+28,2026-05-25,Mori Blend (250g bag),9,126,Stoneybatter,sunny,weekday service
+29,2026-05-25,Pour-Over,30,165,Grand Canal Dock,sunny,weekday service
+30,2026-05-26,Mori Blend (250g bag),29,406,Smithfield Square,cloudy,weekday service
+31,2026-05-26,Mori Blend (250g bag),8,112,Stoneybatter,cloudy,weekday service
+32,2026-05-27,Buttered Croissant,34,119,Temple Bar,sunny,weekday service
+33,2026-05-27,Mori Blend (250g bag),14,196,Stoneybatter,sunny,weekday service
+34,2026-05-27,Espresso Tonic,21,157.5,Smithfield Square,sunny,weekday service
+35,2026-05-27,Espresso Tonic,38,285,Smithfield Square,sunny,weekday service
+36,2026-05-28,Cortado,8,28,The Docklands — Mayor Square,cloudy,weekday service
+37,2026-05-28,Espresso Tonic,23,172.5,Stoneybatter,cloudy,weekday service
+38,2026-05-28,Mori Blend (250g bag),29,406,Grand Canal Dock,cloudy,weekday service
+39,2026-05-28,Buttered Croissant,21,73.5,Stoneybatter,cloudy,weekday service
+40,2026-05-29,Espresso Tonic,24,180,Temple Bar,rain,Friday evening rush
+41,2026-05-29,Cold Brew Tonic,16,104,The Docklands — Mayor Square,rain,Friday evening rush
+42,2026-05-29,Cold Brew Tonic,17,110.5,Grand Canal Dock,rain,Friday evening rush
+43,2026-05-30,Cold Brew Tonic,8,52,The Docklands — Mayor Square,cloudy,Saturday pop-up day
+44,2026-05-30,Buttered Croissant,27,94.5,Smithfield Square,cloudy,Saturday pop-up day
+45,2026-05-31,Cortado,21,73.5,Temple Bar,rain,Sunday market
+46,2026-05-31,Matcha Latte,6,42,Smithfield Square,rain,Sunday market
+47,2026-05-31,Espresso Tonic,24,180,Smithfield Square,rain,Sunday market
+48,2026-06-01,Pour-Over,29,159.5,Temple Bar,cloudy,weekday service
+49,2026-06-01,Cold Brew Tonic,4,26,Smithfield Square,cloudy,weekday service
+50,2026-06-01,Pour-Over,25,137.5,Stoneybatter,cloudy,weekday service
+51,2026-06-02,Buttered Croissant,20,70,The Docklands — Mayor Square,cloudy,weekday service
+52,2026-06-02,Buttered Croissant,6,21,Stoneybatter,cloudy,weekday service
+53,2026-06-03,Buttered Croissant,25,87.5,Stoneybatter,sunny,weekday service
+54,2026-06-03,Cold Brew Tonic,25,162.5,Temple Bar,sunny,weekday service
+55,2026-06-03,Cold Brew Tonic,29,188.5,Smithfield Square,sunny,weekday service
+56,2026-06-03,Matcha Latte,34,238,Temple Bar,sunny,weekday service
+57,2026-06-04,Espresso Tonic,15,112.5,Smithfield Square,windy,weekday service
+58,2026-06-04,Pour-Over,10,55,Stoneybatter,windy,weekday service
+59,2026-06-04,Matcha Latte,15,105,Grand Canal Dock,windy,weekday service
+60,2026-06-05,Cortado,23,80.5,Temple Bar,rain,Friday evening rush
+61,2026-06-05,Buttered Croissant,12,42,Stoneybatter,rain,Friday evening rush
+62,2026-06-05,Buttered Croissant,13,45.5,Temple Bar,rain,Friday evening rush
+63,2026-06-05,Buttered Croissant,6,21,The Docklands — Mayor Square,rain,Friday evening rush
+64,2026-06-06,Cortado,9,31.5,The Docklands — Mayor Square,cloudy,Saturday pop-up day
+65,2026-06-06,Cortado,34,119,The Docklands — Mayor Square,cloudy,Saturday pop-up day
+66,2026-06-06,Cold Brew Tonic,9,58.5,Temple Bar,cloudy,Saturday pop-up day
+67,2026-06-07,Pour-Over,7,38.5,Stoneybatter,cloudy,Sunday market
+68,2026-06-07,Espresso Tonic,31,232.5,Stoneybatter,cloudy,Sunday market
+69,2026-06-07,Cortado,18,63,Smithfield Square,cloudy,Sunday market
+70,2026-06-07,Pour-Over,27,148.5,Smithfield Square,cloudy,Sunday market
+71,2026-06-08,Matcha Latte,4,28,Smithfield Square,rain,weekday service
+72,2026-06-08,Cold Brew Tonic,2,13,Stoneybatter,rain,weekday service
+73,2026-06-08,Cold Brew Tonic,6,39,The Docklands — Mayor Square,rain,weekday service
+74,2026-06-08,Cortado,2,7,Temple Bar,rain,weekday service
+75,2026-06-09,Mori Blend (250g bag),31,434,Temple Bar,sunny,weekday service
+76,2026-06-09,Matcha Latte,34,238,Grand Canal Dock,sunny,weekday service
+77,2026-06-10,Espresso Tonic,4,30,Temple Bar,cloudy,weekday service
+78,2026-06-10,Mori Blend (250g bag),27,378,Stoneybatter,cloudy,weekday service
+79,2026-06-11,Cold Brew Tonic,23,149.5,Stoneybatter,sunny,weekday service
+80,2026-06-11,Cold Brew Tonic,29,188.5,Grand Canal Dock,sunny,weekday service
+81,2026-06-11,Cold Brew Tonic,23,149.5,Grand Canal Dock,sunny,weekday service
+82,2026-06-12,Cold Brew Tonic,38,247,Stoneybatter,cloudy,Friday evening rush
+83,2026-06-12,Buttered Croissant,39,136.5,Smithfield Square,cloudy,Friday evening rush
+84,2026-06-12,Cold Brew Tonic,39,253.5,Stoneybatter,cloudy,Friday evening rush
+85,2026-06-13,Cold Brew Tonic,4,26,Smithfield Square,rain,Saturday pop-up day
+86,2026-06-13,Espresso Tonic,13,97.5,Temple Bar,rain,Saturday pop-up day
+87,2026-06-13,Mori Blend (250g bag),14,196,Stoneybatter,rain,Saturday pop-up day
+88,2026-06-14,Espresso Tonic,6,45,Stoneybatter,sunny,Sunday market
+89,2026-06-14,Matcha Latte,40,280,Stoneybatter,sunny,Sunday market
+90,2026-06-15,Pour-Over,15,82.5,The Docklands — Mayor Square,sunny,weekday service
+91,2026-06-15,Cold Brew Tonic,15,97.5,Grand Canal Dock,sunny,weekday service
+92,2026-06-16,Pour-Over,15,82.5,Temple Bar,windy,weekday service
+93,2026-06-16,Cortado,5,17.5,Smithfield Square,windy,weekday service
+94,2026-06-16,Cortado,15,52.5,Stoneybatter,windy,weekday service
+95,2026-06-17,Cortado,24,84,Grand Canal Dock,sunny,weekday service
+96,2026-06-17,Pour-Over,22,121,Temple Bar,sunny,weekday service
+97,2026-06-17,Mori Blend (250g bag),28,392,Stoneybatter,sunny,weekday service
+98,2026-06-18,Espresso Tonic,22,165,Temple Bar,sunny,weekday service
+99,2026-06-18,Cortado,11,38.5,Stoneybatter,sunny,weekday service
+100,2026-06-18,Espresso Tonic,19,142.5,Temple Bar,sunny,weekday service
+101,2026-06-18,Mori Blend (250g bag),17,238,Grand Canal Dock,sunny,weekday service
+102,2026-06-19,Espresso Tonic,17,127.5,The Docklands — Mayor Square,rain,Friday evening rush
+103,2026-06-19,Mori Blend (250g bag),17,238,Temple Bar,rain,Friday evening rush
+104,2026-06-20,Matcha Latte,20,140,Smithfield Square,cloudy,Saturday pop-up day
+105,2026-06-20,Pour-Over,16,88,Stoneybatter,cloudy,Saturday pop-up day
+106,2026-06-21,Pour-Over,7,38.5,Temple Bar,sunny,Sunday market
+107,2026-06-21,Cortado,16,56,Smithfield Square,sunny,Sunday market
+108,2026-06-22,Pour-Over,7,38.5,Grand Canal Dock,rain,weekday service
+109,2026-06-22,Buttered Croissant,9,31.5,Grand Canal Dock,rain,weekday service
+110,2026-06-23,Espresso Tonic,20,150,Grand Canal Dock,cloudy,weekday service
+111,2026-06-23,Buttered Croissant,7,24.5,Grand Canal Dock,cloudy,weekday service
+112,2026-06-24,Cortado,17,59.5,Smithfield Square,cloudy,weekday service
+113,2026-06-24,Espresso Tonic,8,60,Grand Canal Dock,cloudy,weekday service
+114,2026-06-24,Mori Blend (250g bag),8,112,Stoneybatter,cloudy,weekday service
+115,2026-06-25,Espresso Tonic,13,97.5,The Docklands — Mayor Square,cloudy,weekday service
+116,2026-06-25,Cortado,26,91,Stoneybatter,cloudy,weekday service
+117,2026-06-25,Buttered Croissant,10,35,Smithfield Square,cloudy,weekday service
+118,2026-06-26,Espresso Tonic,8,60,The Docklands — Mayor Square,rain,Friday evening rush
+119,2026-06-26,Cortado,4,14,Smithfield Square,rain,Friday evening rush
+120,2026-06-26,Pour-Over,4,22,Stoneybatter,rain,Friday evening rush
+121,2026-06-27,Cold Brew Tonic,21,136.5,Stoneybatter,cloudy,Saturday pop-up day
+122,2026-06-27,Cortado,34,119,Stoneybatter,cloudy,Saturday pop-up day
+123,2026-06-28,Cold Brew Tonic,28,182,The Docklands — Mayor Square,sunny,Sunday market
+124,2026-06-28,Pour-Over,42,231,Grand Canal Dock,sunny,Sunday market
+125,2026-06-28,Pour-Over,25,137.5,The Docklands — Mayor Square,sunny,Sunday market
+126,2026-06-29,Cortado,10,35,Smithfield Square,rain,weekday service
+127,2026-06-29,Cold Brew Tonic,13,84.5,The Docklands — Mayor Square,rain,weekday service
+128,2026-06-29,Cold Brew Tonic,10,65,The Docklands — Mayor Square,rain,weekday service
+129,2026-06-29,Pour-Over,5,27.5,Smithfield Square,rain,weekday service
+130,2026-06-30,Buttered Croissant,23,80.5,Temple Bar,sunny,weekday service
+131,2026-06-30,Cold Brew Tonic,33,214.5,Grand Canal Dock,sunny,weekday service
+132,2026-06-30,Cortado,21,73.5,Stoneybatter,sunny,weekday service
+133,2026-07-01,Espresso Tonic,10,75,Smithfield Square,rain,weekday service
+134,2026-07-01,Cold Brew Tonic,8,52,Stoneybatter,rain,weekday service
+135,2026-07-02,Buttered Croissant,3,10.5,Stoneybatter,cloudy,weekday service
+136,2026-07-02,Matcha Latte,7,49,Smithfield Square,cloudy,weekday service
+137,2026-07-02,Pour-Over,7,38.5,Stoneybatter,cloudy,weekday service
+138,2026-07-03,Mori Blend (250g bag),24,336,Smithfield Square,cloudy,Friday evening rush
+139,2026-07-03,Buttered Croissant,10,35,Stoneybatter,cloudy,Friday evening rush
+140,2026-07-03,Buttered Croissant,33,115.5,Grand Canal Dock,cloudy,Friday evening rush
+141,2026-07-03,Matcha Latte,9,63,Stoneybatter,cloudy,Friday evening rush
+142,2026-07-04,Espresso Tonic,19,142.5,Smithfield Square,rain,Saturday pop-up day
+143,2026-07-04,Buttered Croissant,8,28,Stoneybatter,rain,Saturday pop-up day
+144,2026-07-04,Pour-Over,5,27.5,Stoneybatter,rain,Saturday pop-up day
+145,2026-07-04,Buttered Croissant,21,73.5,Grand Canal Dock,rain,Saturday pop-up day
+146,2026-07-05,Matcha Latte,10,70,The Docklands — Mayor Square,cloudy,Sunday market
+147,2026-07-05,Mori Blend (250g bag),22,308,Temple Bar,cloudy,Sunday market
+148,2026-07-05,Espresso Tonic,10,75,Stoneybatter,cloudy,Sunday market
+149,2026-07-06,Cold Brew Tonic,10,65,Stoneybatter,rain,weekday service
+150,2026-07-06,Matcha Latte,6,42,Temple Bar,rain,weekday service
+151,2026-07-06,Cold Brew Tonic,14,91,Stoneybatter,rain,weekday service
+152,2026-07-07,Cortado,21,73.5,Temple Bar,cloudy,weekday service
+153,2026-07-07,Cold Brew Tonic,22,143,The Docklands — Mayor Square,cloudy,weekday service
+154,2026-07-08,Mori Blend (250g bag),13,182,Stoneybatter,sunny,weekday service
+155,2026-07-08,Cortado,6,21,The Docklands — Mayor Square,sunny,weekday service
+156,2026-07-08,Pour-Over,14,77,Temple Bar,sunny,weekday service
+157,2026-07-08,Cold Brew Tonic,10,65,The Docklands — Mayor Square,sunny,weekday service
+158,2026-07-09,Mori Blend (250g bag),4,56,Temple Bar,rain,weekday service
+159,2026-07-09,Mori Blend (250g bag),11,154,Smithfield Square,rain,weekday service
+160,2026-07-10,Mori Blend (250g bag),6,84,Smithfield Square,sunny,Friday evening rush
+161,2026-07-10,Buttered Croissant,15,52.5,Grand Canal Dock,sunny,Friday evening rush
+162,2026-07-10,Buttered Croissant,31,108.5,The Docklands — Mayor Square,sunny,Friday evening rush
+163,2026-07-11,Buttered Croissant,11,38.5,Grand Canal Dock,windy,Saturday pop-up day
+164,2026-07-11,Matcha Latte,7,49,Stoneybatter,windy,Saturday pop-up day
+165,2026-07-12,Espresso Tonic,29,217.5,Stoneybatter,cloudy,Sunday market
+166,2026-07-12,Pour-Over,17,93.5,The Docklands — Mayor Square,cloudy,Sunday market
+167,2026-07-13,Cold Brew Tonic,15,97.5,Stoneybatter,cloudy,weekday service
+168,2026-07-13,Buttered Croissant,6,21,Smithfield Square,cloudy,weekday service
+169,2026-07-14,Mori Blend (250g bag),19,266,Smithfield Square,sunny,weekday service
+170,2026-07-14,Pour-Over,16,88,Stoneybatter,sunny,weekday service
+171,2026-07-15,Mori Blend (250g bag),18,252,Stoneybatter,cloudy,weekday service
+172,2026-07-15,Cortado,10,35,Temple Bar,cloudy,weekday service
+173,2026-07-15,Buttered Croissant,18,63,Stoneybatter,cloudy,weekday service
+174,2026-07-15,Pour-Over,30,165,Temple Bar,cloudy,weekday service
+175,2026-07-16,Cold Brew Tonic,7,45.5,Stoneybatter,cloudy,weekday service
+176,2026-07-16,Pour-Over,6,33,The Docklands — Mayor Square,cloudy,weekday service
+177,2026-07-17,Pour-Over,29,159.5,The Docklands — Mayor Square,sunny,Friday evening rush
+178,2026-07-17,Cold Brew Tonic,39,253.5,Smithfield Square,sunny,Friday evening rush
+179,2026-07-17,Mori Blend (250g bag),54,756,Smithfield Square,sunny,Friday evening rush
+180,2026-07-17,Mori Blend (250g bag),37,518,Stoneybatter,sunny,Friday evening rush
+181,2026-07-18,Pour-Over,12,66,Smithfield Square,rain,Saturday pop-up day
+182,2026-07-18,Pour-Over,15,82.5,Grand Canal Dock,rain,Saturday pop-up day
+183,2026-07-18,Espresso Tonic,9,67.5,Smithfield Square,rain,Saturday pop-up day
+184,2026-07-18,Espresso Tonic,7,52.5,The Docklands — Mayor Square,rain,Saturday pop-up day
+185,2026-07-19,Buttered Croissant,56,196,Temple Bar,sunny,Sunday market
+186,2026-07-19,Cold Brew Tonic,54,351,Grand Canal Dock,sunny,Sunday market
+187,2026-07-19,Matcha Latte,23,161,The Docklands — Mayor Square,sunny,Sunday market
+188,2026-07-19,Pour-Over,52,286,Smithfield Square,sunny,Sunday market
+189,2026-07-20,Cortado,7,24.5,The Docklands — Mayor Square,sunny,weekday service
+190,2026-07-20,Cortado,40,140,Temple Bar,sunny,weekday service
+191,2026-07-20,Cortado,29,101.5,Smithfield Square,sunny,weekday service
+192,2026-07-20,Buttered Croissant,37,129.5,Stoneybatter,sunny,weekday service
+193,2026-07-21,Cold Brew Tonic,7,45.5,The Docklands — Mayor Square,cloudy,weekday service
+194,2026-07-21,Matcha Latte,18,126,Stoneybatter,cloudy,weekday service
+195,2026-07-21,Matcha Latte,20,140,Temple Bar,cloudy,weekday service
+196,2026-07-22,Mori Blend (250g bag),7,98,Temple Bar,rain,weekday service
+197,2026-07-22,Cortado,7,24.5,Temple Bar,rain,weekday service
+198,2026-07-23,Espresso Tonic,16,120,The Docklands — Mayor Square,rain,weekday service
+199,2026-07-23,Pour-Over,20,110,Stoneybatter,rain,weekday service
+200,2026-07-23,Matcha Latte,18,126,Smithfield Square,rain,weekday service
+201,2026-07-24,Pour-Over,33,181.5,Stoneybatter,sunny,Friday evening rush
+202,2026-07-24,Espresso Tonic,44,330,Grand Canal Dock,sunny,Friday evening rush
+203,2026-07-24,Matcha Latte,27,189,Grand Canal Dock,sunny,Friday evening rush
+204,2026-07-24,Mori Blend (250g bag),8,112,Grand Canal Dock,sunny,Friday evening rush
+205,2026-07-25,Mori Blend (250g bag),12,168,Temple Bar,rain,Saturday pop-up day
+206,2026-07-25,Buttered Croissant,14,49,Temple Bar,rain,Saturday pop-up day
+207,2026-07-25,Mori Blend (250g bag),25,350,The Docklands — Mayor Square,rain,Saturday pop-up day
+208,2026-07-26,Matcha Latte,42,294,Smithfield Square,sunny,Sunday market
+209,2026-07-26,Cold Brew Tonic,21,136.5,Stoneybatter,sunny,Sunday market
+210,2026-07-26,Cold Brew Tonic,27,175.5,Temple Bar,sunny,Sunday market
+211,2026-07-26,Espresso Tonic,56,420,Stoneybatter,sunny,Sunday market
+212,2026-07-27,Matcha Latte,20,140,The Docklands — Mayor Square,rain,weekday service
+213,2026-07-27,Matcha Latte,14,98,Grand Canal Dock,rain,weekday service
+214,2026-07-28,Pour-Over,7,38.5,Smithfield Square,windy,weekday service
+215,2026-07-28,Pour-Over,28,154,Stoneybatter,windy,weekday service
+216,2026-07-28,Mori Blend (250g bag),14,196,Grand Canal Dock,windy,weekday service
+217,2026-07-28,Cortado,18,63,Stoneybatter,windy,weekday service
+218,2026-07-29,Cold Brew Tonic,4,26,Grand Canal Dock,rain,weekday service
+219,2026-07-29,Buttered Croissant,13,45.5,Grand Canal Dock,rain,weekday service
+220,2026-07-29,Mori Blend (250g bag),10,140,Grand Canal Dock,rain,weekday service
+221,2026-07-30,Pour-Over,11,60.5,Grand Canal Dock,sunny,weekday service
+222,2026-07-30,Pour-Over,11,60.5,Grand Canal Dock,sunny,weekday service
+223,2026-07-31,Mori Blend (250g bag),9,126,Grand Canal Dock,rain,Friday evening rush
+224,2026-07-31,Matcha Latte,24,168,Grand Canal Dock,rain,Friday evening rush
+225,2026-07-31,Buttered Croissant,13,45.5,Stoneybatter,rain,Friday evening rush
+226,2026-08-01,Buttered Croissant,25,87.5,Stoneybatter,rain,Saturday pop-up day
+227,2026-08-01,Cortado,24,84,Stoneybatter,rain,Saturday pop-up day
+228,2026-08-01,Matcha Latte,22,154,The Docklands — Mayor Square,rain,Saturday pop-up day
+229,2026-08-02,Buttered Croissant,8,28,Stoneybatter,sunny,Sunday market
+230,2026-08-02,Matcha Latte,21,147,Smithfield Square,sunny,Sunday market
+231,2026-08-02,Matcha Latte,37,259,Temple Bar,sunny,Sunday market
+232,2026-08-03,Matcha Latte,28,196,Temple Bar,windy,weekday service
+233,2026-08-03,Matcha Latte,21,147,Temple Bar,windy,weekday service
+234,2026-08-04,Cold Brew Tonic,32,208,Smithfield Square,cloudy,weekday service
+235,2026-08-04,Buttered Croissant,28,98,Stoneybatter,cloudy,weekday service
+236,2026-08-04,Pour-Over,11,60.5,Grand Canal Dock,cloudy,weekday service
+237,2026-08-05,Cold Brew Tonic,7,45.5,The Docklands — Mayor Square,rain,weekday service
+238,2026-08-05,Cold Brew Tonic,15,97.5,Temple Bar,rain,weekday service
+239,2026-08-05,Espresso Tonic,13,97.5,Temple Bar,rain,weekday service
+240,2026-08-06,Cold Brew Tonic,26,169,Smithfield Square,cloudy,weekday service
+241,2026-08-06,Cortado,7,24.5,Temple Bar,cloudy,weekday service
+242,2026-08-06,Mori Blend (250g bag),23,322,The Docklands — Mayor Square,cloudy,weekday service
+243,2026-08-06,Matcha Latte,8,56,Smithfield Square,cloudy,weekday service
+244,2026-08-07,Buttered Croissant,22,77,Smithfield Square,rain,Friday evening rush
+245,2026-08-07,Cold Brew Tonic,17,110.5,Temple Bar,rain,Friday evening rush
+246,2026-08-07,Espresso Tonic,18,135,Grand Canal Dock,rain,Friday evening rush
+247,2026-08-07,Buttered Croissant,12,42,Stoneybatter,rain,Friday evening rush
+248,2026-08-08,Pour-Over,39,214.5,Smithfield Square,sunny,Saturday pop-up day
+249,2026-08-08,Pour-Over,48,264,Stoneybatter,sunny,Saturday pop-up day
+250,2026-08-09,Espresso Tonic,46,345,The Docklands — Mayor Square,sunny,Sunday market
+251,2026-08-09,Espresso Tonic,48,360,The Docklands — Mayor Square,sunny,Sunday market
+252,2026-08-10,Buttered Croissant,21,73.5,Grand Canal Dock,sunny,weekday service
+253,2026-08-10,Mori Blend (250g bag),26,364,Temple Bar,sunny,weekday service
+254,2026-08-10,Matcha Latte,40,280,Smithfield Square,sunny,weekday service
+255,2026-08-11,Cortado,13,45.5,Smithfield Square,rain,weekday service
+256,2026-08-11,Cortado,20,70,The Docklands — Mayor Square,rain,weekday service
+257,2026-08-11,Buttered Croissant,8,28,Stoneybatter,rain,weekday service
+258,2026-08-11,Matcha Latte,17,119,Stoneybatter,rain,weekday service
+259,2026-08-12,Pour-Over,37,203.5,Stoneybatter,sunny,weekday service
+260,2026-08-12,Buttered Croissant,37,129.5,The Docklands — Mayor Square,sunny,weekday service
+261,2026-08-12,Buttered Croissant,16,56,Smithfield Square,sunny,weekday service
+262,2026-08-12,Cold Brew Tonic,27,175.5,Stoneybatter,sunny,weekday service

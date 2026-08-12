@@ -1,0 +1,13 @@
+[
+  {
+    "id": 1,
+    "area": "Dublin pop-up (1 day)",
+    "permits_cost": 120,
+    "insurance_cost": 90,
+    "wifi_tether_cost": 30,
+    "generator_cost": 180,
+    "delivery_cost": 60,
+    "marketing_budget": 150,
+    "misc_cost": 40
+  }
+]

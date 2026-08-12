@@ -23,6 +23,7 @@ const LINKS = [
   { to: "/data", label: "Live Data" },
   { to: "/agents", label: "Agents" },
   { to: "/artefacts", label: "Artefacts" },
+  { to: "/log", label: "Log" },
   { to: "/chat", label: "Command" },
 ];
 

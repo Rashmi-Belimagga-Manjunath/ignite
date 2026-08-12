@@ -5,13 +5,15 @@
 // Synthetic does not mean static: every number below is read at query time by the agents.
 
 import { DatabaseSync } from "node:sqlite";
-import { mkdirSync } from "node:fs";
+import { mkdirSync, writeFileSync, copyFileSync } from "node:fs";
 import { dirname, join } from "node:path";
 import { fileURLToPath } from "node:url";
 
 const __dirname = dirname(fileURLToPath(import.meta.url));
 const DB_PATH = join(__dirname, "..", "public", "ignite.db");
+const DATA_DIR = join(__dirname, "..", "data");
 mkdirSync(dirname(DB_PATH), { recursive: true });
+mkdirSync(DATA_DIR, { recursive: true });
 
 const db = new DatabaseSync(DB_PATH);
 
@@ -233,4 +235,38 @@ const counts = db.prepare(`
 `).get();
 
 console.log(`Seeded ignite.db: ${counts.products} products, ${counts.inventory} inventory items, ${counts.locations} locations, ${counts.sales_rows} historical sales rows (€${counts.total_revenue} total revenue)`);
+
+// ---------- Export the synthetic data to data/ (JSON + CSV + db copy) so the
+// data lives in the repo as a real, inspectable dataset. ----------
+const TABLES = [
+  "business_profile",
+  "products",
+  "inventory",
+  "operations",
+  "brand",
+  "locations",
+  "historical_sales",
+];
+
+function toCsv(rows) {
+  if (!rows.length) return "";
+  const cols = Object.keys(rows[0]);
+  const esc = (v) => {
+    const s = v === null || v === undefined ? "" : String(v);
+    return /[",\n]/.test(s) ? `"${s.replace(/"/g, '""')}"` : s;
+  };
+  const lines = [cols.join(",")];
+  for (const r of rows) lines.push(cols.map((c) => esc(r[c])).join(","));
+  return lines.join("\n") + "\n";
+}
+
+for (const table of TABLES) {
+  const rows = db.prepare(`SELECT * FROM ${table}`).all();
+  writeFileSync(join(DATA_DIR, `${table}.json`), JSON.stringify(rows, null, 2) + "\n");
+  writeFileSync(join(DATA_DIR, `${table}.csv`), toCsv(rows));
+  console.log(`  exported ${table}: ${rows.length} rows → data/${table}.json / .csv`);
+}
+copyFileSync(DB_PATH, join(DATA_DIR, "ignite.db"));
+console.log("  copied ignite.db → data/ignite.db");
+
 db.close();
