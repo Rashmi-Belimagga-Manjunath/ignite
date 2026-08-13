@@ -103,6 +103,12 @@
 - **`Agents.jsx`**: status strip, dossier grid and chain now scroll-reveal with stagger.
 - Home + Agents polish completed; build green (500 KB bundle) with all motion markers verified in
   preview.
+- **Dramatic hero banner — the "signal room"** (after user feedback the motion was too subtle):
+  full-viewport hero with an always-moving **live wire ticker** (the five agents mid-action),
+  a **LiveBoard** that cycles each agent's current job every 1.4s with an indeterminate progress
+  bar, **live stat chips** (5 agents / 34 tools / 262 sales / 82% confidence) with pulsing dots,
+  a breathing **title glow**, a **scrolling perspective floor grid**, a sweeping **scanline** across
+  the hero, and **sonar pulse rings** radiating behind the monitor.
 
 ## Verified
 - `npm run smoke` PASSED: DB loads (7 tables, 262 sales), full 5-agent pipeline with live tools,

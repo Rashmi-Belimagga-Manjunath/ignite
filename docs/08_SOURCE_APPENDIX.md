@@ -1566,7 +1566,7 @@ export function useLastRun() {
 
 ```
 
-## `src/index.css` — 240 lines
+## `src/index.css` — 289 lines
 
 ```
 @import "tailwindcss";
@@ -1787,6 +1787,55 @@ body { background: #08080f; }
 .chip-p2 { transform: translate(calc(var(--mx, 0) * 38px), calc(var(--my, 0) * 26px)); }
 .chip-p3 { transform: translate(calc(var(--mx, 0) * -48px), calc(var(--my, 0) * 34px)); }
 .chip-p4 { transform: translate(calc(var(--mx, 0) * 26px), calc(var(--my, 0) * -30px)); }
+
+/* ---- signal room hero ---- */
+.hero-scanline {
+  position: absolute; inset: 0; pointer-events: none; z-index: 1;
+  background: linear-gradient(115deg, transparent 42%, rgba(245,197,24,0.07) 50%, transparent 58%);
+  background-size: 320% 320%;
+  animation: scan-sweep 7s linear infinite;
+}
+@keyframes scan-sweep { from { background-position: 130% 0; } to { background-position: -50% 0; } }
+
+.hero-floor {
+  position: absolute; left: -12%; right: -12%; bottom: -1px; height: 40vh; z-index: 0;
+  background-image:
+    radial-gradient(60% 90% at 50% 100%, rgba(245,197,24,0.14), transparent 70%),
+    linear-gradient(rgba(255,255,255,0.06) 1px, transparent 1px),
+    linear-gradient(90deg, rgba(255,255,255,0.06) 1px, transparent 1px);
+  background-size: 100% 100%, 44px 44px, 44px 44px;
+  transform: perspective(380px) rotateX(64deg);
+  transform-origin: 50% 100%;
+  animation: floor-scroll 2.2s linear infinite;
+  -webkit-mask-image: linear-gradient(to bottom, rgba(0,0,0,0.85), transparent 92%);
+  mask-image: linear-gradient(to bottom, rgba(0,0,0,0.85), transparent 92%);
+  pointer-events: none;
+}
+@keyframes floor-scroll {
+  from { background-position: 0 0, 0 0, 0 0; }
+  to   { background-position: 0 0, 0 44px, 0 44px; }
+}
+
+.liveboard-row { animation: rowIn .45s cubic-bezier(.22,1,.36,1) both; }
+@keyframes rowIn { from { opacity: 0; transform: translateX(-10px); } to { opacity: 1; transform: none; } }
+
+.title-glow { position: relative; }
+.title-glow::after {
+  content: ""; position: absolute; inset: -25%; pointer-events: none; z-index: 0;
+  background: radial-gradient(42% 55% at 50% 50%, rgba(245,197,24,0.22), transparent 70%);
+  animation: glow-pulse 2.8s ease-in-out infinite;
+}
+@keyframes glow-pulse { 0%, 100% { opacity: .35; transform: scale(.98); } 50% { opacity: .85; transform: scale(1.05); } }
+
+.signal-emitter { position: absolute; left: 50%; top: 46%; width: 640px; height: 640px; transform: translate(-50%, -50%); pointer-events: none; z-index: 0; }
+.signal-emitter i { position: absolute; inset: 0; border-radius: 9999px; border: 1px solid rgba(245,197,24,0.45); animation: signal-ring 3.4s cubic-bezier(.22,1,.36,1) infinite; }
+.signal-emitter i:nth-child(2) { animation-delay: 1.13s; }
+.signal-emitter i:nth-child(3) { animation-delay: 2.26s; }
+@keyframes signal-ring { from { transform: scale(.45); opacity: .9; } to { transform: scale(1.55); opacity: 0; } }
+
+.stats-chip { display: flex; align-items: center; gap: .7rem; border: 1px solid rgba(255,255,255,0.08); background: rgba(0,0,0,0.35); backdrop-filter: blur(6px); border-radius: .75rem; padding: .55rem 1rem; }
+.live-dot { width: 8px; height: 8px; border-radius: 9999px; background: #34D399; box-shadow: 0 0 0 0 rgba(52,211,153,0.6); animation: live-dot 1.6s ease-out infinite; }
+@keyframes live-dot { 0% { box-shadow: 0 0 0 0 rgba(52,211,153,0.55); } 100% { box-shadow: 0 0 0 9px rgba(52,211,153,0); } }
 
 /* ---- motion layer ---- */
 .tilt-card { transition: transform .25s cubic-bezier(.22,1,.36,1), box-shadow .3s ease, border-color .3s ease; will-change: transform; }
@@ -3985,7 +4034,7 @@ export default function Chat() {
 
 ```
 
-## `src/pages/Home.jsx` — 483 lines
+## `src/pages/Home.jsx` — 568 lines
 
 ```
 import { useEffect, useRef, useState } from "react";
@@ -4059,6 +4108,30 @@ const CONTACTS = [
   { label: "Status", value: "Accepting new projects", tag: true },
 ];
 
+// Live wire — the five agents mid-action, looping forever under the hero title.
+const LIVE_WIRE = [
+  "Amara Osei · live query · open-meteo",
+  "Lena Kovács · drawing the experience",
+  "Dara O'Brien · compiling the prototype",
+  "Niamh Gallagher · scheduling the launch",
+  "Elias Voss · re-verifying GO / NO-GO",
+];
+
+const LIVE_ACTIONS = [
+  ["AG-001", "Amara Osei", "Researcher", "live query · Open-Meteo 3-day Dublin forecast", "☀"],
+  ["AG-002", "Lena Kovács", "Designer", "sketching the pop-up experience · menu · brand", "🎨"],
+  ["AG-003", "Dara O'Brien", "Maker", "building mori-after-dark.html · prototype ✓", "⚙"],
+  ["AG-004", "Niamh Gallagher", "Communicator", "writing the launch campaign · IG · email · ads", "📣"],
+  ["AG-005", "Elias Voss", "Manager", "re-checking revenue vs weather · GO / NO-GO", "🧭"],
+];
+
+const HERO_STATS = [
+  ["5", "agents", "one unbroken pipeline"],
+  ["34", "live tools", "MCP registry"],
+  ["262", "sales rows", "SQLite database"],
+  ["82%", "confidence", "independent GO"],
+];
+
 export default function Home() {
   const heroRef = useRef(null);
   const [ready, setReady] = useState(false);
@@ -4083,50 +4156,68 @@ export default function Home() {
 
   return (
     <div>
-      {/* ---------- FLOATING HERO BANNER ---------- */}
-      <section ref={heroRef} onPointerMove={onHeroMove} className="relative overflow-hidden bg-grid">
+      {/* ---------- FLOATING HERO BANNER — the signal room ---------- */}
+      <section ref={heroRef} onPointerMove={onHeroMove} className="relative min-h-screen overflow-hidden bg-grid">
         <div className="aurora aurora-drift w-[480px] h-[480px] bg-amber-500 -top-40 -left-40" />
         <div className="aurora aurora-drift w-[420px] h-[420px] bg-orange-600 top-20 right-0" />
         <div className="aurora aurora-drift w-[300px] h-[300px] bg-pink-600 -bottom-20 left-1/3" />
+        <div className="hero-scanline" aria-hidden="true" />
+        <div className="hero-floor" aria-hidden="true" />
+
+        {/* live wire — agents mid-action, forever */}
+        <div className="relative z-[2] border-b border-white/8 bg-black/30 backdrop-blur">
+          <Marquee speed={22}>
+            {LIVE_WIRE.map((w) => (
+              <span key={w} className="font-mono text-[10px] tracking-[0.22em] text-zinc-500 px-5 uppercase whitespace-nowrap">
+                <span className="text-emerald-400">●</span> {w} <span className="text-amber-400/70 mx-2">◆</span>
+              </span>
+            ))}
+          </Marquee>
+        </div>
 
         {/* floating signal chips — parallax against the cursor */}
-        <div className="absolute left-6 lg:left-16 top-24 hidden md:block chip-parallax chip-p1">
+        <div className="absolute left-6 lg:left-16 top-24 hidden md:block chip-parallax chip-p1 z-[2]">
           <div className="card bg-black/40 backdrop-blur px-4 py-2.5 text-xs font-mono float-y">
             <span className="text-emerald-400">☀ 19°</span> <span className="text-zinc-500">·</span> <span className="text-zinc-300">Open-Meteo</span>
           </div>
         </div>
-        <div className="absolute right-6 lg:right-16 top-40 hidden md:block chip-parallax chip-p2">
+        <div className="absolute right-6 lg:right-16 top-40 hidden md:block chip-parallax chip-p2 z-[2]">
           <div className="card bg-black/40 backdrop-blur px-4 py-2.5 text-xs font-mono float-y-slow">
             <span className="text-amber-300">SQL</span> <span className="text-zinc-300">262 sales rows</span>
           </div>
         </div>
-        <div className="absolute left-8 lg:left-24 bottom-16 hidden md:block chip-parallax chip-p3">
+        <div className="absolute left-8 lg:left-24 bottom-16 hidden md:block chip-parallax chip-p3 z-[2]">
           <div className="card bg-black/40 backdrop-blur px-4 py-2.5 text-xs font-mono float-y-slow">
             <span className="text-pink-400">⚙</span> <span className="text-zinc-300">prototype built</span>
           </div>
         </div>
-        <div className="absolute right-10 lg:right-20 bottom-10 hidden md:block chip-parallax chip-p4">
+        <div className="absolute right-10 lg:right-20 bottom-10 hidden md:block chip-parallax chip-p4 z-[2]">
           <div className="card bg-black/40 backdrop-blur px-4 py-2.5 text-xs font-mono float-y">
             <span className="text-emerald-400">✓</span> <span className="text-zinc-300">GO — 82% confidence</span>
           </div>
         </div>
 
-        <div className="relative mx-auto max-w-7xl px-4 sm:px-6 pt-20 lg:pt-28 text-center">
+        <div className="relative z-[2] mx-auto max-w-7xl px-4 sm:px-6 pt-14 lg:pt-20 pb-8 text-center">
           <div className="flex justify-center">
             <Eyebrow n="00" text="The studio" center />
           </div>
-          <h1 className={`font-display font-bold text-4xl sm:text-6xl lg:text-7xl text-white leading-[1.05] tracking-tight ${ready ? "title-live" : ""}`}>
-            <span className="title-line"><span className="title-inner" style={{ "--d": "60ms" }}>FROM</span> <span className="title-inner" style={{ "--d": "170ms" }}>SIGNAL</span></span>
-            <span className="title-line"><span className="title-inner" style={{ "--d": "300ms" }}><span className="shimmer-text">→ TO BUSINESS</span></span></span>
-          </h1>
-          <p className="mt-6 max-w-2xl mx-auto text-zinc-400 text-base sm:text-lg">
+          <div className="title-glow inline-block">
+            <h1 className={`font-display font-bold text-4xl sm:text-6xl lg:text-7xl text-white leading-[1.05] tracking-tight ${ready ? "title-live" : ""}`}>
+              <span className="title-line"><span className="title-inner" style={{ "--d": "60ms" }}>FROM</span> <span className="title-inner" style={{ "--d": "170ms" }}>SIGNAL</span></span>
+              <span className="title-line"><span className="title-inner" style={{ "--d": "300ms" }}><span className="shimmer-text">→ TO BUSINESS</span></span></span>
+            </h1>
+          </div>
+
+          <LiveBoard />
+
+          <p className="mt-5 max-w-2xl mx-auto text-zinc-400 text-base sm:text-lg">
             IGNITE is an autonomous venture launch studio. Five specialised AI agents — a{" "}
             <span className="hl">Researcher</span>, <span className="hl">Designer</span>,{" "}
             <span className="hl">Maker</span>, <span className="hl">Communicator</span> and{" "}
             <span className="hl">Manager</span> — work as one unbroken pipeline, passing real work from
             one to the next, to research, design, build, market and launch a business using live data.
           </p>
-          <div className="mt-8 flex flex-wrap items-center justify-center gap-6">
+          <div className="mt-7 flex flex-wrap items-center justify-center gap-6">
             <Magnetic strength={0.35}>
               <Link to="/operations" className="px-6 py-3 rounded-lg font-semibold text-black bg-gradient-to-r from-amber-300 to-orange-500 hover:brightness-110 transition inline-block">
                 ▶ Watch the organisation work
@@ -4136,10 +4227,24 @@ export default function Home() {
               <span>IGNITE COMMAND</span> <span>→</span>
             </Link>
           </div>
+
+          <div className="mt-10 flex flex-wrap items-center justify-center gap-3">
+            {HERO_STATS.map(([v, l, s]) => (
+              <div key={l} className="stats-chip text-left">
+                <span className="live-dot shrink-0" />
+                <div>
+                  <div className="font-display text-xl sm:text-2xl font-bold text-white leading-none tabular-nums">{v}</div>
+                  <div className="text-[11px] font-mono text-zinc-400 mt-1 uppercase tracking-widest">{l}</div>
+                  <div className="text-[10px] text-zinc-600">{s}</div>
+                </div>
+              </div>
+            ))}
+          </div>
         </div>
 
-        {/* the monitor — tilts with the cursor, scrubs with the scroll */}
-        <div className="relative mx-auto max-w-3xl px-4 sm:px-6 mt-12 pb-20 lg:pb-24">
+        {/* the monitor — signal pulse behind, tilts with the cursor */}
+        <div className="relative z-[2] mx-auto max-w-3xl px-4 sm:px-6 mt-8 pb-16">
+          <div className="signal-emitter hidden lg:block" aria-hidden="true"><i /><i /><i /></div>
           <Monitor title="ignite — organisation console · dublin" badge="live replay">
             <Console />
           </Monitor>
@@ -4450,9 +4555,38 @@ export default function Home() {
   );
 }
 
+// ---------- LiveBoard — cycles the five agents mid-action ----------
+function LiveBoard() {
+  const [i, setI] = useState(0);
+  useEffect(() => {
+    const t = setInterval(() => setI((x) => (x + 1) % LIVE_ACTIONS.length), 1400);
+    return () => clearInterval(t);
+  }, []);
+
+  const [id, name, role, action, emoji] = LIVE_ACTIONS[i];
+
+  return (
+    <div className="mx-auto mt-6 w-full max-w-2xl text-left rounded-xl border border-white/10 bg-black/40 backdrop-blur px-4 py-3 font-mono text-xs sm:text-sm">
+      <div className="flex items-center justify-between text-[10px] uppercase tracking-[0.3em] text-zinc-500 mb-2.5">
+        <span className="text-emerald-300">
+          <span className="inline-block w-2 h-2 rounded-full bg-emerald-400 animate-pulse mr-2" />
+          organisation live
+        </span>
+        <span>now processing · {String(i + 1).padStart(2, "0")}/05</span>
+      </div>
+      <div key={i} className="liveboard-row flex flex-wrap items-center gap-x-3 gap-y-1">
+        <span className="idx"><span className="n">{id.replace("AG-", "")}</span></span>
+        <span className="text-amber-300">{emoji} {name}</span>
+        <span className="text-zinc-500 hidden sm:inline">· {role}</span>
+        <span className="text-zinc-300 ml-auto">{action}</span>
+      </div>
+      <div className="progress-indet mt-3" />
+    </div>
+  );
+}
+
 // ---------- Animated terminal that replays the pipeline ----------
-function Console() {
-  const [shown, setShown] = useState(0);
+function Console() {  const [shown, setShown] = useState(0);
   useEffect(() => {
     if (shown >= CONSOLE_LINES.length) return;
     const t = setTimeout(() => setShown((s) => s + 1), 380);
